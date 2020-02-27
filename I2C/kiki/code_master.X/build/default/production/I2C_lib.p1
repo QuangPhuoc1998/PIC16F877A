@@ -1,0 +1,471 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"815 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 815: extern volatile unsigned char SSPCON __attribute__((address(0x014)));
+[v _SSPCON `Vuc ~T0 @X0 0 e@20 ]
+"1754
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1754: extern volatile unsigned char SSPCON2 __attribute__((address(0x091)));
+[v _SSPCON2 `Vuc ~T0 @X0 0 e@145 ]
+"1823
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1823: extern volatile unsigned char SSPADD __attribute__((address(0x093)));
+[v _SSPADD `Vuc ~T0 @X0 0 e@147 ]
+"1830
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1830: extern volatile unsigned char SSPSTAT __attribute__((address(0x094)));
+[v _SSPSTAT `Vuc ~T0 @X0 0 e@148 ]
+"2968
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2968: extern volatile __bit TRISC3 __attribute__((address(0x43B)));
+[v _TRISC3 `Vb ~T0 @X0 0 e@1083 ]
+"2971
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2971: extern volatile __bit TRISC4 __attribute__((address(0x43C)));
+[v _TRISC4 `Vb ~T0 @X0 0 e@1084 ]
+"2806
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2806: extern volatile __bit SEN __attribute__((address(0x488)));
+[v _SEN `Vb ~T0 @X0 0 e@1160 ]
+"2791
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2791: extern volatile __bit RSEN __attribute__((address(0x489)));
+[v _RSEN `Vb ~T0 @X0 0 e@1161 ]
+"2632
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2632: extern volatile __bit PEN __attribute__((address(0x48A)));
+[v _PEN `Vb ~T0 @X0 0 e@1162 ]
+"808
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 808: extern volatile unsigned char SSPBUF __attribute__((address(0x013)));
+[v _SSPBUF `Vuc ~T0 @X0 0 e@19 ]
+"2737
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2737: extern volatile __bit RCEN __attribute__((address(0x48B)));
+[v _RCEN `Vb ~T0 @X0 0 e@1163 ]
+"2374
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2374: extern volatile __bit ACKDT __attribute__((address(0x48D)));
+[v _ACKDT `Vb ~T0 @X0 0 e@1165 ]
+"2377
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2377: extern volatile __bit ACKEN __attribute__((address(0x48C)));
+[v _ACKEN `Vb ~T0 @X0 0 e@1164 ]
+"2569
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2569: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"2629
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2629: extern volatile __bit PEIE __attribute__((address(0x5E)));
+[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+"2824
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2824: extern volatile __bit SSPIF __attribute__((address(0x63)));
+[v _SSPIF `Vb ~T0 @X0 0 e@99 ]
+"2821
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2821: extern volatile __bit SSPIE __attribute__((address(0x463)));
+[v _SSPIE `Vb ~T0 @X0 0 e@1123 ]
+"54 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"6 ./main.h
+[p x FOSC = HS ]
+"7
+[p x WDTE = OFF ]
+"8
+[p x PWRTE = OFF ]
+"9
+[p x BOREN = OFF ]
+"10
+[p x LVP = OFF ]
+"11
+[p x CPD = OFF ]
+"12
+[p x WRT = OFF ]
+"13
+[p x CP = OFF ]
+"4 I2C_lib.c
+[; ;I2C_lib.c: 4: void I2C_Master_Init(const unsigned long c)
+[v _I2C_Master_Init `(v ~T0 @X0 1 ef1`Cul ]
+"5
+[; ;I2C_lib.c: 5: {
+{
+[e :U _I2C_Master_Init ]
+"4
+[; ;I2C_lib.c: 4: void I2C_Master_Init(const unsigned long c)
+[v _c `Cul ~T0 @X0 1 r1 ]
+"5
+[; ;I2C_lib.c: 5: {
+[f ]
+"6
+[; ;I2C_lib.c: 6:   SSPCON = 0b00101000;
+[e = _SSPCON -> -> 40 `i `uc ]
+"7
+[; ;I2C_lib.c: 7:   SSPCON2 = 0;
+[e = _SSPCON2 -> -> 0 `i `uc ]
+"8
+[; ;I2C_lib.c: 8:   SSPADD = (20000000/(4*c))-1;
+[e = _SSPADD -> - / -> -> 20000000 `l `ul * -> -> -> 4 `i `l `ul _c -> -> -> 1 `i `l `ul `uc ]
+"9
+[; ;I2C_lib.c: 9:   SSPSTAT = 0;
+[e = _SSPSTAT -> -> 0 `i `uc ]
+"10
+[; ;I2C_lib.c: 10:   TRISC3 = 1;
+[e = _TRISC3 -> -> 1 `i `b ]
+"11
+[; ;I2C_lib.c: 11:   TRISC4 = 1;
+[e = _TRISC4 -> -> 1 `i `b ]
+"12
+[; ;I2C_lib.c: 12: }
+[e :UE 95 ]
+}
+"13
+[; ;I2C_lib.c: 13: void I2C_Master_Wait()
+[v _I2C_Master_Wait `(v ~T0 @X0 1 ef ]
+"14
+[; ;I2C_lib.c: 14: {
+{
+[e :U _I2C_Master_Wait ]
+[f ]
+"15
+[; ;I2C_lib.c: 15:   while ((SSPSTAT & 0x04) || (SSPCON2 & 0x1F));
+[e $U 97  ]
+[e :U 98 ]
+[e :U 97 ]
+[e $ || != & -> _SSPSTAT `i -> 4 `i -> 0 `i != & -> _SSPCON2 `i -> 31 `i -> 0 `i 98  ]
+[e :U 99 ]
+"16
+[; ;I2C_lib.c: 16: }
+[e :UE 96 ]
+}
+"17
+[; ;I2C_lib.c: 17: void I2C_Master_Start()
+[v _I2C_Master_Start `(v ~T0 @X0 1 ef ]
+"18
+[; ;I2C_lib.c: 18: {
+{
+[e :U _I2C_Master_Start ]
+[f ]
+"19
+[; ;I2C_lib.c: 19:   I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"20
+[; ;I2C_lib.c: 20:   SEN = 1;
+[e = _SEN -> -> 1 `i `b ]
+"21
+[; ;I2C_lib.c: 21: }
+[e :UE 100 ]
+}
+"22
+[; ;I2C_lib.c: 22: void I2C_Master_RepeatedStart()
+[v _I2C_Master_RepeatedStart `(v ~T0 @X0 1 ef ]
+"23
+[; ;I2C_lib.c: 23: {
+{
+[e :U _I2C_Master_RepeatedStart ]
+[f ]
+"24
+[; ;I2C_lib.c: 24:   I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"25
+[; ;I2C_lib.c: 25:   RSEN = 1;
+[e = _RSEN -> -> 1 `i `b ]
+"26
+[; ;I2C_lib.c: 26: }
+[e :UE 101 ]
+}
+"27
+[; ;I2C_lib.c: 27: void I2C_Master_Stop()
+[v _I2C_Master_Stop `(v ~T0 @X0 1 ef ]
+"28
+[; ;I2C_lib.c: 28: {
+{
+[e :U _I2C_Master_Stop ]
+[f ]
+"29
+[; ;I2C_lib.c: 29:   I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"30
+[; ;I2C_lib.c: 30:   PEN = 1;
+[e = _PEN -> -> 1 `i `b ]
+"31
+[; ;I2C_lib.c: 31: }
+[e :UE 102 ]
+}
+"32
+[; ;I2C_lib.c: 32: void I2C_Master_Write(unsigned d)
+[v _I2C_Master_Write `(v ~T0 @X0 1 ef1`ui ]
+"33
+[; ;I2C_lib.c: 33: {
+{
+[e :U _I2C_Master_Write ]
+"32
+[; ;I2C_lib.c: 32: void I2C_Master_Write(unsigned d)
+[v _d `ui ~T0 @X0 1 r1 ]
+"33
+[; ;I2C_lib.c: 33: {
+[f ]
+"34
+[; ;I2C_lib.c: 34:   I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"35
+[; ;I2C_lib.c: 35:   SSPBUF = d;
+[e = _SSPBUF -> _d `uc ]
+"36
+[; ;I2C_lib.c: 36: }
+[e :UE 103 ]
+}
+"37
+[; ;I2C_lib.c: 37: unsigned short I2C_Master_Read(unsigned short a)
+[v _I2C_Master_Read `(us ~T0 @X0 1 ef1`us ]
+"38
+[; ;I2C_lib.c: 38: {
+{
+[e :U _I2C_Master_Read ]
+"37
+[; ;I2C_lib.c: 37: unsigned short I2C_Master_Read(unsigned short a)
+[v _a `us ~T0 @X0 1 r1 ]
+"38
+[; ;I2C_lib.c: 38: {
+[f ]
+"39
+[; ;I2C_lib.c: 39:   unsigned short temp;
+[v _temp `us ~T0 @X0 1 a ]
+"40
+[; ;I2C_lib.c: 40:   I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"41
+[; ;I2C_lib.c: 41:   RCEN = 1;
+[e = _RCEN -> -> 1 `i `b ]
+"42
+[; ;I2C_lib.c: 42:   I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"43
+[; ;I2C_lib.c: 43:   temp = SSPBUF;
+[e = _temp -> _SSPBUF `us ]
+"44
+[; ;I2C_lib.c: 44:   I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"45
+[; ;I2C_lib.c: 45:   ACKDT = (a)?0:1;
+[e = _ACKDT -> ? != -> _a `ui -> -> 0 `i `ui : -> 0 `i -> 1 `i `b ]
+"46
+[; ;I2C_lib.c: 46:   ACKEN = 1;
+[e = _ACKEN -> -> 1 `i `b ]
+"47
+[; ;I2C_lib.c: 47:   return temp;
+[e ) _temp ]
+[e $UE 104  ]
+"48
+[; ;I2C_lib.c: 48: }
+[e :UE 104 ]
+}
+"50
+[; ;I2C_lib.c: 50: void I2C_Slave_Init(short address)
+[v _I2C_Slave_Init `(v ~T0 @X0 1 ef1`s ]
+"51
+[; ;I2C_lib.c: 51: {
+{
+[e :U _I2C_Slave_Init ]
+"50
+[; ;I2C_lib.c: 50: void I2C_Slave_Init(short address)
+[v _address `s ~T0 @X0 1 r1 ]
+"51
+[; ;I2C_lib.c: 51: {
+[f ]
+"52
+[; ;I2C_lib.c: 52:   SSPSTAT = 0x80;
+[e = _SSPSTAT -> -> 128 `i `uc ]
+"53
+[; ;I2C_lib.c: 53:   SSPADD = address;
+[e = _SSPADD -> _address `uc ]
+"54
+[; ;I2C_lib.c: 54:   SSPCON = 0x36;
+[e = _SSPCON -> -> 54 `i `uc ]
+"55
+[; ;I2C_lib.c: 55:   SSPCON2 = 0x01;
+[e = _SSPCON2 -> -> 1 `i `uc ]
+"56
+[; ;I2C_lib.c: 56:   TRISC3 = 1;
+[e = _TRISC3 -> -> 1 `i `b ]
+"57
+[; ;I2C_lib.c: 57:   TRISC4 = 1;
+[e = _TRISC4 -> -> 1 `i `b ]
+"58
+[; ;I2C_lib.c: 58:   GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
+"59
+[; ;I2C_lib.c: 59:   PEIE = 1;
+[e = _PEIE -> -> 1 `i `b ]
+"60
+[; ;I2C_lib.c: 60:   SSPIF = 0;
+[e = _SSPIF -> -> 0 `i `b ]
+"61
+[; ;I2C_lib.c: 61:   SSPIE = 1;
+[e = _SSPIE -> -> 1 `i `b ]
+"62
+[; ;I2C_lib.c: 62: }
+[e :UE 105 ]
+}

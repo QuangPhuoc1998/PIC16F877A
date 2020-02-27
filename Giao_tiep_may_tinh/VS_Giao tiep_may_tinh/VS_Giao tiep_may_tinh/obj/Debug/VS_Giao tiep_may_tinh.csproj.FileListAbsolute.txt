@@ -1,0 +1,19 @@
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\bin\Debug\VS_Giao tiep_may_tinh.exe.config
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\bin\Debug\VS_Giao tiep_may_tinh.exe
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\bin\Debug\VS_Giao tiep_may_tinh.pdb
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao tiep_may_tinh.csprojResolveAssemblyReference.cache
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao_tiep_may_tinh.Form1.resources
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao_tiep_may_tinh.Properties.Resources.resources
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao tiep_may_tinh.csproj.GenerateResource.Cache
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao tiep_may_tinh.exe
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao tiep_may_tinh.pdb
+E:\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\bin\Debug\ZedGraph.dll
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\bin\Debug\VS_Giao tiep_may_tinh.exe.config
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao tiep_may_tinh.exe
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao tiep_may_tinh.pdb
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\bin\Debug\VS_Giao tiep_may_tinh.exe
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\bin\Debug\VS_Giao tiep_may_tinh.pdb
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao tiep_may_tinh.csprojResolveAssemblyReference.cache
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao_tiep_may_tinh.Form1.resources
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao_tiep_may_tinh.Properties.Resources.resources
+D:\DATA\PIC\PIC16F877A\Giao_tiep_may_tinh\VS_Giao tiep_may_tinh\VS_Giao tiep_may_tinh\obj\Debug\VS_Giao tiep_may_tinh.csproj.GenerateResource.Cache

@@ -1,0 +1,147 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"13 D:\DATA\PIC\PIC16F877A\I2C/code_master.X/I2C_lib.c
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"50
+[v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"16 D:\DATA\PIC\PIC16F877A\I2C\code_slave.X\main_slaves.c
+[v _main main `(v  1 e 1 0 ]
+"63
+[v _Led7_display Led7_display `(v  1 e 1 0 ]
+"75
+[v _i2c_slave_read i2c_slave_read `II(v  1 e 1 0 ]
+"216 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2374
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2377
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2413
+[v _BF BF `VEb  1 e 0 @1184 ]
+"2497
+[v _CKP CKP `VEb  1 e 0 @164 ]
+"2551
+[v _D_nA D_nA `VEb  1 e 0 @1189 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2674
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"2677
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2737
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2791
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2803
+[v _R_nW R_nW `VEb  1 e 0 @1186 ]
+"2806
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2821
+[v _SSPIE SSPIE `VEb  1 e 0 @1123 ]
+"2824
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2839
+[v _SSPOV SSPOV `VEb  1 e 0 @166 ]
+"2935
+[v _TRISB0 TRISB0 `VEb  1 e 0 @1072 ]
+"2938
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1073 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"3043
+[v _WCOL WCOL `VEb  1 e 0 @167 ]
+"12 D:\DATA\PIC\PIC16F877A\I2C\code_slave.X\main_slaves.c
+[v _code7seg code7seg `[10]uc  1 e 10 0 ]
+"13
+[v _data data `uc  1 e 1 0 ]
+"14
+[v _key key `uc  1 e 1 0 ]
+"16
+[v _main main `(v  1 e 1 0 ]
+{
+"18
+[v main@number number `uc  1 a 1 10 ]
+[v main@i i `uc  1 a 1 9 ]
+"62
+} 0
+"63
+[v _Led7_display Led7_display `(v  1 e 1 0 ]
+{
+[v Led7_display@number number `uc  1 a 1 wreg ]
+[v Led7_display@number number `uc  1 a 1 wreg ]
+"65
+[v Led7_display@number number `uc  1 a 1 6 ]
+"74
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 9 ]
+[v ___awmod@counter counter `uc  1 a 1 8 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 3 ]
+[v ___awmod@dividend dividend `i  1 p 2 5 ]
+"34
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 3 ]
+[v ___awdiv@dividend dividend `i  1 p 2 5 ]
+"41
+} 0
+"50 D:\DATA\PIC\PIC16F877A\I2C/code_master.X/I2C_lib.c
+[v _I2C_Slave_Init I2C_Slave_Init `(v  1 e 1 0 ]
+{
+[v I2C_Slave_Init@address address `s  1 p 2 3 ]
+"62
+} 0
+"75 D:\DATA\PIC\PIC16F877A\I2C\code_slave.X\main_slaves.c
+[v _i2c_slave_read i2c_slave_read `II(v  1 e 1 0 ]
+{
+"109
+} 0

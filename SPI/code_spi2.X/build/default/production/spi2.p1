@@ -1,0 +1,421 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"1375 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1375: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"23 spi2.c
+[; ;spi2.c: 23:     Spi_Init(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
+[c E850 32 33 34 35 36 37 .. ]
+[n E850 . SPI_MASTER_OSC_DIV4 SPI_MASTER_OSC_DIV16 SPI_MASTER_OSC_DIV64 SPI_MASTER_TMR2 SPI_SLAVE_SS_EN SPI_SLAVE_SS_DIS  ]
+[c E858 0 128 .. ]
+[n E858 . SPI_DATA_SAMPLE_MIDDLE SPI_DATA_SAMPLE_END  ]
+[c E862 16 0 .. ]
+[n E862 . SPI_CLOCK_IDLE_HIGH SPI_CLOCK_IDLE_LOW  ]
+[c E866 0 64 .. ]
+[n E866 . SPI_IDLE_2_ACTIVE SPI_ACTIVE_2_IDLE  ]
+"44 ./spi.h
+[; ;./spi.h: 44: void Spi_Init(Spi_Type, Spi_Data_Sample, Spi_Clock_Idle, Spi_Transmit_Edge);
+[v _Spi_Init `(v ~T0 @X0 0 ef4`E850`E858`E862`E866 ]
+"15 ./lcd4.h
+[; ;./lcd4.h: 15: void Lcd_Init();
+[v _Lcd_Init `(v ~T0 @X0 0 e? ]
+"2569 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2569: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"2629
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2629: extern volatile __bit PEIE __attribute__((address(0x5E)));
+[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+"2821
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2821: extern volatile __bit SSPIE __attribute__((address(0x463)));
+[v _SSPIE `Vb ~T0 @X0 0 e@1123 ]
+"17 ./lcd4.h
+[; ;./lcd4.h: 17: void Lcd_Write_String(char *a);
+[v _Lcd_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+"14
+[; ;./lcd4.h: 14: void Lcd_Set_Cursor(char a, char b);
+[v _Lcd_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
+"16 spi2.c
+[; ;spi2.c: 16: void Lcd_Display(unsigned int x, unsigned int y);
+[v _Lcd_Display `(v ~T0 @X0 0 ef2`ui`ui ]
+"16 ./lcd4.h
+[; ;./lcd4.h: 16: void Lcd_Write_Char(char a);
+[v _Lcd_Write_Char `(v ~T0 @X0 0 ef1`uc ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"2824 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2824: extern volatile __bit SSPIF __attribute__((address(0x63)));
+[v _SSPIF `Vb ~T0 @X0 0 e@99 ]
+"48 ./spi.h
+[; ;./spi.h: 48: char Spi_Read();
+[v _Spi_Read `(uc ~T0 @X0 0 e? ]
+"49
+[; ;./spi.h: 49: void Spi_Read_Text(char *Output, unsigned int length);
+[v _Spi_Read_Text `(v ~T0 @X0 0 ef2`*uc`ui ]
+"54 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"6 ./main.h
+[p x FOSC = HS ]
+"7
+[p x WDTE = OFF ]
+"8
+[p x PWRTE = OFF ]
+"9
+[p x BOREN = OFF ]
+"10
+[p x LVP = OFF ]
+"11
+[p x CPD = OFF ]
+"12
+[p x WRT = OFF ]
+"13
+[p x CP = OFF ]
+"13 spi2.c
+[; ;spi2.c: 13: unsigned char s;
+[v _s `uc ~T0 @X0 1 e ]
+"14
+[; ;spi2.c: 14: char data[8];
+[v _data `uc ~T0 @X0 -> 8 `i e ]
+"15
+[; ;spi2.c: 15: unsigned int x = 0, y = 0;
+[v _x `ui ~T0 @X0 1 e ]
+[i _x
+-> -> 0 `i `ui
+]
+[v _y `ui ~T0 @X0 1 e ]
+[i _y
+-> -> 0 `i `ui
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"17
+[; ;spi2.c: 17: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"18
+[; ;spi2.c: 18: {
+{
+[e :U _main ]
+[f ]
+"21
+[; ;spi2.c: 21:     TRISB = 0x00;
+[e = _TRISB -> -> 0 `i `uc ]
+"23
+[; ;spi2.c: 23:     Spi_Init(SPI_SLAVE_SS_EN, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
+[e ( _Spi_Init (4 , , , . `E850 4 . `E858 0 . `E862 1 . `E866 0 ]
+"24
+[; ;spi2.c: 24:     Lcd_Init();
+[e ( _Lcd_Init ..  ]
+"26
+[; ;spi2.c: 26:     GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
+"27
+[; ;spi2.c: 27:     PEIE = 1;
+[e = _PEIE -> -> 1 `i `b ]
+"28
+[; ;spi2.c: 28:     SSPIE = 1;
+[e = _SSPIE -> -> 1 `i `b ]
+"30
+[; ;spi2.c: 30:     Lcd_Write_String("x_value = ");
+[e ( _Lcd_Write_String (1 :s 1C ]
+"31
+[; ;spi2.c: 31:     Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"32
+[; ;spi2.c: 32:     Lcd_Write_String("x_value = ");
+[e ( _Lcd_Write_String (1 :s 2C ]
+"33
+[; ;spi2.c: 33:     while(1)
+[e :U 97 ]
+"34
+[; ;spi2.c: 34:     {
+{
+"35
+[; ;spi2.c: 35:         Lcd_Display(x,y);
+[e ( _Lcd_Display (2 , _x _y ]
+"36
+[; ;spi2.c: 36:     }
+}
+[e :U 96 ]
+[e $U 97  ]
+[e :U 98 ]
+"37
+[; ;spi2.c: 37:     return;
+[e $UE 95  ]
+"38
+[; ;spi2.c: 38: }
+[e :UE 95 ]
+}
+"39
+[; ;spi2.c: 39: void Lcd_Display(unsigned int x, unsigned int y)
+[v _Lcd_Display `(v ~T0 @X0 1 ef2`ui`ui ]
+"40
+[; ;spi2.c: 40: {
+{
+[e :U _Lcd_Display ]
+"39
+[; ;spi2.c: 39: void Lcd_Display(unsigned int x, unsigned int y)
+[v _x `ui ~T0 @X0 1 r1 ]
+[v _y `ui ~T0 @X0 1 r2 ]
+"40
+[; ;spi2.c: 40: {
+[f ]
+"41
+[; ;spi2.c: 41:     Lcd_Set_Cursor(1,11);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 11 `i `uc ]
+"42
+[; ;spi2.c: 42:     Lcd_Write_Char(x/1000+48);
+[e ( _Lcd_Write_Char (1 -> + / _x -> -> 1000 `i `ui -> -> 48 `i `ui `uc ]
+"43
+[; ;spi2.c: 43:     Lcd_Write_Char(x%1000/100+48);
+[e ( _Lcd_Write_Char (1 -> + / % _x -> -> 1000 `i `ui -> -> 100 `i `ui -> -> 48 `i `ui `uc ]
+"44
+[; ;spi2.c: 44:     Lcd_Write_Char(x%100/10+48);
+[e ( _Lcd_Write_Char (1 -> + / % _x -> -> 100 `i `ui -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"45
+[; ;spi2.c: 45:     Lcd_Write_Char(x%10+48);
+[e ( _Lcd_Write_Char (1 -> + % _x -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"46
+[; ;spi2.c: 46:     Lcd_Set_Cursor(2,11);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 11 `i `uc ]
+"47
+[; ;spi2.c: 47:     Lcd_Write_Char(y/1000+48);
+[e ( _Lcd_Write_Char (1 -> + / _y -> -> 1000 `i `ui -> -> 48 `i `ui `uc ]
+"48
+[; ;spi2.c: 48:     Lcd_Write_Char(y%1000/100+48);
+[e ( _Lcd_Write_Char (1 -> + / % _y -> -> 1000 `i `ui -> -> 100 `i `ui -> -> 48 `i `ui `uc ]
+"49
+[; ;spi2.c: 49:     Lcd_Write_Char(y%100/10+48);
+[e ( _Lcd_Write_Char (1 -> + / % _y -> -> 100 `i `ui -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"50
+[; ;spi2.c: 50:     Lcd_Write_Char(y%10+48);
+[e ( _Lcd_Write_Char (1 -> + % _y -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"51
+[; ;spi2.c: 51: }
+[e :UE 99 ]
+}
+[v $root$_My_interrupt `(v ~T0 @X0 0 e ]
+"52
+[; ;spi2.c: 52: void __attribute__((picinterrupt(("")))) My_interrupt()
+[v _My_interrupt `(v ~T1 @X0 1 ef ]
+"53
+[; ;spi2.c: 53: {
+{
+[e :U _My_interrupt ]
+[f ]
+"54
+[; ;spi2.c: 54:     if(SSPIE == 1 && SSPIF == 1)
+[e $ ! && == -> _SSPIE `i -> 1 `i == -> _SSPIF `i -> 1 `i 101  ]
+"55
+[; ;spi2.c: 55:     {
+{
+"56
+[; ;spi2.c: 56:         s = Spi_Read();
+[e = _s -> ( _Spi_Read ..  `uc ]
+"57
+[; ;spi2.c: 57:         if(s == ':')
+[e $ ! == -> _s `ui -> 58 `ui 102  ]
+"58
+[; ;spi2.c: 58:         {
+{
+"59
+[; ;spi2.c: 59:             Spi_Read_Text(data, 8);
+[e ( _Spi_Read_Text (2 , &U _data -> -> 8 `i `ui ]
+"60
+[; ;spi2.c: 60:             x = data[0]*1000+data[1]*100+data[2]*10+data[3];
+[e = _x -> + + + * -> *U + &U _data * -> -> -> 0 `i `ui `ux -> -> # *U &U _data `ui `ux `i -> 1000 `i * -> *U + &U _data * -> -> -> 1 `i `ui `ux -> -> # *U &U _data `ui `ux `i -> 100 `i * -> *U + &U _data * -> -> -> 2 `i `ui `ux -> -> # *U &U _data `ui `ux `i -> 10 `i -> *U + &U _data * -> -> -> 3 `i `ui `ux -> -> # *U &U _data `ui `ux `i `ui ]
+"61
+[; ;spi2.c: 61:             y = data[4]*1000+data[5]*100+data[6]*10+data[7];
+[e = _y -> + + + * -> *U + &U _data * -> -> -> 4 `i `ui `ux -> -> # *U &U _data `ui `ux `i -> 1000 `i * -> *U + &U _data * -> -> -> 5 `i `ui `ux -> -> # *U &U _data `ui `ux `i -> 100 `i * -> *U + &U _data * -> -> -> 6 `i `ui `ux -> -> # *U &U _data `ui `ux `i -> 10 `i -> *U + &U _data * -> -> -> 7 `i `ui `ux -> -> # *U &U _data `ui `ux `i `ui ]
+"62
+[; ;spi2.c: 62:         }
+}
+[e :U 102 ]
+"63
+[; ;spi2.c: 63:         SSPIF = 0;
+[e = _SSPIF -> -> 0 `i `b ]
+"64
+[; ;spi2.c: 64:     }
+}
+[e :U 101 ]
+"65
+[; ;spi2.c: 65: }
+[e :UE 100 ]
+}
+[a 1C 120 95 118 97 108 117 101 32 61 32 0 ]
+[a 2C 120 95 118 97 108 117 101 32 61 32 0 ]

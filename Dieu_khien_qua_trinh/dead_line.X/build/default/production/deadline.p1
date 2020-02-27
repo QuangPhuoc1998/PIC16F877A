@@ -1,0 +1,1307 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"2917 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2917: extern volatile __bit TRISA0 __attribute__((address(0x428)));
+[v _TRISA0 `Vb ~T0 @X0 0 e@1064 ]
+"2920
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2920: extern volatile __bit TRISA1 __attribute__((address(0x429)));
+[v _TRISA1 `Vb ~T0 @X0 0 e@1065 ]
+"2935
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2935: extern volatile __bit TRISB0 __attribute__((address(0x430)));
+[v _TRISB0 `Vb ~T0 @X0 0 e@1072 ]
+"2938
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2938: extern volatile __bit TRISB1 __attribute__((address(0x431)));
+[v _TRISB1 `Vb ~T0 @X0 0 e@1073 ]
+"2959
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2959: extern volatile __bit TRISC0 __attribute__((address(0x438)));
+[v _TRISC0 `Vb ~T0 @X0 0 e@1080 ]
+"2962
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2962: extern volatile __bit TRISC1 __attribute__((address(0x439)));
+[v _TRISC1 `Vb ~T0 @X0 0 e@1081 ]
+"2965
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2965: extern volatile __bit TRISC2 __attribute__((address(0x43A)));
+[v _TRISC2 `Vb ~T0 @X0 0 e@1082 ]
+"2767
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2767: extern volatile __bit RD6 __attribute__((address(0x46)));
+[v _RD6 `Vb ~T0 @X0 0 e@70 ]
+"2770
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2770: extern volatile __bit RD7 __attribute__((address(0x47)));
+[v _RD7 `Vb ~T0 @X0 0 e@71 ]
+"2677
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2677: extern volatile __bit RB1 __attribute__((address(0x31)));
+[v _RB1 `Vb ~T0 @X0 0 e@49 ]
+"9 ./lcd_v2.h
+[; ;./lcd_v2.h: 9: void Lcd_Init();
+[v _Lcd_Init `(v ~T0 @X0 0 e? ]
+"29 deadline.c
+[; ;deadline.c: 29: void ADC_Init();
+[v _ADC_Init `(v ~T0 @X0 0 e? ]
+"31
+[; ;deadline.c: 31: void Timer1_Init();
+[v _Timer1_Init `(v ~T0 @X0 0 e? ]
+"32
+[; ;deadline.c: 32: void Interrupt_Init();
+[v _Interrupt_Init `(v ~T0 @X0 0 e? ]
+"8 ./lcd_v2.h
+[; ;./lcd_v2.h: 8: void Lcd_Set_Cursor(unsigned char r, unsigned char c);
+[v _Lcd_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
+"11
+[; ;./lcd_v2.h: 11: void Lcd_Write_String(char *a);
+[v _Lcd_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+"2707 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2707: extern volatile __bit RC1 __attribute__((address(0x39)));
+[v _RC1 `Vb ~T0 @X0 0 e@57 ]
+[v F842 `(v ~T0 @X0 1 tf1`ul ]
+"92 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic.h
+[v __delay `JF842 ~T0 @X0 0 e ]
+[p i __delay ]
+"2599 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2599: extern volatile __bit INTE __attribute__((address(0x5C)));
+[v _INTE `Vb ~T0 @X0 0 e@92 ]
+"7 ./lcd_v2.h
+[; ;./lcd_v2.h: 7: void Lcd_Clear();
+[v _Lcd_Clear `(v ~T0 @X0 0 e? ]
+"30 deadline.c
+[; ;deadline.c: 30: unsigned int Read_ADC(unsigned char channel);
+[v _Read_ADC `(ui ~T0 @X0 0 ef1`uc ]
+"28
+[; ;deadline.c: 28: long map(long x, long in_min, long in_max, long out_min, long out_max);
+[v _map `(l ~T0 @X0 0 ef5`l`l`l`l`l ]
+"10 ./lcd_v2.h
+[; ;./lcd_v2.h: 10: void Lcd_Write_Char(char a);
+[v _Lcd_Write_Char `(v ~T0 @X0 0 ef1`uc ]
+"2704 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2704: extern volatile __bit RC0 __attribute__((address(0x38)));
+[v _RC0 `Vb ~T0 @X0 0 e@56 ]
+"2710
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2710: extern volatile __bit RC2 __attribute__((address(0x3A)));
+[v _RC2 `Vb ~T0 @X0 0 e@58 ]
+"33 deadline.c
+[; ;deadline.c: 33: unsigned int PID_Init(unsigned int nhietdo, unsigned int nhietdodat);
+[v _PID_Init `(ui ~T0 @X0 0 ef2`ui`ui ]
+"27
+[; ;deadline.c: 27: void Display(unsigned char temp, unsigned char set_temp);
+[v _Display `(v ~T0 @X0 0 ef2`uc`uc ]
+"2617 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2617: extern volatile __bit PCFG0 __attribute__((address(0x4F8)));
+[v _PCFG0 `Vb ~T0 @X0 0 e@1272 ]
+"2620
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2620: extern volatile __bit PCFG1 __attribute__((address(0x4F9)));
+[v _PCFG1 `Vb ~T0 @X0 0 e@1273 ]
+"2623
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2623: extern volatile __bit PCFG2 __attribute__((address(0x4FA)));
+[v _PCFG2 `Vb ~T0 @X0 0 e@1274 ]
+"2626
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2626: extern volatile __bit PCFG3 __attribute__((address(0x4FB)));
+[v _PCFG3 `Vb ~T0 @X0 0 e@1275 ]
+"2383
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2383: extern volatile __bit ADCS0 __attribute__((address(0xFE)));
+[v _ADCS0 `Vb ~T0 @X0 0 e@254 ]
+"2386
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2386: extern volatile __bit ADCS1 __attribute__((address(0xFF)));
+[v _ADCS1 `Vb ~T0 @X0 0 e@255 ]
+"2389
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2389: extern volatile __bit ADCS2 __attribute__((address(0x4FE)));
+[v _ADCS2 `Vb ~T0 @X0 0 e@1278 ]
+"2395
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2395: extern volatile __bit ADFM __attribute__((address(0x4FF)));
+[v _ADFM `Vb ~T0 @X0 0 e@1279 ]
+"2404
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2404: extern volatile __bit ADON __attribute__((address(0xF8)));
+[v _ADON `Vb ~T0 @X0 0 e@248 ]
+"2398
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2398: extern volatile __bit ADIE __attribute__((address(0x466)));
+[v _ADIE `Vb ~T0 @X0 0 e@1126 ]
+"2401
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2401: extern volatile __bit ADIF __attribute__((address(0x66)));
+[v _ADIF `Vb ~T0 @X0 0 e@102 ]
+"1159
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1159: extern volatile unsigned char ADCON0 __attribute__((address(0x01F)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
+"2578
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2578: extern volatile __bit GO_nDONE __attribute__((address(0xFA)));
+[v _GO_nDONE `Vb ~T0 @X0 0 e@250 ]
+"1152
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1152: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"2222
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2222: extern volatile unsigned char ADRESL __attribute__((address(0x09E)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
+"648
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 648: extern volatile unsigned char TMR1H __attribute__((address(0x00F)));
+[v _TMR1H `Vuc ~T0 @X0 0 e@15 ]
+"641
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 641: extern volatile unsigned char TMR1L __attribute__((address(0x00E)));
+[v _TMR1L `Vuc ~T0 @X0 0 e@14 ]
+"2860
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2860: extern volatile __bit T1CKPS1 __attribute__((address(0x85)));
+[v _T1CKPS1 `Vb ~T0 @X0 0 e@133 ]
+"2857
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2857: extern volatile __bit T1CKPS0 __attribute__((address(0x84)));
+[v _T1CKPS0 `Vb ~T0 @X0 0 e@132 ]
+"2866
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2866: extern volatile __bit T1OSCEN __attribute__((address(0x83)));
+[v _T1OSCEN `Vb ~T0 @X0 0 e@131 ]
+"2869
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2869: extern volatile __bit T1SYNC __attribute__((address(0x82)));
+[v _T1SYNC `Vb ~T0 @X0 0 e@130 ]
+"2884
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2884: extern volatile __bit TMR1CS __attribute__((address(0x81)));
+[v _TMR1CS `Vb ~T0 @X0 0 e@129 ]
+"2887
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2887: extern volatile __bit TMR1IE __attribute__((address(0x460)));
+[v _TMR1IE `Vb ~T0 @X0 0 e@1120 ]
+"2893
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2893: extern volatile __bit TMR1ON __attribute__((address(0x80)));
+[v _TMR1ON `Vb ~T0 @X0 0 e@128 ]
+"2602
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2602: extern volatile __bit INTEDG __attribute__((address(0x40E)));
+[v _INTEDG `Vb ~T0 @X0 0 e@1038 ]
+"2569
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2569: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"2629
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2629: extern volatile __bit PEIE __attribute__((address(0x5E)));
+[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+[t ~ __interrupt . k ]
+[t T2 __interrupt ]
+"2605
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2605: extern volatile __bit INTF __attribute__((address(0x59)));
+[v _INTF `Vb ~T0 @X0 0 e@89 ]
+"2890
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2890: extern volatile __bit TMR1IF __attribute__((address(0x60)));
+[v _TMR1IF `Vb ~T0 @X0 0 e@96 ]
+"634
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 634: extern volatile unsigned short TMR1 __attribute__((address(0x00E)));
+[v _TMR1 `Vus ~T0 @X0 0 e@14 ]
+"54 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"7 ./main.h
+[p x FOSC = HS ]
+"8
+[p x WDTE = OFF ]
+"9
+[p x PWRTE = OFF ]
+"10
+[p x BOREN = OFF ]
+"11
+[p x LVP = OFF ]
+"12
+[p x CPD = OFF ]
+"13
+[p x WRT = OFF ]
+"14
+[p x CP = OFF ]
+"18 deadline.c
+[; ;deadline.c: 18: unsigned int temp;
+[v _temp `ui ~T0 @X0 1 e ]
+"19
+[; ;deadline.c: 19: int sum = 0, sum_avg = 0;
+[v _sum `i ~T0 @X0 1 e ]
+[i _sum
+-> 0 `i
+]
+[v _sum_avg `i ~T0 @X0 1 e ]
+[i _sum_avg
+-> 0 `i
+]
+"20
+[; ;deadline.c: 20: char m=0,set_temp = 50;
+[v _m `uc ~T0 @X0 1 e ]
+[i _m
+-> -> 0 `i `uc
+]
+[v _set_temp `uc ~T0 @X0 1 e ]
+[i _set_temp
+-> -> 50 `i `uc
+]
+"21
+[; ;deadline.c: 21: unsigned int duty = 0;
+[v _duty `ui ~T0 @X0 1 e ]
+[i _duty
+-> -> 0 `i `ui
+]
+"23
+[; ;deadline.c: 23: float E, E1, E2, T;
+[v _E `f ~T0 @X0 1 e ]
+[v _E1 `f ~T0 @X0 1 e ]
+[v _E2 `f ~T0 @X0 1 e ]
+[v _T `f ~T0 @X0 1 e ]
+"24
+[; ;deadline.c: 24: double a1, a2, a3, Kp, Ki, Kd;
+[v _a1 `d ~T0 @X0 1 e ]
+[v _a2 `d ~T0 @X0 1 e ]
+[v _a3 `d ~T0 @X0 1 e ]
+[v _Kp `d ~T0 @X0 1 e ]
+[v _Ki `d ~T0 @X0 1 e ]
+[v _Kd `d ~T0 @X0 1 e ]
+"25
+[; ;deadline.c: 25: double out, pre_out;
+[v _out `d ~T0 @X0 1 e ]
+[v _pre_out `d ~T0 @X0 1 e ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"35
+[; ;deadline.c: 35: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"36
+[; ;deadline.c: 36: {
+{
+[e :U _main ]
+[f ]
+"38
+[; ;deadline.c: 38:  T = 0.5;
+[e = _T -> .0.5 `f ]
+"39
+[; ;deadline.c: 39:  Kp = 100;
+[e = _Kp -> -> 100 `i `d ]
+"40
+[; ;deadline.c: 40:  Ki = 0.0002151;
+[e = _Ki .0.0002151 ]
+"41
+[; ;deadline.c: 41:  Kd = 0;
+[e = _Kd -> -> 0 `i `d ]
+"42
+[; ;deadline.c: 42:  E = E1 = E2 = 0;
+[e = _E = _E1 = _E2 -> -> 0 `i `f ]
+"43
+[; ;deadline.c: 43:  a1 = a2 = a3 = 0;
+[e = _a1 = _a2 = _a3 -> -> 0 `i `d ]
+"44
+[; ;deadline.c: 44:  out = pre_out = 0;
+[e = _out = _pre_out -> -> 0 `i `d ]
+"46
+[; ;deadline.c: 46:     TRISA0 = 1;
+[e = _TRISA0 -> -> 1 `i `b ]
+"47
+[; ;deadline.c: 47:     TRISA1 = 1;
+[e = _TRISA1 -> -> 1 `i `b ]
+"48
+[; ;deadline.c: 48:     TRISB0 = 1;
+[e = _TRISB0 -> -> 1 `i `b ]
+"49
+[; ;deadline.c: 49:     TRISB1 = 0;
+[e = _TRISB1 -> -> 0 `i `b ]
+"50
+[; ;deadline.c: 50:     TRISC0 = 1;
+[e = _TRISC0 -> -> 1 `i `b ]
+"51
+[; ;deadline.c: 51:     TRISC1 = 1;
+[e = _TRISC1 -> -> 1 `i `b ]
+"52
+[; ;deadline.c: 52:     TRISC2 = 1;
+[e = _TRISC2 -> -> 1 `i `b ]
+"54
+[; ;deadline.c: 54:     RD6 = 1;
+[e = _RD6 -> -> 1 `i `b ]
+"55
+[; ;deadline.c: 55:     RD7 = 1;
+[e = _RD7 -> -> 1 `i `b ]
+"56
+[; ;deadline.c: 56:     RB1 = 0;
+[e = _RB1 -> -> 0 `i `b ]
+"58
+[; ;deadline.c: 58:     Lcd_Init();
+[e ( _Lcd_Init ..  ]
+"59
+[; ;deadline.c: 59:     ADC_Init();
+[e ( _ADC_Init ..  ]
+"60
+[; ;deadline.c: 60:     Timer1_Init();
+[e ( _Timer1_Init ..  ]
+"61
+[; ;deadline.c: 61:     Interrupt_Init();
+[e ( _Interrupt_Init ..  ]
+"63
+[; ;deadline.c: 63:     Lcd_Set_Cursor(1,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"64
+[; ;deadline.c: 64:     Lcd_Write_String("1. TEST MODE");
+[e ( _Lcd_Write_String (1 :s 1C ]
+"65
+[; ;deadline.c: 65:     Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"66
+[; ;deadline.c: 66:     Lcd_Write_String("2. NORMAL MODE");
+[e ( _Lcd_Write_String (1 :s 2C ]
+"67
+[; ;deadline.c: 67:     while(1)
+[e :U 98 ]
+"68
+[; ;deadline.c: 68:     {
+{
+"69
+[; ;deadline.c: 69:         if(RC1 == 0)
+[e $ ! == -> _RC1 `i -> 0 `i 100  ]
+"70
+[; ;deadline.c: 70:         {
+{
+"71
+[; ;deadline.c: 71:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"72
+[; ;deadline.c: 72:             if(RC1 == 0)
+[e $ ! == -> _RC1 `i -> 0 `i 101  ]
+"73
+[; ;deadline.c: 73:             {
+{
+"74
+[; ;deadline.c: 74:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"75
+[; ;deadline.c: 75:                 while(RC1 == 0);
+[e $U 102  ]
+[e :U 103 ]
+[e :U 102 ]
+[e $ == -> _RC1 `i -> 0 `i 103  ]
+[e :U 104 ]
+"77
+[; ;deadline.c: 77:                 mode1:;
+[e :U 105 ]
+"78
+[; ;deadline.c: 78:                 RD6 = 0;
+[e = _RD6 -> -> 0 `i `b ]
+"79
+[; ;deadline.c: 79:                 RD7 = 1;
+[e = _RD7 -> -> 1 `i `b ]
+"80
+[; ;deadline.c: 80:                 INTE = 1;
+[e = _INTE -> -> 1 `i `b ]
+"81
+[; ;deadline.c: 81:                 Lcd_Clear();
+[e ( _Lcd_Clear ..  ]
+"82
+[; ;deadline.c: 82:                 Lcd_Set_Cursor(1,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"83
+[; ;deadline.c: 83:                 Lcd_Write_String("Temp:    oC");
+[e ( _Lcd_Write_String (1 :s 3C ]
+"84
+[; ;deadline.c: 84:                 Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"85
+[; ;deadline.c: 85:                 Lcd_Write_String("Duty:     %");
+[e ( _Lcd_Write_String (1 :s 4C ]
+"86
+[; ;deadline.c: 86:                 while(1)
+[e :U 107 ]
+"87
+[; ;deadline.c: 87:                 {
+{
+"88
+[; ;deadline.c: 88:                     temp = Read_ADC(0)*0.488f+0.5f;
+[e = _temp -> + * -> ( _Read_ADC (1 -> -> 0 `i `uc `f -> .0.488 `f -> .0.5 `f `ui ]
+"89
+[; ;deadline.c: 89:                     duty = map(Read_ADC(1),0,1023,0,8000);
+[e = _duty -> ( _map (4 , , , , -> ( _Read_ADC (1 -> -> 1 `i `uc `l -> -> 0 `i `l -> -> 1023 `i `l -> -> 0 `i `l -> -> 8000 `i `l `ui ]
+"91
+[; ;deadline.c: 91:                     sum +=temp;
+[e =+ _sum -> _temp `i ]
+"92
+[; ;deadline.c: 92:                     if (m < 9) m++;
+[e $ ! < -> _m `i -> 9 `i 109  ]
+[e ++ _m -> -> 1 `i `uc ]
+[e $U 110  ]
+"93
+[; ;deadline.c: 93:                     else
+[e :U 109 ]
+"94
+[; ;deadline.c: 94:                     {
+{
+"95
+[; ;deadline.c: 95:                         sum_avg = sum / 10;
+[e = _sum_avg / _sum -> 10 `i ]
+"96
+[; ;deadline.c: 96:                         sum = 0;
+[e = _sum -> 0 `i ]
+"97
+[; ;deadline.c: 97:                         m=0;
+[e = _m -> -> 0 `i `uc ]
+"98
+[; ;deadline.c: 98:                     }
+}
+[e :U 110 ]
+"100
+[; ;deadline.c: 100:                     Lcd_Set_Cursor(1,7);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 7 `i `uc ]
+"101
+[; ;deadline.c: 101:                     Lcd_Write_Char(sum_avg/10+48);
+[e ( _Lcd_Write_Char (1 -> + / _sum_avg -> 10 `i -> 48 `i `uc ]
+"102
+[; ;deadline.c: 102:                     Lcd_Write_Char(sum_avg%10+48);
+[e ( _Lcd_Write_Char (1 -> + % _sum_avg -> 10 `i -> 48 `i `uc ]
+"103
+[; ;deadline.c: 103:                     Lcd_Set_Cursor(2,7);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
+"104
+[; ;deadline.c: 104:                     Lcd_Write_Char(map(Read_ADC(1),0,1023,100,0)/100+48);
+[e ( _Lcd_Write_Char (1 -> + / ( _map (4 , , , , -> ( _Read_ADC (1 -> -> 1 `i `uc `l -> -> 0 `i `l -> -> 1023 `i `l -> -> 100 `i `l -> -> 0 `i `l -> -> 100 `i `l -> -> 48 `i `l `uc ]
+"105
+[; ;deadline.c: 105:                     Lcd_Write_Char(map(Read_ADC(1),0,1023,100,0)%100/10+48);
+[e ( _Lcd_Write_Char (1 -> + / % ( _map (4 , , , , -> ( _Read_ADC (1 -> -> 1 `i `uc `l -> -> 0 `i `l -> -> 1023 `i `l -> -> 100 `i `l -> -> 0 `i `l -> -> 100 `i `l -> -> 10 `i `l -> -> 48 `i `l `uc ]
+"106
+[; ;deadline.c: 106:                     Lcd_Write_Char(map(Read_ADC(1),0,1023,100,0)%10+48);
+[e ( _Lcd_Write_Char (1 -> + % ( _map (4 , , , , -> ( _Read_ADC (1 -> -> 1 `i `uc `l -> -> 0 `i `l -> -> 1023 `i `l -> -> 100 `i `l -> -> 0 `i `l -> -> 10 `i `l -> -> 48 `i `l `uc ]
+"107
+[; ;deadline.c: 107:                     if(RC0 == 0)
+[e $ ! == -> _RC0 `i -> 0 `i 111  ]
+"108
+[; ;deadline.c: 108:                     {
+{
+"109
+[; ;deadline.c: 109:                         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"110
+[; ;deadline.c: 110:                         if(RC0 == 0)
+[e $ ! == -> _RC0 `i -> 0 `i 112  ]
+"111
+[; ;deadline.c: 111:                         {
+{
+"112
+[; ;deadline.c: 112:                             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"113
+[; ;deadline.c: 113:                             while(RC0 == 0);
+[e $U 113  ]
+[e :U 114 ]
+[e :U 113 ]
+[e $ == -> _RC0 `i -> 0 `i 114  ]
+[e :U 115 ]
+"114
+[; ;deadline.c: 114:                             goto mode2;
+[e $U 116  ]
+"115
+[; ;deadline.c: 115:                         }
+}
+[e :U 112 ]
+"116
+[; ;deadline.c: 116:                     }
+}
+[e :U 111 ]
+"117
+[; ;deadline.c: 117:                     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"118
+[; ;deadline.c: 118:                 }
+}
+[e :U 106 ]
+[e $U 107  ]
+[e :U 108 ]
+"120
+[; ;deadline.c: 120:             }
+}
+[e :U 101 ]
+"121
+[; ;deadline.c: 121:         }
+}
+[e :U 100 ]
+"122
+[; ;deadline.c: 122:         if(RC2 == 0)
+[e $ ! == -> _RC2 `i -> 0 `i 117  ]
+"123
+[; ;deadline.c: 123:         {
+{
+"124
+[; ;deadline.c: 124:             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"125
+[; ;deadline.c: 125:             if(RC2 == 0)
+[e $ ! == -> _RC2 `i -> 0 `i 118  ]
+"126
+[; ;deadline.c: 126:             {
+{
+"127
+[; ;deadline.c: 127:                 _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"128
+[; ;deadline.c: 128:                 while(RC2 == 0);
+[e $U 119  ]
+[e :U 120 ]
+[e :U 119 ]
+[e $ == -> _RC2 `i -> 0 `i 120  ]
+[e :U 121 ]
+"129
+[; ;deadline.c: 129:                 mode2:;
+[e :U 116 ]
+"131
+[; ;deadline.c: 131:                 INTE = 1;
+[e = _INTE -> -> 1 `i `b ]
+"132
+[; ;deadline.c: 132:                 RD6 = 1;
+[e = _RD6 -> -> 1 `i `b ]
+"133
+[; ;deadline.c: 133:                 RD7 = 0;
+[e = _RD7 -> -> 0 `i `b ]
+"134
+[; ;deadline.c: 134:                 Lcd_Clear();
+[e ( _Lcd_Clear ..  ]
+"135
+[; ;deadline.c: 135:                 Lcd_Set_Cursor(1,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"136
+[; ;deadline.c: 136:                 Lcd_Write_String("Temp:    oC");
+[e ( _Lcd_Write_String (1 :s 5C ]
+"137
+[; ;deadline.c: 137:                 Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"138
+[; ;deadline.c: 138:                 Lcd_Write_String("Set temp:    oC");
+[e ( _Lcd_Write_String (1 :s 6C ]
+"139
+[; ;deadline.c: 139:                 while(1)
+[e :U 123 ]
+"140
+[; ;deadline.c: 140:                 {
+{
+"141
+[; ;deadline.c: 141:                     temp = Read_ADC(0)*0.488f+0.5f;
+[e = _temp -> + * -> ( _Read_ADC (1 -> -> 0 `i `uc `f -> .0.488 `f -> .0.5 `f `ui ]
+"142
+[; ;deadline.c: 142:                     duty = PID_Init(temp, set_temp);
+[e = _duty ( _PID_Init (2 , _temp -> _set_temp `ui ]
+"144
+[; ;deadline.c: 144:                     sum +=temp;
+[e =+ _sum -> _temp `i ]
+"145
+[; ;deadline.c: 145:                     if (m < 9) m++;
+[e $ ! < -> _m `i -> 9 `i 125  ]
+[e ++ _m -> -> 1 `i `uc ]
+[e $U 126  ]
+"146
+[; ;deadline.c: 146:                     else
+[e :U 125 ]
+"147
+[; ;deadline.c: 147:                     {
+{
+"148
+[; ;deadline.c: 148:                     sum_avg = sum / 10;
+[e = _sum_avg / _sum -> 10 `i ]
+"149
+[; ;deadline.c: 149:                     sum = 0;
+[e = _sum -> 0 `i ]
+"150
+[; ;deadline.c: 150:                     m=0;
+[e = _m -> -> 0 `i `uc ]
+"151
+[; ;deadline.c: 151:                     }
+}
+[e :U 126 ]
+"153
+[; ;deadline.c: 153:                     if(RC1==0 && set_temp < 80)
+[e $ ! && == -> _RC1 `i -> 0 `i < -> _set_temp `i -> 80 `i 127  ]
+"154
+[; ;deadline.c: 154:                     {
+{
+"155
+[; ;deadline.c: 155:                         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"156
+[; ;deadline.c: 156:                         if(RC1==0 && set_temp < 80)
+[e $ ! && == -> _RC1 `i -> 0 `i < -> _set_temp `i -> 80 `i 128  ]
+"157
+[; ;deadline.c: 157:                         {
+{
+"158
+[; ;deadline.c: 158:                             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"159
+[; ;deadline.c: 159:                             if(RC1==0 && set_temp < 80)
+[e $ ! && == -> _RC1 `i -> 0 `i < -> _set_temp `i -> 80 `i 129  ]
+"160
+[; ;deadline.c: 160:                                 while(RC1==0 && set_temp < 80)
+[e $U 130  ]
+[e :U 131 ]
+"161
+[; ;deadline.c: 161:                                 {
+{
+"162
+[; ;deadline.c: 162:                                     set_temp++;
+[e ++ _set_temp -> -> 1 `i `uc ]
+"163
+[; ;deadline.c: 163:                                     Display(sum_avg,set_temp);
+[e ( _Display (2 , -> _sum_avg `uc -> _set_temp `uc ]
+"164
+[; ;deadline.c: 164:                                     _delay((unsigned long)((250)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"165
+[; ;deadline.c: 165:                                 }
+}
+[e :U 130 ]
+"160
+[; ;deadline.c: 160:                                 while(RC1==0 && set_temp < 80)
+[e $ && == -> _RC1 `i -> 0 `i < -> _set_temp `i -> 80 `i 131  ]
+[e :U 132 ]
+"165
+[; ;deadline.c: 165:                                 }
+[e :U 129 ]
+"166
+[; ;deadline.c: 166:                         }
+}
+[e :U 128 ]
+"167
+[; ;deadline.c: 167:                     }
+}
+[e :U 127 ]
+"168
+[; ;deadline.c: 168:                     if(RC2==0 && set_temp > 40)
+[e $ ! && == -> _RC2 `i -> 0 `i > -> _set_temp `i -> 40 `i 133  ]
+"169
+[; ;deadline.c: 169:                     {
+{
+"170
+[; ;deadline.c: 170:                         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"171
+[; ;deadline.c: 171:                         if(RC2==0 && set_temp > 40)
+[e $ ! && == -> _RC2 `i -> 0 `i > -> _set_temp `i -> 40 `i 134  ]
+"172
+[; ;deadline.c: 172:                         {
+{
+"173
+[; ;deadline.c: 173:                             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"174
+[; ;deadline.c: 174:                             if(RC2==0 && set_temp > 40)
+[e $ ! && == -> _RC2 `i -> 0 `i > -> _set_temp `i -> 40 `i 135  ]
+"175
+[; ;deadline.c: 175:                             {
+{
+"176
+[; ;deadline.c: 176:                                 while(RC2==0 && set_temp > 40)
+[e $U 136  ]
+[e :U 137 ]
+"177
+[; ;deadline.c: 177:                                 {
+{
+"178
+[; ;deadline.c: 178:                                     set_temp--;
+[e -- _set_temp -> -> 1 `i `uc ]
+"179
+[; ;deadline.c: 179:                                     Display(sum_avg,set_temp);
+[e ( _Display (2 , -> _sum_avg `uc -> _set_temp `uc ]
+"180
+[; ;deadline.c: 180:                                     _delay((unsigned long)((250)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"181
+[; ;deadline.c: 181:                                 }
+}
+[e :U 136 ]
+"176
+[; ;deadline.c: 176:                                 while(RC2==0 && set_temp > 40)
+[e $ && == -> _RC2 `i -> 0 `i > -> _set_temp `i -> 40 `i 137  ]
+[e :U 138 ]
+"182
+[; ;deadline.c: 182:                             }
+}
+[e :U 135 ]
+"183
+[; ;deadline.c: 183:                         }
+}
+[e :U 134 ]
+"184
+[; ;deadline.c: 184:                     }
+}
+[e :U 133 ]
+"185
+[; ;deadline.c: 185:                     if(RC0 == 0)
+[e $ ! == -> _RC0 `i -> 0 `i 139  ]
+"186
+[; ;deadline.c: 186:                     {
+{
+"187
+[; ;deadline.c: 187:                         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"188
+[; ;deadline.c: 188:                         if(RC0 == 0)
+[e $ ! == -> _RC0 `i -> 0 `i 140  ]
+"189
+[; ;deadline.c: 189:                         {
+{
+"190
+[; ;deadline.c: 190:                             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"191
+[; ;deadline.c: 191:                             while(RC0 == 0);
+[e $U 141  ]
+[e :U 142 ]
+[e :U 141 ]
+[e $ == -> _RC0 `i -> 0 `i 142  ]
+[e :U 143 ]
+"192
+[; ;deadline.c: 192:                             goto mode1;
+[e $U 105  ]
+"193
+[; ;deadline.c: 193:                         }
+}
+[e :U 140 ]
+"194
+[; ;deadline.c: 194:                     }
+}
+[e :U 139 ]
+"196
+[; ;deadline.c: 196:                     if(RC0 == 0)
+[e $ ! == -> _RC0 `i -> 0 `i 144  ]
+"197
+[; ;deadline.c: 197:                     {
+{
+"198
+[; ;deadline.c: 198:                         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"199
+[; ;deadline.c: 199:                         if(RC0 == 0)
+[e $ ! == -> _RC0 `i -> 0 `i 145  ]
+"200
+[; ;deadline.c: 200:                         {
+{
+"201
+[; ;deadline.c: 201:                             _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"202
+[; ;deadline.c: 202:                             while(RC0 == 0);
+[e $U 146  ]
+[e :U 147 ]
+[e :U 146 ]
+[e $ == -> _RC0 `i -> 0 `i 147  ]
+[e :U 148 ]
+"203
+[; ;deadline.c: 203:                             goto mode1;
+[e $U 105  ]
+"204
+[; ;deadline.c: 204:                         }
+}
+[e :U 145 ]
+"205
+[; ;deadline.c: 205:                     }
+}
+[e :U 144 ]
+"207
+[; ;deadline.c: 207:                     Display(sum_avg,set_temp);
+[e ( _Display (2 , -> _sum_avg `uc -> _set_temp `uc ]
+"208
+[; ;deadline.c: 208:                     _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"210
+[; ;deadline.c: 210:                 }
+}
+[e :U 122 ]
+[e $U 123  ]
+[e :U 124 ]
+"211
+[; ;deadline.c: 211:             }
+}
+[e :U 118 ]
+"212
+[; ;deadline.c: 212:         }
+}
+[e :U 117 ]
+"213
+[; ;deadline.c: 213:     }
+}
+[e :U 97 ]
+[e $U 98  ]
+[e :U 99 ]
+"214
+[; ;deadline.c: 214:     return;
+[e $UE 96  ]
+"215
+[; ;deadline.c: 215: }
+[e :UE 96 ]
+}
+"216
+[; ;deadline.c: 216: void Display(unsigned char a, unsigned char b)
+[v _Display `(v ~T0 @X0 1 ef2`uc`uc ]
+"217
+[; ;deadline.c: 217: {
+{
+[e :U _Display ]
+"216
+[; ;deadline.c: 216: void Display(unsigned char a, unsigned char b)
+[v _a `uc ~T0 @X0 1 r1 ]
+[v _b `uc ~T0 @X0 1 r2 ]
+"217
+[; ;deadline.c: 217: {
+[f ]
+"218
+[; ;deadline.c: 218:     Lcd_Set_Cursor(1,7);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 7 `i `uc ]
+"219
+[; ;deadline.c: 219:     Lcd_Write_Char(a/10+48);
+[e ( _Lcd_Write_Char (1 -> + / -> _a `i -> 10 `i -> 48 `i `uc ]
+"220
+[; ;deadline.c: 220:     Lcd_Write_Char(a%10+48);
+[e ( _Lcd_Write_Char (1 -> + % -> _a `i -> 10 `i -> 48 `i `uc ]
+"222
+[; ;deadline.c: 222:     Lcd_Set_Cursor(2,11);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 11 `i `uc ]
+"223
+[; ;deadline.c: 223:     Lcd_Write_Char(b%100/10+48);
+[e ( _Lcd_Write_Char (1 -> + / % -> _b `i -> 100 `i -> 10 `i -> 48 `i `uc ]
+"224
+[; ;deadline.c: 224:     Lcd_Write_Char(b%10+48);
+[e ( _Lcd_Write_Char (1 -> + % -> _b `i -> 10 `i -> 48 `i `uc ]
+"225
+[; ;deadline.c: 225: }
+[e :UE 149 ]
+}
+"226
+[; ;deadline.c: 226: long map(long x, long in_min, long in_max, long out_min, long out_max)
+[v _map `(l ~T0 @X0 1 ef5`l`l`l`l`l ]
+"227
+[; ;deadline.c: 227: {
+{
+[e :U _map ]
+"226
+[; ;deadline.c: 226: long map(long x, long in_min, long in_max, long out_min, long out_max)
+[v _x `l ~T0 @X0 1 r1 ]
+[v _in_min `l ~T0 @X0 1 r2 ]
+[v _in_max `l ~T0 @X0 1 r3 ]
+[v _out_min `l ~T0 @X0 1 r4 ]
+[v _out_max `l ~T0 @X0 1 r5 ]
+"227
+[; ;deadline.c: 227: {
+[f ]
+"228
+[; ;deadline.c: 228:  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+[e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
+[e $UE 150  ]
+"229
+[; ;deadline.c: 229: }
+[e :UE 150 ]
+}
+"230
+[; ;deadline.c: 230: void ADC_Init()
+[v _ADC_Init `(v ~T0 @X0 1 ef ]
+"231
+[; ;deadline.c: 231: {
+{
+[e :U _ADC_Init ]
+[f ]
+"233
+[; ;deadline.c: 233:     PCFG0 = 0;
+[e = _PCFG0 -> -> 0 `i `b ]
+"234
+[; ;deadline.c: 234:     PCFG1 = 0;
+[e = _PCFG1 -> -> 0 `i `b ]
+"235
+[; ;deadline.c: 235:     PCFG2 = 1;
+[e = _PCFG2 -> -> 1 `i `b ]
+"236
+[; ;deadline.c: 236:     PCFG3 = 0;
+[e = _PCFG3 -> -> 0 `i `b ]
+"238
+[; ;deadline.c: 238:     ADCS0 = 0;
+[e = _ADCS0 -> -> 0 `i `b ]
+"239
+[; ;deadline.c: 239:     ADCS1 = 1;
+[e = _ADCS1 -> -> 1 `i `b ]
+"240
+[; ;deadline.c: 240:     ADCS2 = 1;
+[e = _ADCS2 -> -> 1 `i `b ]
+"242
+[; ;deadline.c: 242:     ADFM = 1;
+[e = _ADFM -> -> 1 `i `b ]
+"244
+[; ;deadline.c: 244:     ADON = 1;
+[e = _ADON -> -> 1 `i `b ]
+"246
+[; ;deadline.c: 246:     ADIE = 0;
+[e = _ADIE -> -> 0 `i `b ]
+"247
+[; ;deadline.c: 247:     ADIF = 0;
+[e = _ADIF -> -> 0 `i `b ]
+"248
+[; ;deadline.c: 248: }
+[e :UE 151 ]
+}
+"249
+[; ;deadline.c: 249: unsigned int Read_ADC(unsigned char channel)
+[v _Read_ADC `(ui ~T0 @X0 1 ef1`uc ]
+"250
+[; ;deadline.c: 250: {
+{
+[e :U _Read_ADC ]
+"249
+[; ;deadline.c: 249: unsigned int Read_ADC(unsigned char channel)
+[v _channel `uc ~T0 @X0 1 r1 ]
+"250
+[; ;deadline.c: 250: {
+[f ]
+"251
+[; ;deadline.c: 251:     unsigned int N;
+[v _N `ui ~T0 @X0 1 a ]
+"252
+[; ;deadline.c: 252:     ADCON0 &= 0x11000101;
+[e =& _ADCON0 -> -> 285212929 `l `Vuc ]
+"253
+[; ;deadline.c: 253:     ADCON0 |= channel << 3;
+[e =| _ADCON0 -> << -> _channel `i -> 3 `i `Vuc ]
+"254
+[; ;deadline.c: 254:     _delay((unsigned long)((2)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"255
+[; ;deadline.c: 255:     GO_nDONE = 1;
+[e = _GO_nDONE -> -> 1 `i `b ]
+"256
+[; ;deadline.c: 256:     while(GO_nDONE);
+[e $U 153  ]
+[e :U 154 ]
+[e :U 153 ]
+[e $ _GO_nDONE 154  ]
+[e :U 155 ]
+"257
+[; ;deadline.c: 257:     N = ADRESH;
+[e = _N -> _ADRESH `ui ]
+"258
+[; ;deadline.c: 258:     return ((N<<8)+ADRESL);
+[e ) + << _N -> 8 `i -> _ADRESL `ui ]
+[e $UE 152  ]
+"259
+[; ;deadline.c: 259:     _delay((unsigned long)((10)*(20000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+"260
+[; ;deadline.c: 260: }
+[e :UE 152 ]
+}
+"261
+[; ;deadline.c: 261: void Timer1_Init()
+[v _Timer1_Init `(v ~T0 @X0 1 ef ]
+"262
+[; ;deadline.c: 262: {
+{
+[e :U _Timer1_Init ]
+[f ]
+"263
+[; ;deadline.c: 263:     TMR1H=0x00;
+[e = _TMR1H -> -> 0 `i `uc ]
+"264
+[; ;deadline.c: 264:     TMR1L=0x00;
+[e = _TMR1L -> -> 0 `i `uc ]
+"266
+[; ;deadline.c: 266:     T1CKPS1 = 0;
+[e = _T1CKPS1 -> -> 0 `i `b ]
+"267
+[; ;deadline.c: 267:     T1CKPS0 = 0;
+[e = _T1CKPS0 -> -> 0 `i `b ]
+"268
+[; ;deadline.c: 268:     T1OSCEN = 0;
+[e = _T1OSCEN -> -> 0 `i `b ]
+"269
+[; ;deadline.c: 269:     T1SYNC = 0;
+[e = _T1SYNC -> -> 0 `i `b ]
+"270
+[; ;deadline.c: 270:     TMR1CS = 0;
+[e = _TMR1CS -> -> 0 `i `b ]
+"272
+[; ;deadline.c: 272:     TMR1IE = 0;
+[e = _TMR1IE -> -> 0 `i `b ]
+"274
+[; ;deadline.c: 274:     TMR1ON = 0;
+[e = _TMR1ON -> -> 0 `i `b ]
+"275
+[; ;deadline.c: 275: }
+[e :UE 156 ]
+}
+"276
+[; ;deadline.c: 276: void Interrupt_Init()
+[v _Interrupt_Init `(v ~T0 @X0 1 ef ]
+"277
+[; ;deadline.c: 277: {
+{
+[e :U _Interrupt_Init ]
+[f ]
+"278
+[; ;deadline.c: 278:     TRISB0 = 1;
+[e = _TRISB0 -> -> 1 `i `b ]
+"280
+[; ;deadline.c: 280:     INTEDG = 1;
+[e = _INTEDG -> -> 1 `i `b ]
+"282
+[; ;deadline.c: 282:     GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
+"283
+[; ;deadline.c: 283:     PEIE = 1;
+[e = _PEIE -> -> 1 `i `b ]
+"284
+[; ;deadline.c: 284: }
+[e :UE 157 ]
+}
+"285
+[; ;deadline.c: 285: unsigned int PID_Init(unsigned int nhietdo, unsigned int nhietdodat)
+[v _PID_Init `(ui ~T0 @X0 1 ef2`ui`ui ]
+"286
+[; ;deadline.c: 286: {
+{
+[e :U _PID_Init ]
+"285
+[; ;deadline.c: 285: unsigned int PID_Init(unsigned int nhietdo, unsigned int nhietdodat)
+[v _nhietdo `ui ~T0 @X0 1 r1 ]
+[v _nhietdodat `ui ~T0 @X0 1 r2 ]
+"286
+[; ;deadline.c: 286: {
+[f ]
+"287
+[; ;deadline.c: 287:     E = nhietdodat-nhietdo;
+[e = _E -> - _nhietdodat _nhietdo `f ]
+"288
+[; ;deadline.c: 288:     a1 = Kp + (Ki*T)/2 + Kd/2;
+[e = _a1 + + _Kp / * _Ki -> _T `d -> -> 2 `i `d / _Kd -> -> 2 `i `d ]
+"289
+[; ;deadline.c: 289:  a2 = -Kp + (Ki*T)/2 - 2*Kd/T;
+[e = _a2 - + -U _Kp / * _Ki -> _T `d -> -> 2 `i `d / * -> -> 2 `i `d _Kd -> _T `d ]
+"290
+[; ;deadline.c: 290:  a3 = Kd/T;
+[e = _a3 / _Kd -> _T `d ]
+"291
+[; ;deadline.c: 291:  out = pre_out + E*a1 + E1*a2 + E2*a3;
+[e = _out + + + _pre_out * -> _E `d _a1 * -> _E1 `d _a2 * -> _E2 `d _a3 ]
+"292
+[; ;deadline.c: 292:  pre_out = out;
+[e = _pre_out _out ]
+"293
+[; ;deadline.c: 293:  E2 = E1;
+[e = _E2 _E1 ]
+"294
+[; ;deadline.c: 294:  E1 = E;
+[e = _E1 _E ]
+"295
+[; ;deadline.c: 295:  return 6000-out;
+[e ) -> - -> -> 6000 `i `d _out `ui ]
+[e $UE 158  ]
+"296
+[; ;deadline.c: 296: }
+[e :UE 158 ]
+}
+[v $root$_My_interrupt `(v ~T0 @X0 0 e ]
+"297
+[; ;deadline.c: 297: void __attribute__((picinterrupt(("")))) My_interrupt()
+[v _My_interrupt `(v ~T2 @X0 1 ef ]
+"298
+[; ;deadline.c: 298: {
+{
+[e :U _My_interrupt ]
+[f ]
+"299
+[; ;deadline.c: 299:     if(INTE == 1 && INTF == 1)
+[e $ ! && == -> _INTE `i -> 1 `i == -> _INTF `i -> 1 `i 160  ]
+"300
+[; ;deadline.c: 300:     {
+{
+"301
+[; ;deadline.c: 301:         RB1 = 0;
+[e = _RB1 -> -> 0 `i `b ]
+"303
+[; ;deadline.c: 303:         TMR1ON = 1;
+[e = _TMR1ON -> -> 1 `i `b ]
+"304
+[; ;deadline.c: 304:         while(TMR1IF==0);
+[e $U 161  ]
+[e :U 162 ]
+[e :U 161 ]
+[e $ == -> _TMR1IF `i -> 0 `i 162  ]
+[e :U 163 ]
+"305
+[; ;deadline.c: 305:         TMR1ON = 0;
+[e = _TMR1ON -> -> 0 `i `b ]
+"306
+[; ;deadline.c: 306:         TMR1= 65535-(500+duty)/0.2f;
+[e = _TMR1 -> - -> -> 65535 `l `f / -> + -> -> 500 `i `ui _duty `f -> .0.2 `f `us ]
+"307
+[; ;deadline.c: 307:         TMR1IF = 0;
+[e = _TMR1IF -> -> 0 `i `b ]
+"309
+[; ;deadline.c: 309:         RB1 = 1;
+[e = _RB1 -> -> 1 `i `b ]
+"310
+[; ;deadline.c: 310:         INTF = 0;
+[e = _INTF -> -> 0 `i `b ]
+"311
+[; ;deadline.c: 311:     }
+}
+[e :U 160 ]
+"312
+[; ;deadline.c: 312: }
+[e :UE 159 ]
+}
+[a 1C 49 46 32 84 69 83 84 32 77 79 68 69 0 ]
+[a 2C 50 46 32 78 79 82 77 65 76 32 77 79 68 69 0 ]
+[a 6C 83 101 116 32 116 101 109 112 58 32 32 32 32 111 67 0 ]
+[a 3C 84 101 109 112 58 32 32 32 32 111 67 0 ]
+[a 5C 84 101 109 112 58 32 32 32 32 111 67 0 ]
+[a 4C 68 117 116 121 58 32 32 32 32 32 37 0 ]

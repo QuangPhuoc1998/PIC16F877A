@@ -1,0 +1,525 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"22 SPI.c
+[; ;SPI.c: 22:     Spi_Init(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
+[c E850 32 33 34 35 36 37 .. ]
+[n E850 . SPI_MASTER_OSC_DIV4 SPI_MASTER_OSC_DIV16 SPI_MASTER_OSC_DIV64 SPI_MASTER_TMR2 SPI_SLAVE_SS_EN SPI_SLAVE_SS_DIS  ]
+[c E858 0 128 .. ]
+[n E858 . SPI_DATA_SAMPLE_MIDDLE SPI_DATA_SAMPLE_END  ]
+[c E862 16 0 .. ]
+[n E862 . SPI_CLOCK_IDLE_HIGH SPI_CLOCK_IDLE_LOW  ]
+[c E866 0 64 .. ]
+[n E866 . SPI_IDLE_2_ACTIVE SPI_ACTIVE_2_IDLE  ]
+"44 ./spi.h
+[; ;./spi.h: 44: void Spi_Init(Spi_Type, Spi_Data_Sample, Spi_Clock_Idle, Spi_Transmit_Edge);
+[v _Spi_Init `(v ~T0 @X0 0 ef4`E850`E858`E862`E866 ]
+"14 SPI.c
+[; ;SPI.c: 14: void ADC_Init(unsigned char channel);
+[v _ADC_Init `(v ~T0 @X0 0 ef1`uc ]
+"15
+[; ;SPI.c: 15: unsigned int Read_ADC(unsigned char channel);
+[v _Read_ADC `(ui ~T0 @X0 0 ef1`uc ]
+"45 ./spi.h
+[; ;./spi.h: 45: void Spi_Write(char);
+[v _Spi_Write `(v ~T0 @X0 0 ef1`uc ]
+[v F842 `(v ~T0 @X0 1 tf1`ul ]
+"92 D:\Mplab X\xc8\pic\include\pic.h
+[v __delay `JF842 ~T0 @X0 0 e ]
+[p i __delay ]
+"2617 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2617: extern volatile __bit PCFG0 __attribute__((address(0x4F8)));
+[v _PCFG0 `Vb ~T0 @X0 0 e@1272 ]
+"2620
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2620: extern volatile __bit PCFG1 __attribute__((address(0x4F9)));
+[v _PCFG1 `Vb ~T0 @X0 0 e@1273 ]
+"2623
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2623: extern volatile __bit PCFG2 __attribute__((address(0x4FA)));
+[v _PCFG2 `Vb ~T0 @X0 0 e@1274 ]
+"2626
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2626: extern volatile __bit PCFG3 __attribute__((address(0x4FB)));
+[v _PCFG3 `Vb ~T0 @X0 0 e@1275 ]
+"2383
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2383: extern volatile __bit ADCS0 __attribute__((address(0xFE)));
+[v _ADCS0 `Vb ~T0 @X0 0 e@254 ]
+"2386
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2386: extern volatile __bit ADCS1 __attribute__((address(0xFF)));
+[v _ADCS1 `Vb ~T0 @X0 0 e@255 ]
+"2389
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2389: extern volatile __bit ADCS2 __attribute__((address(0x4FE)));
+[v _ADCS2 `Vb ~T0 @X0 0 e@1278 ]
+"2395
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2395: extern volatile __bit ADFM __attribute__((address(0x4FF)));
+[v _ADFM `Vb ~T0 @X0 0 e@1279 ]
+"2404
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2404: extern volatile __bit ADON __attribute__((address(0xF8)));
+[v _ADON `Vb ~T0 @X0 0 e@248 ]
+"2398
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2398: extern volatile __bit ADIE __attribute__((address(0x466)));
+[v _ADIE `Vb ~T0 @X0 0 e@1126 ]
+"2401
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2401: extern volatile __bit ADIF __attribute__((address(0x66)));
+[v _ADIF `Vb ~T0 @X0 0 e@102 ]
+"2917
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2917: extern volatile __bit TRISA0 __attribute__((address(0x428)));
+[v _TRISA0 `Vb ~T0 @X0 0 e@1064 ]
+"2920
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2920: extern volatile __bit TRISA1 __attribute__((address(0x429)));
+[v _TRISA1 `Vb ~T0 @X0 0 e@1065 ]
+"2923
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2923: extern volatile __bit TRISA2 __attribute__((address(0x42A)));
+[v _TRISA2 `Vb ~T0 @X0 0 e@1066 ]
+"2926
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2926: extern volatile __bit TRISA3 __attribute__((address(0x42B)));
+[v _TRISA3 `Vb ~T0 @X0 0 e@1067 ]
+"1159
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1159: extern volatile unsigned char ADCON0 __attribute__((address(0x01F)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
+"2578
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2578: extern volatile __bit GO_nDONE __attribute__((address(0xFA)));
+[v _GO_nDONE `Vb ~T0 @X0 0 e@250 ]
+"1152
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1152: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"2222
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2222: extern volatile unsigned char ADRESL __attribute__((address(0x09E)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
+"54 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;D:\Mplab X\xc8\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"6 ./main.h
+[p x FOSC = HS ]
+"7
+[p x WDTE = OFF ]
+"8
+[p x PWRTE = OFF ]
+"9
+[p x BOREN = OFF ]
+"10
+[p x LVP = OFF ]
+"11
+[p x CPD = OFF ]
+"12
+[p x WRT = OFF ]
+"13
+[p x CP = OFF ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"16 SPI.c
+[; ;SPI.c: 16: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"17
+[; ;SPI.c: 17: {
+{
+[e :U _main ]
+[f ]
+"18
+[; ;SPI.c: 18:     unsigned int a, b;
+[v _a `ui ~T0 @X0 1 a ]
+[v _b `ui ~T0 @X0 1 a ]
+"22
+[; ;SPI.c: 22:     Spi_Init(SPI_MASTER_OSC_DIV4, SPI_DATA_SAMPLE_MIDDLE, SPI_CLOCK_IDLE_LOW, SPI_IDLE_2_ACTIVE);
+[e ( _Spi_Init (4 , , , . `E850 0 . `E858 0 . `E862 1 . `E866 0 ]
+"23
+[; ;SPI.c: 23:     ADC_Init(0);
+[e ( _ADC_Init (1 -> -> 0 `i `uc ]
+"24
+[; ;SPI.c: 24:     ADC_Init(1);
+[e ( _ADC_Init (1 -> -> 1 `i `uc ]
+"27
+[; ;SPI.c: 27:     while(1)
+[e :U 98 ]
+"28
+[; ;SPI.c: 28:     {
+{
+"29
+[; ;SPI.c: 29:         a = Read_ADC(0);
+[e = _a ( _Read_ADC (1 -> -> 0 `i `uc ]
+"30
+[; ;SPI.c: 30:         b = Read_ADC(1);
+[e = _b ( _Read_ADC (1 -> -> 1 `i `uc ]
+"31
+[; ;SPI.c: 31:         Spi_Write(':');
+[e ( _Spi_Write (1 -> -> 58 `ui `uc ]
+"32
+[; ;SPI.c: 32:         _delay((unsigned long)((10)*(20000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+"33
+[; ;SPI.c: 33:         Spi_Write(a/1000);
+[e ( _Spi_Write (1 -> / _a -> -> 1000 `i `ui `uc ]
+"34
+[; ;SPI.c: 34:         Spi_Write(a%1000/100);
+[e ( _Spi_Write (1 -> / % _a -> -> 1000 `i `ui -> -> 100 `i `ui `uc ]
+"35
+[; ;SPI.c: 35:         Spi_Write(a%100/10);
+[e ( _Spi_Write (1 -> / % _a -> -> 100 `i `ui -> -> 10 `i `ui `uc ]
+"36
+[; ;SPI.c: 36:         Spi_Write(a%10);
+[e ( _Spi_Write (1 -> % _a -> -> 10 `i `ui `uc ]
+"37
+[; ;SPI.c: 37:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"38
+[; ;SPI.c: 38:         Spi_Write(b/1000);
+[e ( _Spi_Write (1 -> / _b -> -> 1000 `i `ui `uc ]
+"39
+[; ;SPI.c: 39:         Spi_Write(b%1000/100);
+[e ( _Spi_Write (1 -> / % _b -> -> 1000 `i `ui -> -> 100 `i `ui `uc ]
+"40
+[; ;SPI.c: 40:         Spi_Write(b%100/10);
+[e ( _Spi_Write (1 -> / % _b -> -> 100 `i `ui -> -> 10 `i `ui `uc ]
+"41
+[; ;SPI.c: 41:         Spi_Write(b%10);
+[e ( _Spi_Write (1 -> % _b -> -> 10 `i `ui `uc ]
+"42
+[; ;SPI.c: 42:         _delay((unsigned long)((10)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"43
+[; ;SPI.c: 43:     }
+}
+[e :U 97 ]
+[e $U 98  ]
+[e :U 99 ]
+"44
+[; ;SPI.c: 44:     return;
+[e $UE 96  ]
+"45
+[; ;SPI.c: 45: }
+[e :UE 96 ]
+}
+"46
+[; ;SPI.c: 46: void ADC_Init(unsigned char channel)
+[v _ADC_Init `(v ~T0 @X0 1 ef1`uc ]
+"47
+[; ;SPI.c: 47: {
+{
+[e :U _ADC_Init ]
+"46
+[; ;SPI.c: 46: void ADC_Init(unsigned char channel)
+[v _channel `uc ~T0 @X0 1 r1 ]
+"47
+[; ;SPI.c: 47: {
+[f ]
+"49
+[; ;SPI.c: 49:     PCFG0 = 0;
+[e = _PCFG0 -> -> 0 `i `b ]
+"50
+[; ;SPI.c: 50:     PCFG1 = 0;
+[e = _PCFG1 -> -> 0 `i `b ]
+"51
+[; ;SPI.c: 51:     PCFG2 = 1;
+[e = _PCFG2 -> -> 1 `i `b ]
+"52
+[; ;SPI.c: 52:     PCFG3 = 0;
+[e = _PCFG3 -> -> 0 `i `b ]
+"54
+[; ;SPI.c: 54:     ADCS0 = 0;
+[e = _ADCS0 -> -> 0 `i `b ]
+"55
+[; ;SPI.c: 55:     ADCS1 = 1;
+[e = _ADCS1 -> -> 1 `i `b ]
+"56
+[; ;SPI.c: 56:     ADCS2 = 1;
+[e = _ADCS2 -> -> 1 `i `b ]
+"58
+[; ;SPI.c: 58:     ADFM = 1;
+[e = _ADFM -> -> 1 `i `b ]
+"60
+[; ;SPI.c: 60:     ADON = 1;
+[e = _ADON -> -> 1 `i `b ]
+"62
+[; ;SPI.c: 62:     ADIE = 0;
+[e = _ADIE -> -> 0 `i `b ]
+"63
+[; ;SPI.c: 63:     ADIF = 0;
+[e = _ADIF -> -> 0 `i `b ]
+"65
+[; ;SPI.c: 65:     switch (channel)
+[e $U 102  ]
+"66
+[; ;SPI.c: 66:     {
+{
+"67
+[; ;SPI.c: 67:         case 1:
+[e :U 103 ]
+"68
+[; ;SPI.c: 68:             TRISA0 = 1;
+[e = _TRISA0 -> -> 1 `i `b ]
+"69
+[; ;SPI.c: 69:             break;
+[e $U 101  ]
+"70
+[; ;SPI.c: 70:         case 2:
+[e :U 104 ]
+"71
+[; ;SPI.c: 71:             TRISA1 = 1;
+[e = _TRISA1 -> -> 1 `i `b ]
+"72
+[; ;SPI.c: 72:             break;
+[e $U 101  ]
+"73
+[; ;SPI.c: 73:         case 3:
+[e :U 105 ]
+"74
+[; ;SPI.c: 74:             TRISA2 = 1;
+[e = _TRISA2 -> -> 1 `i `b ]
+"75
+[; ;SPI.c: 75:             break;
+[e $U 101  ]
+"76
+[; ;SPI.c: 76:         case 4:
+[e :U 106 ]
+"77
+[; ;SPI.c: 77:             TRISA3 = 1;
+[e = _TRISA3 -> -> 1 `i `b ]
+"78
+[; ;SPI.c: 78:             break;
+[e $U 101  ]
+"79
+[; ;SPI.c: 79:         default:
+[e :U 107 ]
+"80
+[; ;SPI.c: 80:             break;
+[e $U 101  ]
+"81
+[; ;SPI.c: 81:     }
+}
+[e $U 101  ]
+[e :U 102 ]
+[e [\ -> _channel `i , $ -> 1 `i 103
+ , $ -> 2 `i 104
+ , $ -> 3 `i 105
+ , $ -> 4 `i 106
+ 107 ]
+[e :U 101 ]
+"83
+[; ;SPI.c: 83: }
+[e :UE 100 ]
+}
+"84
+[; ;SPI.c: 84: unsigned int Read_ADC(unsigned char channel)
+[v _Read_ADC `(ui ~T0 @X0 1 ef1`uc ]
+"85
+[; ;SPI.c: 85: {
+{
+[e :U _Read_ADC ]
+"84
+[; ;SPI.c: 84: unsigned int Read_ADC(unsigned char channel)
+[v _channel `uc ~T0 @X0 1 r1 ]
+"85
+[; ;SPI.c: 85: {
+[f ]
+"86
+[; ;SPI.c: 86:     unsigned int N;
+[v _N `ui ~T0 @X0 1 a ]
+"87
+[; ;SPI.c: 87:     ADCON0 &= 0x11000101;
+[e =& _ADCON0 -> -> 285212929 `l `Vuc ]
+"88
+[; ;SPI.c: 88:     if(channel > 3) return 0;
+[e $ ! > -> _channel `i -> 3 `i 109  ]
+[e ) -> -> 0 `i `ui ]
+[e $UE 108  ]
+[e :U 109 ]
+"89
+[; ;SPI.c: 89:     ADCON0 |= channel << 3;
+[e =| _ADCON0 -> << -> _channel `i -> 3 `i `Vuc ]
+"90
+[; ;SPI.c: 90:     _delay((unsigned long)((2)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"91
+[; ;SPI.c: 91:     GO_nDONE = 1;
+[e = _GO_nDONE -> -> 1 `i `b ]
+"92
+[; ;SPI.c: 92:     while(GO_nDONE);
+[e $U 110  ]
+[e :U 111 ]
+[e :U 110 ]
+[e $ _GO_nDONE 111  ]
+[e :U 112 ]
+"93
+[; ;SPI.c: 93:     N = ADRESH;
+[e = _N -> _ADRESH `ui ]
+"94
+[; ;SPI.c: 94:     return ((N<<8)+ADRESL);
+[e ) + << _N -> 8 `i -> _ADRESL `ui ]
+[e $UE 108  ]
+"95
+[; ;SPI.c: 95: }
+[e :UE 108 ]
+}

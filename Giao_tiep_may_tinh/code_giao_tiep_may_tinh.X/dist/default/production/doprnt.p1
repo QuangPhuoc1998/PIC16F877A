@@ -1,0 +1,92 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"535 D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 535:  union {
+[u S7 `ul 1 `d 1 ]
+[n S7 . vd integ ]
+"10 D:\Mplab X\xc8\pic\include\c90\stdarg.h
+[v ___va_start `(*v ~T0 @X0 0 ef ]
+[p i ___va_start ]
+"16 D:\Mplab X\xc8\pic\include\c90\conio.h
+[; ;D:\Mplab X\xc8\pic\include\c90\conio.h: 16: extern void putch(char);
+[v _putch `(v ~T0 @X0 0 ef1`uc ]
+"12 D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c
+[p n 350 ]
+"472
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 472: printf(const char * f, ...)
+[v _printf `(i ~T0 @X0 1 ev`*Cuc ]
+"473
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 473: {
+{
+[e :U _printf ]
+"472
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 472: printf(const char * f, ...)
+[v _f `*Cuc ~T0 @X0 1 r0 ]
+"473
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 473: {
+[f ]
+"474
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 474:  va_list ap;
+[v _ap `*v ~T0 @X0 -> -> 1 `i `ux a ]
+"507
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 507:  char c;
+[v _c `uc ~T0 @X0 1 a ]
+"516
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 516:  signed char prec;
+[v _prec `c ~T0 @X0 1 a ]
+"520
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 520:  unsigned char flag;
+[v _flag `uc ~T0 @X0 1 a ]
+"538
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 538:  } tmpval;
+[v _tmpval `S7 ~T0 @X0 1 a ]
+"540
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 540:  unsigned int val;
+[v _val `ui ~T0 @X0 1 a ]
+"541
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 541:  unsigned len;
+[v _len `ui ~T0 @X0 1 a ]
+"542
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 542:  const char * cp;
+[v _cp `*Cuc ~T0 @X0 1 a ]
+"545
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 545:  *ap = __va_start();
+[e = *U &U _ap ( ___va_start ..  ]
+"548
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 548:  while((c = *f++)) {
+[e $U 8  ]
+[e :U 9 ]
+{
+"552
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 552:   {
+{
+"553
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 553:    (putch(c) );
+[e ( _putch (1 _c ]
+"554
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 554:    continue;
+[e $U 8  ]
+"555
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 555:   }
+}
+"1441
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 1441:   {
+{
+"1488
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 1488:   }
+}
+"1552
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 1552:  }
+}
+[e :U 8 ]
+"548
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 548:  while((c = *f++)) {
+[e $ != -> = _c *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x `i -> 0 `i 9  ]
+[e :U 10 ]
+"1559
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 1559:  return 0;
+[e ) -> 0 `i ]
+[e $UE 6  ]
+"1560
+[; ;D:\Mplab X\xc8\pic\sources\c90\common\doprnt.c: 1560: }
+[e :UE 6 ]
+}

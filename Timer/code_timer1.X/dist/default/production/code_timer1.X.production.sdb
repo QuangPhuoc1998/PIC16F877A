@@ -1,0 +1,80 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"10 D:\Mplab X\xc8\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\Mplab X\xc8\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\Mplab X\xc8\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"5 E:\PIC\PIC16F877A\Timer\code_timer1.X\lcd4.c
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"27
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"82
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"13 E:\PIC\PIC16F877A\Timer\code_timer1.X\timer1.c
+[v _main main `(v  1 e 1 0 ]
+"24
+[v _Timer_Init Timer_Init `(v  1 e 1 0 ]
+"41
+[v _MyInterrup MyInterrup `II(v  1 e 1 0 ]
+"641 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"648
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2725
+[v _RC7 RC7 `VEb  1 e 0 @63 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2857
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @132 ]
+"2860
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @133 ]
+"2866
+[v _T1OSCEN T1OSCEN `VEb  1 e 0 @131 ]
+"2869
+[v _T1SYNC T1SYNC `VEb  1 e 0 @130 ]
+"2884
+[v _TMR1CS TMR1CS `VEb  1 e 0 @129 ]
+"2887
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"2890
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"2893
+[v _TMR1ON TMR1ON `VEb  1 e 0 @128 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"13 E:\PIC\PIC16F877A\Timer\code_timer1.X\timer1.c
+[v _main main `(v  1 e 1 0 ]
+{
+"23
+} 0
+"24
+[v _Timer_Init Timer_Init `(v  1 e 1 0 ]
+{
+"40
+} 0
+"41
+[v _MyInterrup MyInterrup `II(v  1 e 1 0 ]
+{
+"50
+} 0

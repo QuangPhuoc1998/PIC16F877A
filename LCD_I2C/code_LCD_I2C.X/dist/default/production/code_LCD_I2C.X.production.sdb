@@ -1,0 +1,318 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"4 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\DS1307_lib.c
+[v _DECIMALtoBCD DECIMALtoBCD `(i  1 e 2 0 ]
+"11
+[v _BCDtoDECIMAL BCDtoDECIMAL `(i  1 e 2 0 ]
+"7 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\I2C_LCD.c
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"24
+[v _lcd_send_cmd lcd_send_cmd `(v  1 e 1 0 ]
+"51
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"64
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"70
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"11 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\I2C_Source_File.c
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+"23
+[v _I2C_Start I2C_Start `(uc  1 e 1 0 ]
+"52
+[v _I2C_Repeated_Start I2C_Repeated_Start `(uc  1 e 1 0 ]
+"66
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+"76
+[v _I2C_Ack I2C_Ack `(v  1 e 1 0 ]
+"83
+[v _I2C_Nack I2C_Nack `(v  1 e 1 0 ]
+"89
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+"103
+[v _I2C_Stop I2C_Stop `(uc  1 e 1 0 ]
+"112
+[v _I2C_Ready I2C_Ready `(v  1 e 1 0 ]
+"15 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\LCD_I2C.c
+[v _main main `(v  1 e 1 0 ]
+"49
+[v _DS1307_Read_Time DS1307_Read_Time `(v  1 e 1 0 ]
+"808 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+[s S125 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"1771
+[u S134 . 1 `S125 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES134  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S146 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1884
+[s S155 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S160 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S166 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S171 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S176 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S181 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S186 . 1 `S146 1 . 1 0 `S155 1 . 1 0 `S160 1 . 1 0 `S166 1 . 1 0 `S171 1 . 1 0 `S176 1 . 1 0 `S181 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES186  1 e 1 @148 ]
+"2374
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2377
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2380
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2737
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2791
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2821
+[v _SSPIE SSPIE `VEb  1 e 0 @1123 ]
+"2824
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"13 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\LCD_I2C.c
+[v _time time `[7]ui  1 e 14 0 ]
+"15
+[v _main main `(v  1 e 1 0 ]
+{
+"48
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"64 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\I2C_LCD.c
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+[v Lcd_Write_String@str str `*.24uc  1 a 1 wreg ]
+"66
+[v Lcd_Write_String@i i `i  1 a 2 7 ]
+"64
+[v Lcd_Write_String@str str `*.24uc  1 a 1 wreg ]
+"67
+[v Lcd_Write_String@str str `*.24uc  1 a 1 9 ]
+"69
+} 0
+"7
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@data data `uc  1 a 1 wreg ]
+"9
+[v Lcd_Write_Char@data_u data_u `uc  1 a 1 6 ]
+[v Lcd_Write_Char@data_l data_l `uc  1 a 1 5 ]
+"7
+[v Lcd_Write_Char@data data `uc  1 a 1 wreg ]
+"10
+[v Lcd_Write_Char@data data `uc  1 a 1 4 ]
+"22
+} 0
+"70
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@row row `uc  1 a 1 wreg ]
+"72
+[v Lcd_Set_Cursor@cmd cmd `uc  1 a 1 13 ]
+"70
+[v Lcd_Set_Cursor@row row `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@col col `uc  1 p 1 7 ]
+"73
+[v Lcd_Set_Cursor@row row `uc  1 a 1 10 ]
+"76
+} 0
+"51
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"63
+} 0
+"24
+[v _lcd_send_cmd lcd_send_cmd `(v  1 e 1 0 ]
+{
+[v lcd_send_cmd@data data `uc  1 a 1 wreg ]
+"26
+[v lcd_send_cmd@data_u data_u `uc  1 a 1 6 ]
+[v lcd_send_cmd@data_l data_l `uc  1 a 1 5 ]
+"24
+[v lcd_send_cmd@data data `uc  1 a 1 wreg ]
+"27
+[v lcd_send_cmd@data data `uc  1 a 1 4 ]
+"40
+} 0
+"11 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\I2C_Source_File.c
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+{
+"21
+} 0
+"49 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\LCD_I2C.c
+[v _DS1307_Read_Time DS1307_Read_Time `(v  1 e 1 0 ]
+{
+"69
+} 0
+"103 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\I2C_Source_File.c
+[v _I2C_Stop I2C_Stop `(uc  1 e 1 0 ]
+{
+"110
+} 0
+"23
+[v _I2C_Start I2C_Start `(uc  1 e 1 0 ]
+{
+[v I2C_Start@slave_write_address slave_write_address `uc  1 a 1 wreg ]
+[v I2C_Start@slave_write_address slave_write_address `uc  1 a 1 wreg ]
+"25
+[v I2C_Start@slave_write_address slave_write_address `uc  1 a 1 1 ]
+"31
+} 0
+"52
+[v _I2C_Repeated_Start I2C_Repeated_Start `(uc  1 e 1 0 ]
+{
+[v I2C_Repeated_Start@slave_read_address slave_read_address `uc  1 a 1 wreg ]
+[v I2C_Repeated_Start@slave_read_address slave_read_address `uc  1 a 1 wreg ]
+"54
+[v I2C_Repeated_Start@slave_read_address slave_read_address `uc  1 a 1 1 ]
+"64
+} 0
+"66
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Write@data data `uc  1 a 1 wreg ]
+[v I2C_Write@data data `uc  1 a 1 wreg ]
+"68
+[v I2C_Write@data data `uc  1 a 1 0 ]
+"74
+} 0
+"89
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+{
+[v I2C_Read@flag flag `uc  1 a 1 wreg ]
+"91
+[v I2C_Read@buffer buffer `uc  1 a 1 2 ]
+"89
+[v I2C_Read@flag flag `uc  1 a 1 wreg ]
+"92
+[v I2C_Read@flag flag `uc  1 a 1 1 ]
+"101
+} 0
+"112
+[v _I2C_Ready I2C_Ready `(v  1 e 1 0 ]
+{
+"116
+} 0
+"83
+[v _I2C_Nack I2C_Nack `(v  1 e 1 0 ]
+{
+"88
+} 0
+"76
+[v _I2C_Ack I2C_Ack `(v  1 e 1 0 ]
+{
+"81
+} 0
+"11 D:\DATA\PIC\PIC16F877A\LCD_I2C\code_LCD_I2C.X\DS1307_lib.c
+[v _BCDtoDECIMAL BCDtoDECIMAL `(i  1 e 2 0 ]
+{
+"13
+[v BCDtoDECIMAL@H H `i  1 a 2 10 ]
+[v BCDtoDECIMAL@L L `i  1 a 2 8 ]
+"11
+[v BCDtoDECIMAL@BCD BCD `i  1 p 2 6 ]
+"17
+} 0
+"15 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0

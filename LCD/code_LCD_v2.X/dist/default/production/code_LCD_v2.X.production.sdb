@@ -1,0 +1,112 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"49 D:\DATA\PIC\PIC16F877A\LCD\code_LCD_v2.X\main.c
+[v _Lcd_Write_High_Nibble Lcd_Write_High_Nibble `(v  1 e 1 0 ]
+"60
+[v _Lcd_Write_Low_Nibble Lcd_Write_Low_Nibble `(v  1 e 1 0 ]
+"97
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"126
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"175
+[v _Lcd_Chr_Cp Lcd_Chr_Cp `(v  1 e 1 0 ]
+"210
+[v _Lcd_Out_Cp Lcd_Out_Cp `(v  1 e 1 0 ]
+"225
+[v _Lcd_Out Lcd_Out `(v  1 e 1 0 ]
+"264
+[v _main main `(v  1 e 1 0 ]
+"1499 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"264 D:\DATA\PIC\PIC16F877A\LCD\code_LCD_v2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"275
+} 0
+"225
+[v _Lcd_Out Lcd_Out `(v  1 e 1 0 ]
+{
+[v Lcd_Out@row row `uc  1 a 1 wreg ]
+"228
+[v Lcd_Out@add add `uc  1 a 1 12 ]
+"225
+[v Lcd_Out@row row `uc  1 a 1 wreg ]
+[v Lcd_Out@column column `uc  1 p 1 6 ]
+"226
+[v Lcd_Out@text text `*.24uc  1 p 1 7 ]
+"229
+[v Lcd_Out@row row `uc  1 a 1 9 ]
+"233
+} 0
+"210
+[v _Lcd_Out_Cp Lcd_Out_Cp `(v  1 e 1 0 ]
+{
+[v Lcd_Out_Cp@str str `*.24uc  1 a 1 wreg ]
+"212
+[v Lcd_Out_Cp@i i `uc  1 a 1 5 ]
+"210
+[v Lcd_Out_Cp@str str `*.24uc  1 a 1 wreg ]
+"212
+[v Lcd_Out_Cp@str str `*.24uc  1 a 1 4 ]
+"218
+} 0
+"175
+[v _Lcd_Chr_Cp Lcd_Chr_Cp `(v  1 e 1 0 ]
+{
+[v Lcd_Chr_Cp@achar achar `uc  1 a 1 wreg ]
+[v Lcd_Chr_Cp@achar achar `uc  1 a 1 wreg ]
+"180
+[v Lcd_Chr_Cp@achar achar `uc  1 a 1 2 ]
+"194
+} 0
+"126
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"164
+} 0
+"97
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@cmd cmd `uc  1 a 1 wreg ]
+[v Lcd_Cmd@cmd cmd `uc  1 a 1 wreg ]
+"102
+[v Lcd_Cmd@cmd cmd `uc  1 a 1 3 ]
+"125
+} 0
+"60
+[v _Lcd_Write_Low_Nibble Lcd_Write_Low_Nibble `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Low_Nibble@b b `uc  1 a 1 wreg ]
+[v Lcd_Write_Low_Nibble@b b `uc  1 a 1 wreg ]
+"62
+[v Lcd_Write_Low_Nibble@b b `uc  1 a 1 0 ]
+"66
+} 0
+"49
+[v _Lcd_Write_High_Nibble Lcd_Write_High_Nibble `(v  1 e 1 0 ]
+{
+"55
+} 0

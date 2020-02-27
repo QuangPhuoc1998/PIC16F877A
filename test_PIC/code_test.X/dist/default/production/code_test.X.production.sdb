@@ -1,0 +1,44 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"10 D:\Mplab X\xc8\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\Mplab X\xc8\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\Mplab X\xc8\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"11 E:\PIC\PIC16F877A\test_PIC\code_test.X\test.c
+[v _main main `(v  1 e 1 0 ]
+"166 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"278
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"402
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"3007
+[v _TRISE0 TRISE0 `VEb  1 e 0 @1096 ]
+"3010
+[v _TRISE1 TRISE1 `VEb  1 e 0 @1097 ]
+"3013
+[v _TRISE2 TRISE2 `VEb  1 e 0 @1098 ]
+"11 E:\PIC\PIC16F877A\test_PIC\code_test.X\test.c
+[v _main main `(v  1 e 1 0 ]
+{
+"28
+} 0

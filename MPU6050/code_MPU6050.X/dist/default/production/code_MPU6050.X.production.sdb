@@ -1,0 +1,624 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"417 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c
+[v _fround fround `(d  1 s 4 fround ]
+"433
+[v _scale scale `(d  1 s 4 scale ]
+"500
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"60 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"43 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"60 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"8 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"11 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\I2C_Source_File.c
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+"33
+[v _I2C_Start_Wait I2C_Start_Wait `(v  1 e 1 0 ]
+"52
+[v _I2C_Repeated_Start I2C_Repeated_Start `(uc  1 e 1 0 ]
+"66
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+"76
+[v _I2C_Ack I2C_Ack `(v  1 e 1 0 ]
+"83
+[v _I2C_Nack I2C_Nack `(v  1 e 1 0 ]
+"89
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+"103
+[v _I2C_Stop I2C_Stop `(uc  1 e 1 0 ]
+"112
+[v _I2C_Ready I2C_Ready `(v  1 e 1 0 ]
+"5 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\lcd4.c
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"27
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"42
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"63
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"82
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"98
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"116
+[v _Lcd_Set_Port Lcd_Set_Port `(v  1 e 1 0 ]
+"15 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\MPU6050.c
+[v _MPU6050_Init MPU6050_Init `(v  1 e 1 0 ]
+"28
+[v _MPU_Start_Loc MPU_Start_Loc `(v  1 e 1 0 ]
+"34
+[v _main main `(v  1 e 1 0 ]
+"808 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+[s S141 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"1771
+[u S150 . 1 `S141 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES150  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S162 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1884
+[s S171 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S176 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S182 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S187 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S192 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S197 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S202 . 1 `S162 1 . 1 0 `S171 1 . 1 0 `S176 1 . 1 0 `S182 1 . 1 0 `S187 1 . 1 0 `S192 1 . 1 0 `S197 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES202  1 e 1 @148 ]
+"2374
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2377
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2380
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2632
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2737
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2791
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2821
+[v _SSPIE SSPIE `VEb  1 e 0 @1123 ]
+"2824
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2971
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"358 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[10]ul  1 s 40 dpowers ]
+"7 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\powers.c
+[v __powers_ _powers_ `DC[13]d  1 e 52 0 ]
+"39
+[v __npowers_ _npowers_ `DC[13]d  1 e 52 0 ]
+"34 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\MPU6050.c
+[v _main main `(v  1 e 1 0 ]
+{
+"39
+[v main@buffer buffer `[20]uc  1 a 20 39 ]
+"38
+[v main@Xa Xa `f  1 a 4 59 ]
+"37
+[v main@Ax Ax `i  1 a 2 63 ]
+"60
+} 0
+"500 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"528
+[v sprintf@fval fval `d  1 a 4 30 ]
+[u S461 . 4 `ul 1 vd 4 0 `d 1 integ 4 0 ]
+"538
+[v sprintf@tmpval tmpval `S461  1 a 4 23 ]
+"540
+[v sprintf@val val `ul  1 a 4 17 ]
+"512
+[v sprintf@prec prec `i  1 a 2 28 ]
+"529
+[v sprintf@eexp eexp `i  1 a 2 21 ]
+"520
+[v sprintf@flag flag `us  1 a 2 15 ]
+"507
+[v sprintf@c c `uc  1 a 1 34 ]
+"502
+[v sprintf@ap ap `[1]*.4v  1 a 1 14 ]
+"500
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"545
+[v sprintf@sp sp `*.4uc  1 a 1 27 ]
+"1560
+} 0
+"433
+[v _scale scale `(d  1 s 4 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"436
+[v scale@scl scl `c  1 a 1 48 ]
+"449
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 7 ]
+[v ___awdiv@dividend dividend `i  1 p 2 9 ]
+"41
+} 0
+"8 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"417 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c
+[v _fround fround `(d  1 s 4 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"421
+[v fround@prec prec `uc  1 a 1 49 ]
+"426
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0
+"8 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S659 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S664 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S667 . 4 `l 1 i 4 0 `d 1 f 4 0 `S659 1 fAsBytes 4 0 `S664 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S667  1 a 4 24 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 18 ]
+[s S736 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S739 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S736 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S739  1 a 2 28 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 23 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 22 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 17 ]
+"8
+[v ___flmul@b b `d  1 p 4 4 ]
+[v ___flmul@a a `d  1 p 4 8 ]
+"205
+} 0
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"60 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 4 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 4 4 ]
+"101
+} 0
+"60 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 0 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 5 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 4 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 4 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 4 4 ]
+"101
+} 0
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"15 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"10
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"5
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
+"25
+} 0
+"5 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"43 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 59 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 58 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 49 ]
+"70
+} 0
+"242 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 70 ]
+[v ___flsub@b b `d  1 p 4 74 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 69 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 68 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 67 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 66 ]
+"10
+[v ___fladd@b b `d  1 p 4 50 ]
+[v ___fladd@a a `d  1 p 4 54 ]
+"237
+} 0
+"15 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 0 ]
+[v ___flge@ff2 ff2 `d  1 p 4 4 ]
+"19
+} 0
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
+} 0
+"28 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\MPU6050.c
+[v _MPU_Start_Loc MPU_Start_Loc `(v  1 e 1 0 ]
+{
+"33
+} 0
+"52 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\I2C_Source_File.c
+[v _I2C_Repeated_Start I2C_Repeated_Start `(uc  1 e 1 0 ]
+{
+[v I2C_Repeated_Start@slave_read_address slave_read_address `uc  1 a 1 wreg ]
+[v I2C_Repeated_Start@slave_read_address slave_read_address `uc  1 a 1 wreg ]
+"54
+[v I2C_Repeated_Start@slave_read_address slave_read_address `uc  1 a 1 1 ]
+"64
+} 0
+"15 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\MPU6050.c
+[v _MPU6050_Init MPU6050_Init `(v  1 e 1 0 ]
+{
+"27
+} 0
+"33 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\I2C_Source_File.c
+[v _I2C_Start_Wait I2C_Start_Wait `(v  1 e 1 0 ]
+{
+[v I2C_Start_Wait@slave_write_address slave_write_address `uc  1 a 1 wreg ]
+[v I2C_Start_Wait@slave_write_address slave_write_address `uc  1 a 1 wreg ]
+"37
+[v I2C_Start_Wait@slave_write_address slave_write_address `uc  1 a 1 1 ]
+"50
+} 0
+"66
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Write@data data `uc  1 a 1 wreg ]
+[v I2C_Write@data data `uc  1 a 1 wreg ]
+"68
+[v I2C_Write@data data `uc  1 a 1 0 ]
+"74
+} 0
+"103
+[v _I2C_Stop I2C_Stop `(uc  1 e 1 0 ]
+{
+"110
+} 0
+"98 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\lcd4.c
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+[v Lcd_Write_String@a a `*.4uc  1 a 1 wreg ]
+"100
+[v Lcd_Write_String@i i `i  1 a 2 6 ]
+"98
+[v Lcd_Write_String@a a `*.4uc  1 a 1 wreg ]
+"101
+[v Lcd_Write_String@a a `*.4uc  1 a 1 8 ]
+"103
+} 0
+"82
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"84
+[v Lcd_Write_Char@y y `uc  1 a 1 3 ]
+[v Lcd_Write_Char@temp temp `uc  1 a 1 2 ]
+"82
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"85
+[v Lcd_Write_Char@a a `uc  1 a 1 4 ]
+"96
+} 0
+"116
+[v _Lcd_Set_Port Lcd_Set_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Port@a a `uc  1 a 1 2 ]
+"134
+} 0
+"42
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"44
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 10 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 9 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 8 ]
+"42
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 4 ]
+"45
+[v Lcd_Set_Cursor@a a `uc  1 a 1 7 ]
+"61
+} 0
+"63
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"80
+} 0
+"27
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"29
+[v Lcd_Cmd@a a `uc  1 a 1 3 ]
+"34
+} 0
+"5
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+"7
+[v Lcd_Port@a a `uc  1 a 1 0 ]
+"26
+} 0
+"89 D:\DATA\PIC\PIC16F877A\MPU6050\code_MPU6050.X\I2C_Source_File.c
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+{
+[v I2C_Read@flag flag `uc  1 a 1 wreg ]
+"91
+[v I2C_Read@buffer buffer `uc  1 a 1 2 ]
+"89
+[v I2C_Read@flag flag `uc  1 a 1 wreg ]
+"92
+[v I2C_Read@flag flag `uc  1 a 1 1 ]
+"101
+} 0
+"112
+[v _I2C_Ready I2C_Ready `(v  1 e 1 0 ]
+{
+"116
+} 0
+"83
+[v _I2C_Nack I2C_Nack `(v  1 e 1 0 ]
+{
+"88
+} 0
+"76
+[v _I2C_Ack I2C_Ack `(v  1 e 1 0 ]
+{
+"81
+} 0
+"11
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+{
+"21
+} 0

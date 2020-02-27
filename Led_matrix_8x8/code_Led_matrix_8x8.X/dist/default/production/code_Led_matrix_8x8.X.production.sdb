@@ -1,0 +1,34 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"15 D:\DATA\PIC\PIC16F877A\Led_matrix_8x8\code_Led_matrix_8x8.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"278 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"11 D:\DATA\PIC\PIC16F877A\Led_matrix_8x8\code_Led_matrix_8x8.X\main.c
+[v _n n `ui  1 e 2 0 ]
+"13
+[v _cot cot `[8]uc  1 e 8 0 ]
+"14
+[v _code_1 code_1 `[8]uc  1 e 8 0 ]
+"15
+[v _main main `(v  1 e 1 0 ]
+{
+"29
+} 0

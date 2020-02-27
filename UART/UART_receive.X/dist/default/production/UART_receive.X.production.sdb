@@ -1,0 +1,253 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"5 D:\Mplab X\xc8\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 D:\Mplab X\xc8\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 D:\Mplab X\xc8\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 D:\Mplab X\xc8\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 D:\Mplab X\xc8\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 D:\Mplab X\xc8\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\Mplab X\xc8\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"5 E:\PIC\PIC16F877A\UART\UART_receive.X\lcd4.c
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"27
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"42
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"63
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"82
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"98
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"17 E:\PIC\PIC16F877A\UART\UART_receive.X\UART_receive.c
+[v _main main `(v  1 e 1 0 ]
+"42
+[v _Lcd_Display Lcd_Display `(v  1 e 1 0 ]
+"56
+[v _My_interrupt My_interrupt `II(v  1 e 1 0 ]
+"6 E:\PIC\PIC16F877A\UART\UART_receive.X\USART.c
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+"38
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"45
+[v _UART_Read_Text UART_Read_Text `(v  1 e 1 0 ]
+"52
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"216 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2740
+[v _RCIE RCIE `VEb  1 e 0 @1125 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3016
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"14 E:\PIC\PIC16F877A\UART\UART_receive.X\UART_receive.c
+[v _a a `uc  1 e 1 0 ]
+[v _data data `[8]uc  1 e 8 0 ]
+"15
+[v _x_value x_value `ui  1 e 2 0 ]
+[v _y_value y_value `ui  1 e 2 0 ]
+"17
+[v _main main `(v  1 e 1 0 ]
+{
+"41
+} 0
+"6 E:\PIC\PIC16F877A\UART\UART_receive.X\USART.c
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+{
+"8
+[v UART_Init@x x `ui  1 a 2 46 ]
+"6
+[v UART_Init@baudrate baudrate `DCl  1 p 4 30 ]
+"27
+} 0
+"5 D:\Mplab X\xc8\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 26 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 25 ]
+[v ___aldiv@counter counter `uc  1 a 1 24 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 15 ]
+[v ___aldiv@dividend dividend `l  1 p 4 19 ]
+"41
+} 0
+"98 E:\PIC\PIC16F877A\UART\UART_receive.X\lcd4.c
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+[v Lcd_Write_String@a a `*.24uc  1 a 1 wreg ]
+"100
+[v Lcd_Write_String@i i `i  1 a 2 20 ]
+"98
+[v Lcd_Write_String@a a `*.24uc  1 a 1 wreg ]
+"101
+[v Lcd_Write_String@a a `*.24uc  1 a 1 22 ]
+"103
+} 0
+"63
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"80
+} 0
+"42 E:\PIC\PIC16F877A\UART\UART_receive.X\UART_receive.c
+[v _Lcd_Display Lcd_Display `(v  1 e 1 0 ]
+{
+[v Lcd_Display@x_value x_value `ui  1 p 2 29 ]
+[v Lcd_Display@y_value y_value `ui  1 p 2 31 ]
+"55
+} 0
+"5 D:\Mplab X\xc8\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 20 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 15 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 17 ]
+"25
+} 0
+"5 D:\Mplab X\xc8\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 26 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 28 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 21 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 23 ]
+"30
+} 0
+"82 E:\PIC\PIC16F877A\UART\UART_receive.X\lcd4.c
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"84
+[v Lcd_Write_Char@y y `uc  1 a 1 18 ]
+[v Lcd_Write_Char@temp temp `uc  1 a 1 17 ]
+"82
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"85
+[v Lcd_Write_Char@a a `uc  1 a 1 19 ]
+"96
+} 0
+"42
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+"44
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 25 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 24 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 23 ]
+"42
+[v Lcd_Set_Cursor@a a `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@b b `uc  1 p 1 19 ]
+"45
+[v Lcd_Set_Cursor@a a `uc  1 a 1 22 ]
+"61
+} 0
+"27
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+"29
+[v Lcd_Cmd@a a `uc  1 a 1 18 ]
+"34
+} 0
+"5
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+"7
+[v Lcd_Port@a a `uc  1 a 1 15 ]
+"26
+} 0
+"56 E:\PIC\PIC16F877A\UART\UART_receive.X\UART_receive.c
+[v _My_interrupt My_interrupt `II(v  1 e 1 0 ]
+{
+"68
+} 0
+"15 D:\Mplab X\xc8\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"45 E:\PIC\PIC16F877A\UART\UART_receive.X\USART.c
+[v _UART_Read_Text UART_Read_Text `(v  1 e 1 0 ]
+{
+[v UART_Read_Text@Output Output `*.4uc  1 a 1 wreg ]
+"48
+[v UART_Read_Text@i_111 i `i  1 a 2 5 ]
+"45
+[v UART_Read_Text@Output Output `*.4uc  1 a 1 wreg ]
+[v UART_Read_Text@length length `ui  1 p 2 0 ]
+"48
+[v UART_Read_Text@Output Output `*.4uc  1 a 1 4 ]
+"50
+} 0
+"38
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+{
+"43
+} 0

@@ -1,0 +1,665 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"396 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 396: extern const double _powers_[], _npowers_[];
+[v __npowers_ `Cd ~T0 @X0 -> 0 `x e ]
+[v __powers_ `Cd ~T0 @X0 -> 0 `x e ]
+"535
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 535:  union {
+[u S19 `ul 1 `d 1 ]
+[n S19 . vd integ ]
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\c90\stdarg.h
+[v ___va_start `(*v ~T0 @X0 0 ef ]
+[p i ___va_start ]
+"7 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\c90\ctype.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\c90\ctype.h: 7: extern __bit isdigit(char);
+[v _isdigit `(b ~T0 @X0 0 ef1`uc ]
+"13 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\c90\stdarg.h
+[v ___va_arg `(*v ~T0 @X0 0 ev`*v ]
+[p i ___va_arg ]
+"402 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 402: extern unsigned long _tdiv_to_l_(float, float);
+[v __tdiv_to_l_ `(ul ~T0 @X0 0 ef2`f`f ]
+"400
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 400: extern unsigned long _div_to_l_(double, double);
+[v __div_to_l_ `(ul ~T0 @X0 0 ef2`d`d ]
+"12 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c
+[p n 350 ]
+"358
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 358: const static unsigned long dpowers[] = {1, 10, 100, 1000, 10000,
+[v _dpowers `Cul ~T0 @X0 -> 10 `i s ]
+[i _dpowers
+:U ..
+-> -> -> 1 `i `l `ul
+-> -> -> 10 `i `l `ul
+-> -> -> 100 `i `l `ul
+-> -> -> 1000 `i `l `ul
+-> -> -> 10000 `i `l `ul
+-> -> 100000 `l `ul
+-> -> 1000000 `l `ul
+-> -> 10000000 `l `ul
+-> -> 100000000 `l `ul
+-> -> 1000000000 `l `ul
+..
+]
+"417
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 417: fround(unsigned char prec)
+[v _fround `(d ~T0 @X0 1 sf1`uc ]
+"418
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 418: {
+{
+[e :U _fround ]
+"417
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 417: fround(unsigned char prec)
+[v _prec `uc ~T0 @X0 1 r1 ]
+"418
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 418: {
+[f ]
+"421
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 421:  if(prec>=110)
+[e $ ! >= -> _prec `i -> 110 `i 7  ]
+"422
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 422:   return 0.5 * _npowers_[prec/100U+18U] * _npowers_[(prec%100U)/10U+9U] * _npowers_[prec%10U];
+[e ) * * * .0.5 *U + &U __npowers_ * -> + / -> _prec `ui -> 100 `ui -> 18 `ui `ux -> -> # *U &U __npowers_ `ui `ux *U + &U __npowers_ * -> + / % -> _prec `ui -> 100 `ui -> 10 `ui -> 9 `ui `ux -> -> # *U &U __npowers_ `ui `ux *U + &U __npowers_ * -> % -> _prec `ui -> 10 `ui `ux -> -> # *U &U __npowers_ `ui `ux ]
+[e $UE 6  ]
+[e $U 8  ]
+"423
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 423:  else if(prec > 10)
+[e :U 7 ]
+[e $ ! > -> _prec `i -> 10 `i 9  ]
+"424
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 424:   return 0.5 * _npowers_[prec/10U+9U] * _npowers_[prec%10U];
+[e ) * * .0.5 *U + &U __npowers_ * -> + / -> _prec `ui -> 10 `ui -> 9 `ui `ux -> -> # *U &U __npowers_ `ui `ux *U + &U __npowers_ * -> % -> _prec `ui -> 10 `ui `ux -> -> # *U &U __npowers_ `ui `ux ]
+[e $UE 6  ]
+[e :U 9 ]
+[e :U 8 ]
+"425
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 425:  return 0.5 * _npowers_[prec];
+[e ) * .0.5 *U + &U __npowers_ * -> _prec `ux -> -> # *U &U __npowers_ `ui `ux ]
+[e $UE 6  ]
+"426
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 426: }
+[e :UE 6 ]
+}
+"433
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 433: scale(signed char scl)
+[v _scale `(d ~T0 @X0 1 sf1`c ]
+"434
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 434: {
+{
+[e :U _scale ]
+"433
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 433: scale(signed char scl)
+[v _scl `c ~T0 @X0 1 r1 ]
+"434
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 434: {
+[f ]
+"436
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 436:  if(scl < 0) {
+[e $ ! < -> _scl `i -> 0 `i 11  ]
+{
+"437
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 437:   scl = -scl;
+[e = _scl -> -U -> _scl `i `c ]
+"438
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 438:   if(scl>=110)
+[e $ ! >= -> _scl `i -> 110 `i 12  ]
+"439
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 439:    return _npowers_[(unsigned char)(scl/100+18)] * _npowers_[(unsigned char)((scl%100)/10+9)] * _npowers_[(unsigned char)(scl%10)];
+[e ) * * *U + &U __npowers_ * -> -> + / -> _scl `i -> 100 `i -> 18 `i `uc `ux -> -> # *U &U __npowers_ `ui `ux *U + &U __npowers_ * -> -> + / % -> _scl `i -> 100 `i -> 10 `i -> 9 `i `uc `ux -> -> # *U &U __npowers_ `ui `ux *U + &U __npowers_ * -> -> % -> _scl `i -> 10 `i `uc `ux -> -> # *U &U __npowers_ `ui `ux ]
+[e $UE 10  ]
+[e $U 13  ]
+"440
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 440:   else if(scl > 10)
+[e :U 12 ]
+[e $ ! > -> _scl `i -> 10 `i 14  ]
+"441
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 441:    return _npowers_[(unsigned char)(scl/10+9)] * _npowers_[(unsigned char)(scl%10)];
+[e ) * *U + &U __npowers_ * -> -> + / -> _scl `i -> 10 `i -> 9 `i `uc `ux -> -> # *U &U __npowers_ `ui `ux *U + &U __npowers_ * -> -> % -> _scl `i -> 10 `i `uc `ux -> -> # *U &U __npowers_ `ui `ux ]
+[e $UE 10  ]
+[e :U 14 ]
+[e :U 13 ]
+"442
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 442:   return _npowers_[(unsigned char)scl];
+[e ) *U + &U __npowers_ * -> -> _scl `uc `ux -> -> # *U &U __npowers_ `ui `ux ]
+[e $UE 10  ]
+"443
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 443:  }
+}
+[e :U 11 ]
+"444
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 444:  if(scl>=110)
+[e $ ! >= -> _scl `i -> 110 `i 15  ]
+"445
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 445:   return _powers_[(unsigned char)(scl/100+18)] * _powers_[(unsigned char)((scl%100)/10+9)] * _powers_[(unsigned char)(scl%10)];
+[e ) * * *U + &U __powers_ * -> -> + / -> _scl `i -> 100 `i -> 18 `i `uc `ux -> -> # *U &U __powers_ `ui `ux *U + &U __powers_ * -> -> + / % -> _scl `i -> 100 `i -> 10 `i -> 9 `i `uc `ux -> -> # *U &U __powers_ `ui `ux *U + &U __powers_ * -> -> % -> _scl `i -> 10 `i `uc `ux -> -> # *U &U __powers_ `ui `ux ]
+[e $UE 10  ]
+[e $U 16  ]
+"446
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 446:  else if(scl > 10)
+[e :U 15 ]
+[e $ ! > -> _scl `i -> 10 `i 17  ]
+"447
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 447:   return _powers_[(unsigned char)(scl/10+9)] * _powers_[(unsigned char)(scl%10)];
+[e ) * *U + &U __powers_ * -> -> + / -> _scl `i -> 10 `i -> 9 `i `uc `ux -> -> # *U &U __powers_ `ui `ux *U + &U __powers_ * -> -> % -> _scl `i -> 10 `i `uc `ux -> -> # *U &U __powers_ `ui `ux ]
+[e $UE 10  ]
+[e :U 17 ]
+[e :U 16 ]
+"448
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 448:  return _powers_[(unsigned char)scl];
+[e ) *U + &U __powers_ * -> -> _scl `uc `ux -> -> # *U &U __powers_ `ui `ux ]
+[e $UE 10  ]
+"449
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 449: }
+[e :UE 10 ]
+}
+"500
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 500: sprintf(char * sp, const char * f, ...)
+[v _sprintf `(i ~T0 @X0 1 e1v`*uc`*Cuc ]
+"501
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 501: {
+{
+[e :U _sprintf ]
+"500
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 500: sprintf(char * sp, const char * f, ...)
+[v _sp `*uc ~T0 @X0 1 r1 ]
+[v _f `*Cuc ~T0 @X0 1 r0 ]
+"501
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 501: {
+[f ]
+"502
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 502:  va_list ap;
+[v _ap `*v ~T0 @X0 -> -> 1 `i `ux a ]
+"507
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 507:  char c;
+[v _c `uc ~T0 @X0 1 a ]
+"509
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 509:  int width;
+[v _width `i ~T0 @X0 1 a ]
+"512
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 512:  int prec;
+[v _prec `i ~T0 @X0 1 a ]
+"520
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 520:  unsigned short flag;
+[v _flag `us ~T0 @X0 1 a ]
+"527
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 527:  char d;
+[v _d `uc ~T0 @X0 1 a ]
+"528
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 528:  double fval;
+[v _fval `d ~T0 @X0 1 a ]
+"529
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 529:  int eexp;
+[v _eexp `i ~T0 @X0 1 a ]
+"538
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 538:  } tmpval;
+[v _tmpval `S19 ~T0 @X0 1 a ]
+"540
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 540:  unsigned long val;
+[v _val `ul ~T0 @X0 1 a ]
+"541
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 541:  unsigned len;
+[v _len `ui ~T0 @X0 1 a ]
+"542
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 542:  const char * cp;
+[v _cp `*Cuc ~T0 @X0 1 a ]
+"545
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 545:  *ap = __va_start();
+[e = *U &U _ap ( ___va_start ..  ]
+"548
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 548:  while((c = *f++)) {
+[e $U 20  ]
+[e :U 21 ]
+{
+"550
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 550:   if(c != '%')
+[e $ ! != -> _c `ui -> 37 `ui 23  ]
+"552
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 552:   {
+{
+"553
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 553:    ((*sp++ = (c)));
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x _c ]
+"554
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 554:    continue;
+[e $U 20  ]
+"555
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 555:   }
+}
+[e :U 23 ]
+"560
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 560:   flag = 0;
+[e = _flag -> -> 0 `i `us ]
+"623
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 623:   if(*f == '.') {
+[e $ ! == -> *U _f `ui -> 46 `ui 24  ]
+{
+"624
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 624:    flag |= 0x4000;
+[e =| _flag -> -> 16384 `i `us ]
+"625
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 625:    f++;
+[e ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x ]
+"639
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 639:    {
+{
+"640
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 640:     prec = 0;
+[e = _prec -> 0 `i ]
+"641
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 641:     while(isdigit((unsigned)*f))
+[e $U 25  ]
+[e :U 26 ]
+"642
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 642:      prec = prec*10 + *f++ - '0';
+[e = _prec -> - -> + * _prec -> 10 `i -> *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x `i `ui -> 48 `ui `i ]
+[e :U 25 ]
+"641
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 641:     while(isdigit((unsigned)*f))
+[e $ ( _isdigit (1 -> -> *U _f `ui `uc 26  ]
+[e :U 27 ]
+"643
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 643:    }
+}
+"644
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 644:   } else {
+}
+[e $U 28  ]
+[e :U 24 ]
+{
+"645
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 645:    prec = 0;
+[e = _prec -> 0 `i ]
+"647
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 647:    flag |= 0x1000;
+[e =| _flag -> -> 4096 `i `us ]
+"649
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 649:   }
+}
+[e :U 28 ]
+"654
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 654:   switch(c = *f++) {
+[e $U 30  ]
+{
+"656
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 656:   case 0:
+[e :U 31 ]
+"657
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 657:    goto alldone;
+[e $U 32  ]
+"681
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 681:   case 'f':
+[e :U 33 ]
+"682
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 682:    flag |= 0x400;
+[e =| _flag -> -> 1024 `i `us ]
+"683
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 683:    break;
+[e $U 29  ]
+"821
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 821:   default:
+[e :U 34 ]
+"832
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 832:    continue;
+[e $U 20  ]
+"841
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 841:   }
+}
+[e $U 29  ]
+[e :U 30 ]
+[e [\ -> = _c *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x `i , $ -> 0 `i 31
+ , $ -> -> 102 `ui `i 33
+ 34 ]
+[e :U 29 ]
+"844
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 844:   if(flag & (0x700)) {
+[e $ ! != & -> _flag `ui -> -> 1792 `i `ui -> -> 0 `i `ui 35  ]
+{
+"846
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 846:    if(flag & 0x1000)
+[e $ ! != & -> _flag `ui -> -> 4096 `i `ui -> -> 0 `i `ui 36  ]
+"848
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 848:     prec = 6;
+[e = _prec -> 6 `i ]
+[e :U 36 ]
+"849
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 849:    fval = (*(double *)__va_arg((*(double **)ap), (double)0));
+[e = _fval *U -> ( ___va_arg , (. -> *U -> &U _ap `**d `*v -> -> 0 `i `d `*d ]
+"850
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 850:    if(fval < 0.0) {
+[e $ ! < _fval .0.0 37  ]
+{
+"851
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 851:     fval = -fval;
+[e = _fval -U _fval ]
+"852
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 852:     flag |= 0x03;
+[e =| _flag -> -> 3 `i `us ]
+"853
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 853:    }
+}
+[e :U 37 ]
+"854
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 854:    eexp = 0;
+[e = _eexp -> 0 `i ]
+"855
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 855:    if( fval!=0) {
+[e $ ! != _fval -> -> 0 `i `d 38  ]
+{
+"856
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 856:     (void)(*(&eexp) = (unsigned char)((*(unsigned long *)&fval >> 23) & 255) - 126);
+[e = *U &U _eexp - -> -> & >> *U -> &U _fval `*ul -> 23 `i -> -> -> 255 `i `l `ul `uc `i -> 126 `i ]
+"857
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 857:     eexp--;
+[e -- _eexp -> 1 `i ]
+"858
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 858:     eexp *= 3;
+[e =* _eexp -> 3 `i ]
+"859
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 859:     eexp /= 10;
+[e =/ _eexp -> 10 `i ]
+"860
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 860:     if(eexp < 0)
+[e $ ! < _eexp -> 0 `i 39  ]
+"861
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 861:      eexp--;
+[e -- _eexp -> 1 `i ]
+[e :U 39 ]
+"865
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 865:     tmpval.integ = scale(-eexp);
+[e = . _tmpval 1 ( _scale (1 -> -U _eexp `c ]
+"866
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 866:     tmpval.integ *= fval;
+[e =* . _tmpval 1 _fval ]
+"867
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 867:     if(tmpval.integ < 1.0)
+[e $ ! < . _tmpval 1 .1.0 40  ]
+"868
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 868:      eexp--;
+[e -- _eexp -> 1 `i ]
+[e $U 41  ]
+"869
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 869:     else if(tmpval.integ >= 10.0)
+[e :U 40 ]
+[e $ ! >= . _tmpval 1 .10.0 42  ]
+"870
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 870:      eexp++;
+[e ++ _eexp -> 1 `i ]
+[e :U 42 ]
+[e :U 41 ]
+"871
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 871:    }
+}
+[e :U 38 ]
+"1131
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1131:      if(prec <= 12)
+[e $ ! <= _prec -> 12 `i 43  ]
+"1132
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1132:       fval += fround((unsigned int)prec);
+[e =+ _fval ( _fround (1 -> -> _prec `ui `uc ]
+[e :U 43 ]
+"1135
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1135:     if((eexp > 9)||(fval != 0 && (unsigned long)fval == 0 && eexp > 1)) {
+[e $ ! || > _eexp -> 9 `i && && != _fval -> -> 0 `i `d == -> _fval `ul -> -> -> 0 `i `l `ul > _eexp -> 1 `i 44  ]
+{
+"1139
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1139:      if(tmpval.integ < 4.294967296){
+[e $ ! < . _tmpval 1 .4.294967296 45  ]
+{
+"1140
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1140:       eexp -= (sizeof dpowers/sizeof dpowers[0])-1;
+[e =- _eexp -> - / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui -> -> 1 `i `ui `i ]
+"1141
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1141:      }else{
+}
+[e $U 46  ]
+[e :U 45 ]
+{
+"1142
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1142:       eexp -= (sizeof dpowers/sizeof dpowers[0])-2;
+[e =- _eexp -> - / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui -> -> 2 `i `ui `i ]
+"1143
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1143:      }
+}
+[e :U 46 ]
+"1144
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1144:      tmpval.integ = scale(eexp);
+[e = . _tmpval 1 ( _scale (1 -> _eexp `c ]
+"1145
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1145:      val = ((sizeof(double)== 3) ? _tdiv_to_l_(fval,tmpval.integ) : _div_to_l_(fval,tmpval.integ));
+[e = _val ? == -> # `d `ui -> -> 3 `i `ui : ( __tdiv_to_l_ (2 , -> _fval `f -> . _tmpval 1 `f ( __div_to_l_ (2 , _fval . _tmpval 1 ]
+"1148
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1148:      fval = 0.0;
+[e = _fval .0.0 ]
+"1149
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1149:     } else {
+}
+[e $U 47  ]
+[e :U 44 ]
+{
+"1150
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1150:      val = (unsigned long)fval;
+[e = _val -> _fval `ul ]
+"1151
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1151:      fval -= (double)val;
+[e =- _fval -> _val `d ]
+"1152
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1152:      eexp = 0;
+[e = _eexp -> 0 `i ]
+"1153
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1153:     }
+}
+[e :U 47 ]
+"1155
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1155:     for(c = 1 ; c != (sizeof dpowers/sizeof dpowers[0]) ; c++)
+{
+[e = _c -> -> 1 `i `uc ]
+[e $ != -> _c `ui / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui 48  ]
+[e $U 49  ]
+[e :U 48 ]
+"1156
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1156:      if(val < dpowers[c])
+[e $ ! < _val *U + &U _dpowers * -> _c `ux -> -> # *U &U _dpowers `ui `ux 51  ]
+"1157
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1157:       break;
+[e $U 49  ]
+[e :U 51 ]
+[e ++ _c -> -> 1 `i `uc ]
+[e $ != -> _c `ui / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui 48  ]
+[e :U 49 ]
+}
+"1194
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1194:     {
+{
+"1207
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1207:     if(flag & 0x03)
+[e $ ! != & -> _flag `ui -> -> 3 `i `ui -> -> 0 `i `ui 52  ]
+"1209
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1209:      ((*sp++ = ('-')));
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> -> 45 `ui `uc ]
+[e :U 52 ]
+"1214
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1214:    }
+}
+"1215
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1215:    while(c--) {
+[e $U 53  ]
+[e :U 54 ]
+{
+"1219
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1219:     {
+{
+"1220
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1220:      tmpval.vd = val/dpowers[c];
+[e = . _tmpval 0 / _val *U + &U _dpowers * -> _c `ux -> -> # *U &U _dpowers `ui `ux ]
+"1221
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1221:      tmpval.vd %= 10;
+[e =% . _tmpval 0 -> -> -> 10 `i `l `ul ]
+"1222
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1222:      ((*sp++ = ('0' + tmpval.vd)));
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> + -> -> 48 `ui `ul . _tmpval 0 `uc ]
+"1223
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1223:     }
+}
+"1225
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1225:    }
+}
+[e :U 53 ]
+"1215
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1215:    while(c--) {
+[e $ != -> -- _c -> -> 1 `i `uc `i -> 0 `i 54  ]
+[e :U 55 ]
+"1226
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1226:    while(eexp > 0) {
+[e $U 56  ]
+[e :U 57 ]
+{
+"1227
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1227:     ((*sp++ = ('0')));
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> -> 48 `ui `uc ]
+"1228
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1228:     eexp--;
+[e -- _eexp -> 1 `i ]
+"1229
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1229:    }
+}
+[e :U 56 ]
+"1226
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1226:    while(eexp > 0) {
+[e $ > _eexp -> 0 `i 57  ]
+[e :U 58 ]
+"1230
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1230:    if(prec > (int)((sizeof dpowers/sizeof dpowers[0])-2))
+[e $ ! > _prec -> - / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui -> -> 2 `i `ui `i 59  ]
+"1231
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1231:     c = (sizeof dpowers/sizeof dpowers[0])-2;
+[e = _c -> - / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui -> -> 2 `i `ui `uc ]
+[e $U 60  ]
+"1232
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1232:    else
+[e :U 59 ]
+"1233
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1233:     c = (char)prec;
+[e = _c -> _prec `uc ]
+[e :U 60 ]
+"1234
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1234:    prec -= (int)c;
+[e =- _prec -> _c `i ]
+"1238
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1238:    if(c)
+[e $ ! != -> _c `i -> 0 `i 61  ]
+"1240
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1240:     ((*sp++ = ('.')));
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> -> 46 `ui `uc ]
+[e :U 61 ]
+"1246
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1246:    val = (unsigned long)(fval * scale((signed char)c));
+[e = _val -> * _fval ( _scale (1 -> _c `c `ul ]
+"1247
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1247:    while(c--) {
+[e $U 62  ]
+[e :U 63 ]
+{
+"1248
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1248:     tmpval.vd = val/dpowers[c];
+[e = . _tmpval 0 / _val *U + &U _dpowers * -> _c `ux -> -> # *U &U _dpowers `ui `ux ]
+"1249
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1249:     tmpval.vd %= 10;
+[e =% . _tmpval 0 -> -> -> 10 `i `l `ul ]
+"1250
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1250:     ((*sp++ = ('0' + tmpval.vd)));
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> + -> -> 48 `ui `ul . _tmpval 0 `uc ]
+"1251
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1251:     val %= dpowers[c];
+[e =% _val *U + &U _dpowers * -> _c `ux -> -> # *U &U _dpowers `ui `ux ]
+"1252
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1252:    }
+}
+[e :U 62 ]
+"1247
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1247:    while(c--) {
+[e $ != -> -- _c -> -> 1 `i `uc `i -> 0 `i 63  ]
+[e :U 64 ]
+"1254
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1254:    while(prec) {
+[e $U 65  ]
+[e :U 66 ]
+{
+"1255
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1255:     ((*sp++ = ('0')));
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> -> 48 `ui `uc ]
+"1256
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1256:     prec--;
+[e -- _prec -> 1 `i ]
+"1257
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1257:    }
+}
+[e :U 65 ]
+"1254
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1254:    while(prec) {
+[e $ != _prec -> 0 `i 66  ]
+[e :U 67 ]
+"1264
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1264:    continue;
+[e $U 20  ]
+"1265
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1265:   }
+}
+[e :U 35 ]
+"1309
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1309:   if(prec == 0 && val == 0)
+[e $ ! && == _prec -> 0 `i == _val -> -> -> 0 `i `l `ul 68  ]
+"1310
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1310:    prec++;
+[e ++ _prec -> 1 `i ]
+[e :U 68 ]
+"1358
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1358:   if(c < prec)
+[e $ ! < -> _c `i _prec 69  ]
+"1359
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1359:    c = prec;
+[e = _c -> _prec `uc ]
+[e $U 70  ]
+"1360
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1360:   else if(prec < c)
+[e :U 69 ]
+[e $ ! < _prec -> _c `i 71  ]
+"1361
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1361:    prec = c;
+[e = _prec -> _c `i ]
+[e :U 71 ]
+[e :U 70 ]
+"1441
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1441:   {
+{
+"1457
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1457:    if(flag & 0x03)
+[e $ ! != & -> _flag `ui -> -> 3 `i `ui -> -> 0 `i `ui 72  ]
+"1458
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1458:     ((*sp++ = ('-')));
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> -> 45 `ui `uc ]
+[e :U 72 ]
+"1488
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1488:   }
+}
+"1552
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1552:  }
+}
+[e :U 20 ]
+"548
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 548:  while((c = *f++)) {
+[e $ != -> = _c *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x `i -> 0 `i 21  ]
+[e :U 22 ]
+"1554
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1554: alldone:
+[e :U 32 ]
+"1557
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1557:  *sp = 0;
+[e = *U _sp -> -> 0 `i `uc ]
+"1559
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1559:  return 0;
+[e ) -> 0 `i ]
+[e $UE 18  ]
+"1560
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\doprnt.c: 1560: }
+[e :UE 18 ]
+}

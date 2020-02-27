@@ -1,0 +1,93 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"5 D:\Mplab X\xc8\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"10 D:\Mplab X\xc8\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\Mplab X\xc8\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\Mplab X\xc8\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 E:\PIC\PIC16F877A\Giao_tiep_may_tinh\code_giao_tiep_may_tinh.X\Giao_tiep_may_tinh.c
+[v _main main `(v  1 e 1 0 ]
+"5 E:\PIC\PIC16F877A\Giao_tiep_may_tinh\code_giao_tiep_may_tinh.X\USART.c
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+"37
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"51
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"1059 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2416
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2515
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2743
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2812
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2842
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2977
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2980
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"2983
+[v _TRISD0 TRISD0 `VEb  1 e 0 @1088 ]
+"2986
+[v _TRISD1 TRISD1 `VEb  1 e 0 @1089 ]
+"2989
+[v _TRISD2 TRISD2 `VEb  1 e 0 @1090 ]
+"3016
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3031
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"12 E:\PIC\PIC16F877A\Giao_tiep_may_tinh\code_giao_tiep_may_tinh.X\Giao_tiep_may_tinh.c
+[v _main main `(v  1 e 1 0 ]
+{
+"14
+[v main@c c `uc  1 a 1 13 ]
+"45
+} 0
+"37 E:\PIC\PIC16F877A\Giao_tiep_may_tinh\code_giao_tiep_may_tinh.X\USART.c
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+{
+"42
+} 0
+"5
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+{
+"7
+[v UART_Init@x x `ui  1 a 2 9 ]
+"5
+[v UART_Init@baudrate baudrate `DCl  1 p 4 6 ]
+"26
+} 0
+"5 D:\Mplab X\xc8\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0

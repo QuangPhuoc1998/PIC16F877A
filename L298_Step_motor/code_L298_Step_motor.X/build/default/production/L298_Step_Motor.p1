@@ -1,0 +1,753 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"9 L298_Step_Motor.c
+[; ;L298_Step_Motor.c: 9: void ADC_Init();
+[v _ADC_Init `(v ~T0 @X0 0 e? ]
+"6
+[; ;L298_Step_Motor.c: 6: void GPIO_Init();
+[v _GPIO_Init `(v ~T0 @X0 0 e? ]
+"11
+[; ;L298_Step_Motor.c: 11: long map(long x, long in_min, long in_max, long out_min, long out_max);
+[v _map `(l ~T0 @X0 0 ef5`l`l`l`l`l ]
+"10
+[; ;L298_Step_Motor.c: 10: unsigned int Read_ADC(unsigned char channel);
+[v _Read_ADC `(ui ~T0 @X0 0 ef1`uc ]
+"216 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 216: extern volatile unsigned char PORTB __attribute__((address(0x006)));
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+[v F842 `(v ~T0 @X0 1 tf1`ul ]
+"92 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic.h
+[v __delay `JF842 ~T0 @X0 0 e ]
+[p i __delay ]
+"1375 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1375: extern volatile unsigned char TRISB __attribute__((address(0x086)));
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"2917
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2917: extern volatile __bit TRISA0 __attribute__((address(0x428)));
+[v _TRISA0 `Vb ~T0 @X0 0 e@1064 ]
+"634
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 634: extern volatile unsigned short TMR1 __attribute__((address(0x00E)));
+[v _TMR1 `Vus ~T0 @X0 0 e@14 ]
+"2860
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2860: extern volatile __bit T1CKPS1 __attribute__((address(0x85)));
+[v _T1CKPS1 `Vb ~T0 @X0 0 e@133 ]
+"2857
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2857: extern volatile __bit T1CKPS0 __attribute__((address(0x84)));
+[v _T1CKPS0 `Vb ~T0 @X0 0 e@132 ]
+"2866
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2866: extern volatile __bit T1OSCEN __attribute__((address(0x83)));
+[v _T1OSCEN `Vb ~T0 @X0 0 e@131 ]
+"2869
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2869: extern volatile __bit T1SYNC __attribute__((address(0x82)));
+[v _T1SYNC `Vb ~T0 @X0 0 e@130 ]
+"2884
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2884: extern volatile __bit TMR1CS __attribute__((address(0x81)));
+[v _TMR1CS `Vb ~T0 @X0 0 e@129 ]
+"2569
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2569: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"2629
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2629: extern volatile __bit PEIE __attribute__((address(0x5E)));
+[v _PEIE `Vb ~T0 @X0 0 e@94 ]
+"2887
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2887: extern volatile __bit TMR1IE __attribute__((address(0x460)));
+[v _TMR1IE `Vb ~T0 @X0 0 e@1120 ]
+"2893
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2893: extern volatile __bit TMR1ON __attribute__((address(0x80)));
+[v _TMR1ON `Vb ~T0 @X0 0 e@128 ]
+"2617
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2617: extern volatile __bit PCFG0 __attribute__((address(0x4F8)));
+[v _PCFG0 `Vb ~T0 @X0 0 e@1272 ]
+"2620
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2620: extern volatile __bit PCFG1 __attribute__((address(0x4F9)));
+[v _PCFG1 `Vb ~T0 @X0 0 e@1273 ]
+"2623
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2623: extern volatile __bit PCFG2 __attribute__((address(0x4FA)));
+[v _PCFG2 `Vb ~T0 @X0 0 e@1274 ]
+"2626
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2626: extern volatile __bit PCFG3 __attribute__((address(0x4FB)));
+[v _PCFG3 `Vb ~T0 @X0 0 e@1275 ]
+"2383
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2383: extern volatile __bit ADCS0 __attribute__((address(0xFE)));
+[v _ADCS0 `Vb ~T0 @X0 0 e@254 ]
+"2386
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2386: extern volatile __bit ADCS1 __attribute__((address(0xFF)));
+[v _ADCS1 `Vb ~T0 @X0 0 e@255 ]
+"2389
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2389: extern volatile __bit ADCS2 __attribute__((address(0x4FE)));
+[v _ADCS2 `Vb ~T0 @X0 0 e@1278 ]
+"2395
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2395: extern volatile __bit ADFM __attribute__((address(0x4FF)));
+[v _ADFM `Vb ~T0 @X0 0 e@1279 ]
+"2404
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2404: extern volatile __bit ADON __attribute__((address(0xF8)));
+[v _ADON `Vb ~T0 @X0 0 e@248 ]
+"2398
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2398: extern volatile __bit ADIE __attribute__((address(0x466)));
+[v _ADIE `Vb ~T0 @X0 0 e@1126 ]
+"2401
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2401: extern volatile __bit ADIF __attribute__((address(0x66)));
+[v _ADIF `Vb ~T0 @X0 0 e@102 ]
+"1159
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1159: extern volatile unsigned char ADCON0 __attribute__((address(0x01F)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@31 ]
+"2578
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2578: extern volatile __bit GO_nDONE __attribute__((address(0xFA)));
+[v _GO_nDONE `Vb ~T0 @X0 0 e@250 ]
+"1152
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1152: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"2222
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2222: extern volatile unsigned char ADRESL __attribute__((address(0x09E)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@158 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"2890
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2890: extern volatile __bit TMR1IF __attribute__((address(0x60)));
+[v _TMR1IF `Vb ~T0 @X0 0 e@96 ]
+"54 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"6 ./main.h
+[p x FOSC = HS ]
+"7
+[p x WDTE = OFF ]
+"8
+[p x PWRTE = OFF ]
+"9
+[p x BOREN = OFF ]
+"10
+[p x LVP = OFF ]
+"11
+[p x CPD = OFF ]
+"12
+[p x WRT = OFF ]
+"13
+[p x CP = OFF ]
+"3 L298_Step_Motor.c
+[; ;L298_Step_Motor.c: 3: unsigned char full_drive_right[4] = {0x09,0x0C, 0x06, 0x03};
+[v _full_drive_right `uc ~T0 @X0 -> 4 `i e ]
+[i _full_drive_right
+:U ..
+-> -> 9 `i `uc
+-> -> 12 `i `uc
+-> -> 6 `i `uc
+-> -> 3 `i `uc
+..
+]
+"4
+[; ;L298_Step_Motor.c: 4: unsigned char full_drive_left[4] = {0x03,0x06, 0x0C, 0x09};
+[v _full_drive_left `uc ~T0 @X0 -> 4 `i e ]
+[i _full_drive_left
+:U ..
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 12 `i `uc
+-> -> 9 `i `uc
+..
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"12
+[; ;L298_Step_Motor.c: 12: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"13
+[; ;L298_Step_Motor.c: 13: {
+{
+[e :U _main ]
+[f ]
+"14
+[; ;L298_Step_Motor.c: 14:     static short t;
+[v F866 `s ~T0 @X0 1 s t ]
+"15
+[; ;L298_Step_Motor.c: 15:     unsigned int adc_value = 10;
+[v _adc_value `ui ~T0 @X0 1 a ]
+[e = _adc_value -> -> 10 `i `ui ]
+"17
+[; ;L298_Step_Motor.c: 17:     ADC_Init();
+[e ( _ADC_Init ..  ]
+"18
+[; ;L298_Step_Motor.c: 18:     GPIO_Init();
+[e ( _GPIO_Init ..  ]
+"21
+[; ;L298_Step_Motor.c: 21:     while(1)
+[e :U 97 ]
+"22
+[; ;L298_Step_Motor.c: 22:     {
+{
+"23
+[; ;L298_Step_Motor.c: 23:         adc_value = map(Read_ADC(0),0,1023,700,10000);
+[e = _adc_value -> ( _map (4 , , , , -> ( _Read_ADC (1 -> -> 0 `i `uc `l -> -> 0 `i `l -> -> 1023 `i `l -> -> 700 `i `l -> -> 10000 `i `l `ui ]
+"24
+[; ;L298_Step_Motor.c: 24:         switch (t)
+[e $U 100  ]
+"25
+[; ;L298_Step_Motor.c: 25:         {
+{
+"26
+[; ;L298_Step_Motor.c: 26:             case 0:
+[e :U 101 ]
+"27
+[; ;L298_Step_Motor.c: 27:             PORTB = full_drive_right[0];
+[e = _PORTB *U + &U _full_drive_right * -> -> -> 0 `i `ui `ux -> -> # *U &U _full_drive_right `ui `ux ]
+"28
+[; ;L298_Step_Motor.c: 28:             break;
+[e $U 99  ]
+"29
+[; ;L298_Step_Motor.c: 29:             case 1:
+[e :U 102 ]
+"30
+[; ;L298_Step_Motor.c: 30:             PORTB = full_drive_right[1];
+[e = _PORTB *U + &U _full_drive_right * -> -> -> 1 `i `ui `ux -> -> # *U &U _full_drive_right `ui `ux ]
+"31
+[; ;L298_Step_Motor.c: 31:             break;
+[e $U 99  ]
+"32
+[; ;L298_Step_Motor.c: 32:             case 2:
+[e :U 103 ]
+"33
+[; ;L298_Step_Motor.c: 33:             PORTB = full_drive_right[2];
+[e = _PORTB *U + &U _full_drive_right * -> -> -> 2 `i `ui `ux -> -> # *U &U _full_drive_right `ui `ux ]
+"34
+[; ;L298_Step_Motor.c: 34:             break;
+[e $U 99  ]
+"35
+[; ;L298_Step_Motor.c: 35:             case 3:
+[e :U 104 ]
+"36
+[; ;L298_Step_Motor.c: 36:             PORTB = full_drive_right[3];
+[e = _PORTB *U + &U _full_drive_right * -> -> -> 3 `i `ui `ux -> -> # *U &U _full_drive_right `ui `ux ]
+"37
+[; ;L298_Step_Motor.c: 37:             break;
+[e $U 99  ]
+"38
+[; ;L298_Step_Motor.c: 38:             default: break;
+[e :U 105 ]
+[e $U 99  ]
+"39
+[; ;L298_Step_Motor.c: 39:         }
+}
+[e $U 99  ]
+[e :U 100 ]
+[e [\ -> F866 `i , $ -> 0 `i 101
+ , $ -> 1 `i 102
+ , $ -> 2 `i 103
+ , $ -> 3 `i 104
+ 105 ]
+[e :U 99 ]
+"40
+[; ;L298_Step_Motor.c: 40:         if(t==3) t=0; else t++;
+[e $ ! == -> F866 `i -> 3 `i 106  ]
+[e = F866 -> -> 0 `i `s ]
+[e $U 107  ]
+[e :U 106 ]
+[e ++ F866 -> -> 1 `i `s ]
+[e :U 107 ]
+"41
+[; ;L298_Step_Motor.c: 41:         _delay((unsigned long)((10000)*(20000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10000 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+"42
+[; ;L298_Step_Motor.c: 42:     }
+}
+[e :U 96 ]
+[e $U 97  ]
+[e :U 98 ]
+"43
+[; ;L298_Step_Motor.c: 43:     return;
+[e $UE 95  ]
+"44
+[; ;L298_Step_Motor.c: 44: }
+[e :UE 95 ]
+}
+"45
+[; ;L298_Step_Motor.c: 45: void GPIO_Init()
+[v _GPIO_Init `(v ~T0 @X0 1 ef ]
+"46
+[; ;L298_Step_Motor.c: 46: {
+{
+[e :U _GPIO_Init ]
+[f ]
+"47
+[; ;L298_Step_Motor.c: 47:     TRISB = 0x00;
+[e = _TRISB -> -> 0 `i `uc ]
+"48
+[; ;L298_Step_Motor.c: 48:     TRISA0 = 1;
+[e = _TRISA0 -> -> 1 `i `b ]
+"49
+[; ;L298_Step_Motor.c: 49: }
+[e :UE 108 ]
+}
+"50
+[; ;L298_Step_Motor.c: 50: void Delay_customer(unsigned int time)
+[v _Delay_customer `(v ~T0 @X0 1 ef1`ui ]
+"51
+[; ;L298_Step_Motor.c: 51: {
+{
+[e :U _Delay_customer ]
+"50
+[; ;L298_Step_Motor.c: 50: void Delay_customer(unsigned int time)
+[v _time `ui ~T0 @X0 1 r1 ]
+"51
+[; ;L298_Step_Motor.c: 51: {
+[f ]
+"52
+[; ;L298_Step_Motor.c: 52:     unsigned char x;
+[v _x `uc ~T0 @X0 1 a ]
+"53
+[; ;L298_Step_Motor.c: 53:     for(x=0;x<time;x++)
+{
+[e = _x -> -> 0 `i `uc ]
+[e $U 113  ]
+[e :U 110 ]
+"54
+[; ;L298_Step_Motor.c: 54:     {
+{
+"55
+[; ;L298_Step_Motor.c: 55:         _delay((unsigned long)((1)*(20000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+"56
+[; ;L298_Step_Motor.c: 56:     }
+}
+[e ++ _x -> -> 1 `i `uc ]
+[e :U 113 ]
+[e $ < -> _x `ui _time 110  ]
+[e :U 111 ]
+}
+"57
+[; ;L298_Step_Motor.c: 57: }
+[e :UE 109 ]
+}
+"58
+[; ;L298_Step_Motor.c: 58: void Timer_Init()
+[v _Timer_Init `(v ~T0 @X0 1 ef ]
+"59
+[; ;L298_Step_Motor.c: 59: {
+{
+[e :U _Timer_Init ]
+[f ]
+"60
+[; ;L298_Step_Motor.c: 60:     TMR1= 62411;
+[e = _TMR1 -> -> 62411 `l `us ]
+"62
+[; ;L298_Step_Motor.c: 62:     T1CKPS1 = 1;
+[e = _T1CKPS1 -> -> 1 `i `b ]
+"63
+[; ;L298_Step_Motor.c: 63:     T1CKPS0 = 1;
+[e = _T1CKPS0 -> -> 1 `i `b ]
+"64
+[; ;L298_Step_Motor.c: 64:     T1OSCEN = 0;
+[e = _T1OSCEN -> -> 0 `i `b ]
+"65
+[; ;L298_Step_Motor.c: 65:     T1SYNC = 0;
+[e = _T1SYNC -> -> 0 `i `b ]
+"66
+[; ;L298_Step_Motor.c: 66:     TMR1CS = 0;
+[e = _TMR1CS -> -> 0 `i `b ]
+"68
+[; ;L298_Step_Motor.c: 68:     GIE=1;
+[e = _GIE -> -> 1 `i `b ]
+"69
+[; ;L298_Step_Motor.c: 69:     PEIE=1;
+[e = _PEIE -> -> 1 `i `b ]
+"70
+[; ;L298_Step_Motor.c: 70:     TMR1IE=1;
+[e = _TMR1IE -> -> 1 `i `b ]
+"72
+[; ;L298_Step_Motor.c: 72:     TMR1ON = 1;
+[e = _TMR1ON -> -> 1 `i `b ]
+"73
+[; ;L298_Step_Motor.c: 73: }
+[e :UE 114 ]
+}
+"74
+[; ;L298_Step_Motor.c: 74: void ADC_Init()
+[v _ADC_Init `(v ~T0 @X0 1 ef ]
+"75
+[; ;L298_Step_Motor.c: 75: {
+{
+[e :U _ADC_Init ]
+[f ]
+"77
+[; ;L298_Step_Motor.c: 77:     PCFG0 = 0;
+[e = _PCFG0 -> -> 0 `i `b ]
+"78
+[; ;L298_Step_Motor.c: 78:     PCFG1 = 0;
+[e = _PCFG1 -> -> 0 `i `b ]
+"79
+[; ;L298_Step_Motor.c: 79:     PCFG2 = 0;
+[e = _PCFG2 -> -> 0 `i `b ]
+"80
+[; ;L298_Step_Motor.c: 80:     PCFG3 = 0;
+[e = _PCFG3 -> -> 0 `i `b ]
+"82
+[; ;L298_Step_Motor.c: 82:     ADCS0 = 1;
+[e = _ADCS0 -> -> 1 `i `b ]
+"83
+[; ;L298_Step_Motor.c: 83:     ADCS1 = 0;
+[e = _ADCS1 -> -> 0 `i `b ]
+"84
+[; ;L298_Step_Motor.c: 84:     ADCS2 = 1;
+[e = _ADCS2 -> -> 1 `i `b ]
+"86
+[; ;L298_Step_Motor.c: 86:     ADFM = 1;
+[e = _ADFM -> -> 1 `i `b ]
+"88
+[; ;L298_Step_Motor.c: 88:     ADON = 1;
+[e = _ADON -> -> 1 `i `b ]
+"90
+[; ;L298_Step_Motor.c: 90:     ADIE = 0;
+[e = _ADIE -> -> 0 `i `b ]
+"91
+[; ;L298_Step_Motor.c: 91:     ADIF = 0;
+[e = _ADIF -> -> 0 `i `b ]
+"92
+[; ;L298_Step_Motor.c: 92: }
+[e :UE 115 ]
+}
+"93
+[; ;L298_Step_Motor.c: 93: unsigned int Read_ADC(unsigned char channel)
+[v _Read_ADC `(ui ~T0 @X0 1 ef1`uc ]
+"94
+[; ;L298_Step_Motor.c: 94: {
+{
+[e :U _Read_ADC ]
+"93
+[; ;L298_Step_Motor.c: 93: unsigned int Read_ADC(unsigned char channel)
+[v _channel `uc ~T0 @X0 1 r1 ]
+"94
+[; ;L298_Step_Motor.c: 94: {
+[f ]
+"95
+[; ;L298_Step_Motor.c: 95:     unsigned int N;
+[v _N `ui ~T0 @X0 1 a ]
+"96
+[; ;L298_Step_Motor.c: 96:     ADCON0 &= 0x11000101;
+[e =& _ADCON0 -> -> 285212929 `l `Vuc ]
+"97
+[; ;L298_Step_Motor.c: 97:     ADCON0 |= channel << 3;
+[e =| _ADCON0 -> << -> _channel `i -> 3 `i `Vuc ]
+"98
+[; ;L298_Step_Motor.c: 98:     _delay((unsigned long)((2)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"99
+[; ;L298_Step_Motor.c: 99:     GO_nDONE = 1;
+[e = _GO_nDONE -> -> 1 `i `b ]
+"100
+[; ;L298_Step_Motor.c: 100:     while(GO_nDONE);
+[e $U 117  ]
+[e :U 118 ]
+[e :U 117 ]
+[e $ _GO_nDONE 118  ]
+[e :U 119 ]
+"101
+[; ;L298_Step_Motor.c: 101:     N = ADRESH;
+[e = _N -> _ADRESH `ui ]
+"102
+[; ;L298_Step_Motor.c: 102:     return ((N<<8)+ADRESL);
+[e ) + << _N -> 8 `i -> _ADRESL `ui ]
+[e $UE 116  ]
+"103
+[; ;L298_Step_Motor.c: 103:     _delay((unsigned long)((10)*(20000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+"104
+[; ;L298_Step_Motor.c: 104: }
+[e :UE 116 ]
+}
+"105
+[; ;L298_Step_Motor.c: 105: long map(long x, long in_min, long in_max, long out_min, long out_max)
+[v _map `(l ~T0 @X0 1 ef5`l`l`l`l`l ]
+"106
+[; ;L298_Step_Motor.c: 106: {
+{
+[e :U _map ]
+"105
+[; ;L298_Step_Motor.c: 105: long map(long x, long in_min, long in_max, long out_min, long out_max)
+[v _x `l ~T0 @X0 1 r1 ]
+[v _in_min `l ~T0 @X0 1 r2 ]
+[v _in_max `l ~T0 @X0 1 r3 ]
+[v _out_min `l ~T0 @X0 1 r4 ]
+[v _out_max `l ~T0 @X0 1 r5 ]
+"106
+[; ;L298_Step_Motor.c: 106: {
+[f ]
+"107
+[; ;L298_Step_Motor.c: 107:  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+[e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
+[e $UE 120  ]
+"108
+[; ;L298_Step_Motor.c: 108: }
+[e :UE 120 ]
+}
+[v $root$_MyInterrup `(v ~T0 @X0 0 e ]
+"109
+[; ;L298_Step_Motor.c: 109: void __attribute__((picinterrupt(("")))) MyInterrup()
+[v _MyInterrup `(v ~T1 @X0 1 ef ]
+"110
+[; ;L298_Step_Motor.c: 110: {
+{
+[e :U _MyInterrup ]
+[f ]
+"111
+[; ;L298_Step_Motor.c: 111:     static short t;
+[v F884 `s ~T0 @X0 1 s t ]
+"112
+[; ;L298_Step_Motor.c: 112:     if(TMR1IE == 1 && TMR1IF == 1)
+[e $ ! && == -> _TMR1IE `i -> 1 `i == -> _TMR1IF `i -> 1 `i 122  ]
+"113
+[; ;L298_Step_Motor.c: 113:     {
+{
+"114
+[; ;L298_Step_Motor.c: 114:         switch (t)
+[e $U 124  ]
+"115
+[; ;L298_Step_Motor.c: 115:         {
+{
+"116
+[; ;L298_Step_Motor.c: 116:             case 0:
+[e :U 125 ]
+"117
+[; ;L298_Step_Motor.c: 117:             PORTB = full_drive_right[0];
+[e = _PORTB *U + &U _full_drive_right * -> -> -> 0 `i `ui `ux -> -> # *U &U _full_drive_right `ui `ux ]
+"118
+[; ;L298_Step_Motor.c: 118:             break;
+[e $U 123  ]
+"119
+[; ;L298_Step_Motor.c: 119:             case 1:
+[e :U 126 ]
+"120
+[; ;L298_Step_Motor.c: 120:             PORTB = full_drive_right[1];
+[e = _PORTB *U + &U _full_drive_right * -> -> -> 1 `i `ui `ux -> -> # *U &U _full_drive_right `ui `ux ]
+"121
+[; ;L298_Step_Motor.c: 121:             break;
+[e $U 123  ]
+"122
+[; ;L298_Step_Motor.c: 122:             case 2:
+[e :U 127 ]
+"123
+[; ;L298_Step_Motor.c: 123:             PORTB = full_drive_right[2];
+[e = _PORTB *U + &U _full_drive_right * -> -> -> 2 `i `ui `ux -> -> # *U &U _full_drive_right `ui `ux ]
+"124
+[; ;L298_Step_Motor.c: 124:             break;
+[e $U 123  ]
+"125
+[; ;L298_Step_Motor.c: 125:             case 3:
+[e :U 128 ]
+"126
+[; ;L298_Step_Motor.c: 126:             PORTB = full_drive_right[3];
+[e = _PORTB *U + &U _full_drive_right * -> -> -> 3 `i `ui `ux -> -> # *U &U _full_drive_right `ui `ux ]
+"127
+[; ;L298_Step_Motor.c: 127:             break;
+[e $U 123  ]
+"128
+[; ;L298_Step_Motor.c: 128:             default: break;
+[e :U 129 ]
+[e $U 123  ]
+"129
+[; ;L298_Step_Motor.c: 129:         }
+}
+[e $U 123  ]
+[e :U 124 ]
+[e [\ -> F884 `i , $ -> 0 `i 125
+ , $ -> 1 `i 126
+ , $ -> 2 `i 127
+ , $ -> 3 `i 128
+ 129 ]
+[e :U 123 ]
+"130
+[; ;L298_Step_Motor.c: 130:         if(t==3) t=0; else t++;
+[e $ ! == -> F884 `i -> 3 `i 130  ]
+[e = F884 -> -> 0 `i `s ]
+[e $U 131  ]
+[e :U 130 ]
+[e ++ F884 -> -> 1 `i `s ]
+[e :U 131 ]
+"132
+[; ;L298_Step_Motor.c: 132:       TMR1= map(Read_ADC(0),0,1023,0,64911);
+[e = _TMR1 -> ( _map (4 , , , , -> ( _Read_ADC (1 -> -> 0 `i `uc `l -> -> 0 `i `l -> -> 1023 `i `l -> -> 0 `i `l -> 64911 `l `us ]
+"133
+[; ;L298_Step_Motor.c: 133:       TMR1IF = 0;
+[e = _TMR1IF -> -> 0 `i `b ]
+"134
+[; ;L298_Step_Motor.c: 134:     }
+}
+[e :U 122 ]
+"135
+[; ;L298_Step_Motor.c: 135: }
+[e :UE 121 ]
+}

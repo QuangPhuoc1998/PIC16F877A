@@ -1,0 +1,236 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"22 E:\PIC\PIC16F877A\SPI\code_SPI.X\SPI.c
+[e E850 . `uc
+SPI_MASTER_OSC_DIV4 32
+SPI_MASTER_OSC_DIV16 33
+SPI_MASTER_OSC_DIV64 34
+SPI_MASTER_TMR2 35
+SPI_SLAVE_SS_EN 36
+SPI_SLAVE_SS_DIS 37
+]
+[e E858 . `uc
+SPI_DATA_SAMPLE_MIDDLE 0
+SPI_DATA_SAMPLE_END 128
+]
+[e E862 . `uc
+SPI_CLOCK_IDLE_HIGH 16
+SPI_CLOCK_IDLE_LOW 0
+]
+[e E866 . `uc
+SPI_IDLE_2_ACTIVE 0
+SPI_ACTIVE_2_IDLE 64
+]
+"12 E:\PIC\PIC16F877A\SPI\code_SPI.X\spi_lib.c
+[e E850 . `uc
+SPI_MASTER_OSC_DIV4 32
+SPI_MASTER_OSC_DIV16 33
+SPI_MASTER_OSC_DIV64 34
+SPI_MASTER_TMR2 35
+SPI_SLAVE_SS_EN 36
+SPI_SLAVE_SS_DIS 37
+]
+[e E858 . `uc
+SPI_DATA_SAMPLE_MIDDLE 0
+SPI_DATA_SAMPLE_END 128
+]
+[e E862 . `uc
+SPI_CLOCK_IDLE_HIGH 16
+SPI_CLOCK_IDLE_LOW 0
+]
+[e E866 . `uc
+SPI_IDLE_2_ACTIVE 0
+SPI_ACTIVE_2_IDLE 64
+]
+"5 D:\Mplab X\xc8\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 D:\Mplab X\xc8\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 D:\Mplab X\xc8\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\Mplab X\xc8\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\Mplab X\xc8\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"16 E:\PIC\PIC16F877A\SPI\code_SPI.X\SPI.c
+[v _main main `(v  1 e 1 0 ]
+"46
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"84
+[v _Read_ADC Read_ADC `(ui  1 e 2 0 ]
+"12 E:\PIC\PIC16F877A\SPI\code_SPI.X\spi_lib.c
+[v _Spi_Init Spi_Init `(v  1 e 1 0 ]
+"29
+[v _spiReceiveWait spiReceiveWait `(v  1 s 1 spiReceiveWait ]
+"34
+[v _Spi_Write Spi_Write `(v  1 e 1 0 ]
+"52
+[v _Spi_Read Spi_Read `(uc  1 e 1 0 ]
+"808 D:\Mplab X\xc8\pic\include\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S118 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1884
+[s S127 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S132 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S138 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S143 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S148 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S153 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S158 . 1 `S118 1 . 1 0 `S127 1 . 1 0 `S132 1 . 1 0 `S138 1 . 1 0 `S143 1 . 1 0 `S148 1 . 1 0 `S153 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES158  1 e 1 @148 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2383
+[v _ADCS0 ADCS0 `VEb  1 e 0 @254 ]
+"2386
+[v _ADCS1 ADCS1 `VEb  1 e 0 @255 ]
+"2389
+[v _ADCS2 ADCS2 `VEb  1 e 0 @1278 ]
+"2395
+[v _ADFM ADFM `VEb  1 e 0 @1279 ]
+"2398
+[v _ADIE ADIE `VEb  1 e 0 @1126 ]
+"2401
+[v _ADIF ADIF `VEb  1 e 0 @102 ]
+"2404
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"2578
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @250 ]
+"2617
+[v _PCFG0 PCFG0 `VEb  1 e 0 @1272 ]
+"2620
+[v _PCFG1 PCFG1 `VEb  1 e 0 @1273 ]
+"2623
+[v _PCFG2 PCFG2 `VEb  1 e 0 @1274 ]
+"2626
+[v _PCFG3 PCFG3 `VEb  1 e 0 @1275 ]
+"2917
+[v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
+"2920
+[v _TRISA1 TRISA1 `VEb  1 e 0 @1065 ]
+"2923
+[v _TRISA2 TRISA2 `VEb  1 e 0 @1066 ]
+"2926
+[v _TRISA3 TRISA3 `VEb  1 e 0 @1067 ]
+"2968
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2974
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"16 E:\PIC\PIC16F877A\SPI\code_SPI.X\SPI.c
+[v _main main `(v  1 e 1 0 ]
+{
+"18
+[v main@b b `ui  1 a 2 4 ]
+[v main@a a `ui  1 a 2 2 ]
+"45
+} 0
+"5 D:\Mplab X\xc8\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 D:\Mplab X\xc8\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0
+"34 E:\PIC\PIC16F877A\SPI\code_SPI.X\spi_lib.c
+[v _Spi_Write Spi_Write `(v  1 e 1 0 ]
+{
+[v Spi_Write@dat dat `uc  1 a 1 wreg ]
+[v Spi_Write@dat dat `uc  1 a 1 wreg ]
+"36
+[v Spi_Write@dat dat `uc  1 a 1 0 ]
+"37
+} 0
+"12
+[v _Spi_Init Spi_Init `(v  1 e 1 0 ]
+{
+[v Spi_Init@sType sType `E850  1 a 1 wreg ]
+[v Spi_Init@sType sType `E850  1 a 1 wreg ]
+[v Spi_Init@sDataSample sDataSample `E858  1 p 1 0 ]
+[v Spi_Init@sClockIdle sClockIdle `E862  1 p 1 1 ]
+[v Spi_Init@sTransmitEdge sTransmitEdge `E866  1 p 1 2 ]
+"14
+[v Spi_Init@sType sType `E850  1 a 1 3 ]
+"27
+} 0
+"84 E:\PIC\PIC16F877A\SPI\code_SPI.X\SPI.c
+[v _Read_ADC Read_ADC `(ui  1 e 2 0 ]
+{
+[v Read_ADC@channel channel `uc  1 a 1 wreg ]
+"86
+[v Read_ADC@N N `ui  1 a 2 6 ]
+"84
+[v Read_ADC@channel channel `uc  1 a 1 wreg ]
+"87
+[v Read_ADC@channel channel `uc  1 a 1 8 ]
+"95
+} 0
+"46
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+[v ADC_Init@channel channel `uc  1 a 1 wreg ]
+[v ADC_Init@channel channel `uc  1 a 1 wreg ]
+"49
+[v ADC_Init@channel channel `uc  1 a 1 2 ]
+"83
+} 0

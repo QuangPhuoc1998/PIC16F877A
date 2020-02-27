@@ -1,0 +1,400 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"18 ./I2C_Master_File.h
+[; ;./I2C_Master_File.h: 18: void I2C_Init();
+[v _I2C_Init `(v ~T0 @X0 0 e? ]
+"7 ./I2C_LCD.h
+[; ;./I2C_LCD.h: 7: void Lcd_Init ();
+[v _Lcd_Init `(v ~T0 @X0 0 e? ]
+"14 LCD_I2C.c
+[; ;LCD_I2C.c: 14: void DS1307_Read_Time();
+[v _DS1307_Read_Time `(v ~T0 @X0 0 e? ]
+"9 ./I2C_LCD.h
+[; ;./I2C_LCD.h: 9: void Lcd_Set_Cursor(unsigned char row, unsigned char col);
+[v _Lcd_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
+"4
+[; ;./I2C_LCD.h: 4: void Lcd_Write_Char(unsigned char data);
+[v _Lcd_Write_Char `(v ~T0 @X0 0 ef1`uc ]
+"8
+[; ;./I2C_LCD.h: 8: void Lcd_Write_String(char *str);
+[v _Lcd_Write_String `(v ~T0 @X0 0 ef1`*uc ]
+[v F842 `(v ~T0 @X0 1 tf1`ul ]
+"92 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic.h
+[v __delay `JF842 ~T0 @X0 0 e ]
+[p i __delay ]
+"19 ./I2C_Master_File.h
+[; ;./I2C_Master_File.h: 19: char I2C_Start(char);
+[v _I2C_Start `(uc ~T0 @X0 0 ef1`uc ]
+"23
+[; ;./I2C_Master_File.h: 23: char I2C_Write(unsigned char);
+[v _I2C_Write `(uc ~T0 @X0 0 ef1`uc ]
+"21
+[; ;./I2C_Master_File.h: 21: char I2C_Repeated_Start(char);
+[v _I2C_Repeated_Start `(uc ~T0 @X0 0 ef1`uc ]
+"26
+[; ;./I2C_Master_File.h: 26: char I2C_Read(char);
+[v _I2C_Read `(uc ~T0 @X0 0 ef1`uc ]
+"22
+[; ;./I2C_Master_File.h: 22: char I2C_Stop();
+[v _I2C_Stop `(uc ~T0 @X0 0 e? ]
+"5 ./DS1307.h
+[; ;./DS1307.h: 5: int BCDtoDECIMAL(int BCD);
+[v _BCDtoDECIMAL `(i ~T0 @X0 0 ef1`i ]
+"54 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"7 ./main.h
+[p x FOSC = HS ]
+"8
+[p x WDTE = OFF ]
+"9
+[p x PWRTE = OFF ]
+"10
+[p x BOREN = OFF ]
+"11
+[p x LVP = OFF ]
+"12
+[p x CPD = OFF ]
+"13
+[p x WRT = OFF ]
+"14
+[p x CP = OFF ]
+"13 LCD_I2C.c
+[; ;LCD_I2C.c: 13: unsigned int time[7];
+[v _time `ui ~T0 @X0 -> 7 `i e ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"15
+[; ;LCD_I2C.c: 15: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"18
+[; ;LCD_I2C.c: 18:     I2C_Init();
+[e ( _I2C_Init ..  ]
+"19
+[; ;LCD_I2C.c: 19:     Lcd_Init();
+[e ( _Lcd_Init ..  ]
+"21
+[; ;LCD_I2C.c: 21:     while (1)
+[e :U 97 ]
+"22
+[; ;LCD_I2C.c: 22:     {
+{
+"23
+[; ;LCD_I2C.c: 23:         DS1307_Read_Time();
+[e ( _DS1307_Read_Time ..  ]
+"25
+[; ;LCD_I2C.c: 25:         Lcd_Set_Cursor(1,5);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 5 `i `uc ]
+"26
+[; ;LCD_I2C.c: 26:         Lcd_Write_Char(time[2]/10+48);
+[e ( _Lcd_Write_Char (1 -> + / *U + &U _time * -> -> -> 2 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"27
+[; ;LCD_I2C.c: 27:         Lcd_Write_Char(time[2]%10+48);
+[e ( _Lcd_Write_Char (1 -> + % *U + &U _time * -> -> -> 2 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"28
+[; ;LCD_I2C.c: 28:         Lcd_Write_Char(':');
+[e ( _Lcd_Write_Char (1 -> -> 58 `ui `uc ]
+"29
+[; ;LCD_I2C.c: 29:         Lcd_Write_Char(time[1]/10+48);
+[e ( _Lcd_Write_Char (1 -> + / *U + &U _time * -> -> -> 1 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"30
+[; ;LCD_I2C.c: 30:         Lcd_Write_Char(time[1]%10+48);
+[e ( _Lcd_Write_Char (1 -> + % *U + &U _time * -> -> -> 1 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"31
+[; ;LCD_I2C.c: 31:         Lcd_Write_Char(':');
+[e ( _Lcd_Write_Char (1 -> -> 58 `ui `uc ]
+"32
+[; ;LCD_I2C.c: 32:         Lcd_Write_Char(time[0]/10+48);
+[e ( _Lcd_Write_Char (1 -> + / *U + &U _time * -> -> -> 0 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"33
+[; ;LCD_I2C.c: 33:         Lcd_Write_Char(time[0]%10+48);
+[e ( _Lcd_Write_Char (1 -> + % *U + &U _time * -> -> -> 0 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"35
+[; ;LCD_I2C.c: 35:         Lcd_Set_Cursor(2,4);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 4 `i `uc ]
+"36
+[; ;LCD_I2C.c: 36:         Lcd_Write_Char(time[4]/10+48);
+[e ( _Lcd_Write_Char (1 -> + / *U + &U _time * -> -> -> 4 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"37
+[; ;LCD_I2C.c: 37:         Lcd_Write_Char(time[4]%10+48);
+[e ( _Lcd_Write_Char (1 -> + % *U + &U _time * -> -> -> 4 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"38
+[; ;LCD_I2C.c: 38:         Lcd_Write_Char(':');
+[e ( _Lcd_Write_Char (1 -> -> 58 `ui `uc ]
+"39
+[; ;LCD_I2C.c: 39:         Lcd_Write_Char(time[5]/10+48);
+[e ( _Lcd_Write_Char (1 -> + / *U + &U _time * -> -> -> 5 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"40
+[; ;LCD_I2C.c: 40:         Lcd_Write_Char(time[5]%10+48);
+[e ( _Lcd_Write_Char (1 -> + % *U + &U _time * -> -> -> 5 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"41
+[; ;LCD_I2C.c: 41:         Lcd_Write_Char(':');
+[e ( _Lcd_Write_Char (1 -> -> 58 `ui `uc ]
+"42
+[; ;LCD_I2C.c: 42:         Lcd_Write_String("20");
+[e ( _Lcd_Write_String (1 :s 1C ]
+"43
+[; ;LCD_I2C.c: 43:         Lcd_Write_Char(time[6]/10+48);
+[e ( _Lcd_Write_Char (1 -> + / *U + &U _time * -> -> -> 6 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"44
+[; ;LCD_I2C.c: 44:         Lcd_Write_Char(time[6]%10+48);
+[e ( _Lcd_Write_Char (1 -> + % *U + &U _time * -> -> -> 6 `i `ui `ux -> -> # *U &U _time `ui `ux -> -> 10 `i `ui -> -> 48 `i `ui `uc ]
+"45
+[; ;LCD_I2C.c: 45:         _delay((unsigned long)((1000)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"46
+[; ;LCD_I2C.c: 46:     }
+}
+[e :U 96 ]
+[e $U 97  ]
+[e :U 98 ]
+"47
+[; ;LCD_I2C.c: 47:     return;
+[e $UE 95  ]
+"48
+[; ;LCD_I2C.c: 48: }
+[e :UE 95 ]
+}
+"49
+[; ;LCD_I2C.c: 49: void DS1307_Read_Time()
+[v _DS1307_Read_Time `(v ~T0 @X0 1 ef ]
+"50
+[; ;LCD_I2C.c: 50: {
+{
+[e :U _DS1307_Read_Time ]
+[f ]
+"51
+[; ;LCD_I2C.c: 51:     I2C_Start(0xD0);
+[e ( _I2C_Start (1 -> -> 208 `i `uc ]
+"52
+[; ;LCD_I2C.c: 52:     I2C_Write(0x00);
+[e ( _I2C_Write (1 -> -> 0 `i `uc ]
+"53
+[; ;LCD_I2C.c: 53:     I2C_Repeated_Start(0xD1);
+[e ( _I2C_Repeated_Start (1 -> -> 209 `i `uc ]
+"54
+[; ;LCD_I2C.c: 54:     time[0] = I2C_Read(0);
+[e = *U + &U _time * -> -> -> 0 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _I2C_Read (1 -> -> 0 `i `uc `ui ]
+"55
+[; ;LCD_I2C.c: 55:     time[1] = I2C_Read(0);
+[e = *U + &U _time * -> -> -> 1 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _I2C_Read (1 -> -> 0 `i `uc `ui ]
+"56
+[; ;LCD_I2C.c: 56:     time[2] = I2C_Read(0);
+[e = *U + &U _time * -> -> -> 2 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _I2C_Read (1 -> -> 0 `i `uc `ui ]
+"57
+[; ;LCD_I2C.c: 57:     time[3] = I2C_Read(0);
+[e = *U + &U _time * -> -> -> 3 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _I2C_Read (1 -> -> 0 `i `uc `ui ]
+"58
+[; ;LCD_I2C.c: 58:     time[4] = I2C_Read(0);
+[e = *U + &U _time * -> -> -> 4 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _I2C_Read (1 -> -> 0 `i `uc `ui ]
+"59
+[; ;LCD_I2C.c: 59:     time[5] = I2C_Read(0);
+[e = *U + &U _time * -> -> -> 5 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _I2C_Read (1 -> -> 0 `i `uc `ui ]
+"60
+[; ;LCD_I2C.c: 60:     time[6] = I2C_Read(1);
+[e = *U + &U _time * -> -> -> 6 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _I2C_Read (1 -> -> 1 `i `uc `ui ]
+"61
+[; ;LCD_I2C.c: 61:     I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"63
+[; ;LCD_I2C.c: 63:     time[0] = BCDtoDECIMAL(time[0]);
+[e = *U + &U _time * -> -> -> 0 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _BCDtoDECIMAL (1 -> *U + &U _time * -> -> -> 0 `i `ui `ux -> -> # *U &U _time `ui `ux `i `ui ]
+"64
+[; ;LCD_I2C.c: 64:     time[1] = BCDtoDECIMAL(time[1]);
+[e = *U + &U _time * -> -> -> 1 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _BCDtoDECIMAL (1 -> *U + &U _time * -> -> -> 1 `i `ui `ux -> -> # *U &U _time `ui `ux `i `ui ]
+"65
+[; ;LCD_I2C.c: 65:     time[2] = BCDtoDECIMAL(time[2]);
+[e = *U + &U _time * -> -> -> 2 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _BCDtoDECIMAL (1 -> *U + &U _time * -> -> -> 2 `i `ui `ux -> -> # *U &U _time `ui `ux `i `ui ]
+"66
+[; ;LCD_I2C.c: 66:     time[4] = BCDtoDECIMAL(time[4]);
+[e = *U + &U _time * -> -> -> 4 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _BCDtoDECIMAL (1 -> *U + &U _time * -> -> -> 4 `i `ui `ux -> -> # *U &U _time `ui `ux `i `ui ]
+"67
+[; ;LCD_I2C.c: 67:     time[5] = BCDtoDECIMAL(time[5]);
+[e = *U + &U _time * -> -> -> 5 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _BCDtoDECIMAL (1 -> *U + &U _time * -> -> -> 5 `i `ui `ux -> -> # *U &U _time `ui `ux `i `ui ]
+"68
+[; ;LCD_I2C.c: 68:     time[6] = BCDtoDECIMAL(time[6]);
+[e = *U + &U _time * -> -> -> 6 `i `ui `ux -> -> # *U &U _time `ui `ux -> ( _BCDtoDECIMAL (1 -> *U + &U _time * -> -> -> 6 `i `ui `ux -> -> # *U &U _time `ui `ux `i `ui ]
+"69
+[; ;LCD_I2C.c: 69: }
+[e :UE 99 ]
+}
+[a 1C 50 48 0 ]

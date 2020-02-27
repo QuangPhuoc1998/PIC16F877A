@@ -1,0 +1,602 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\code_lm35_led7.X.production.o
+cinit CODE 0 7F0 7F0 10 2
+text1 CODE 0 39A 39A 9E 2
+text2 CODE 0 225 225 32 2
+text3 CODE 0 292 292 3C 2
+text4 CODE 0 438 438 A3 2
+text5 CODE 0 32D 32D 6D 2
+text6 CODE 0 4DB 4DB 315 2
+text7 CODE 0 202 202 23 2
+text8 CODE 0 257 257 3B 2
+text9 CODE 0 1EA 1EA 18 2
+maintext CODE 0 2CE 2CE 5F 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 27 1
+inittext CODE 0 1D9 1D9 11 2
+idataBANK0 CODE 0 1CF 1CF A 2
+dataBANK0 BANK0 1 47 47 A 1
+$C:\Users\Admin\AppData\Local\Temp\s2sk.o
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 51-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 51-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-1CE 2
+CONST 800-1FFF 2
+ENTRY 3-1CE 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-1CE 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-1CE 2
+STRCODE 800-1FFF 2
+STRING 3-1CE 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\code_lm35_led7.X.production.o
+7F0 cinit CODE >547:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F0 cinit CODE >550:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F0 cinit CODE >591:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F1 cinit CODE >592:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F2 cinit CODE >593:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F3 cinit CODE >594:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F4 cinit CODE >595:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F5 cinit CODE >596:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F6 cinit CODE >597:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F7 cinit CODE >598:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F8 cinit CODE >599:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7F9 cinit CODE >600:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7FC cinit CODE >606:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7FC cinit CODE >608:C:\Users\Admin\AppData\Local\Temp\s2sk.
+7FD cinit CODE >609:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1EA text9 CODE >3:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1EA text9 CODE >6:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1ED text9 CODE >7:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1EE text9 CODE >8:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1EF text9 CODE >9:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1F0 text9 CODE >11:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1F3 text9 CODE >12:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1F4 text9 CODE >13:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1F7 text9 CODE >15:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1F8 text9 CODE >17:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1FB text9 CODE >19:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+1FE text9 CODE >20:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+201 text9 CODE >21:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+257 text8 CODE >22:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+258 text8 CODE >25:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+25E text8 CODE >26:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+26B text8 CODE >27:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+274 text8 CODE >28:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+277 text8 CODE >29:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+279 text8 CODE >30:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+280 text8 CODE >31:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+291 text8 CODE >33:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\ADC.c
+202 text7 CODE >4:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+203 text7 CODE >5:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+205 text7 CODE >6:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+20C text7 CODE >51:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+20E text7 CODE >52:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+214 text7 CODE >53:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+214 text7 CODE >54:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+21B text7 CODE >55:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+21D text7 CODE >56:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+220 text7 CODE >59:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+224 text7 CODE >60:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+4DB text6 CODE >8:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4DB text6 CODE >17:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4E2 text6 CODE >18:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4E8 text6 CODE >19:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4E9 text6 CODE >20:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4EA text6 CODE >24:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4ED text6 CODE >26:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4F0 text6 CODE >28:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4F8 text6 CODE >31:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4F9 text6 CODE >33:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+4FA text6 CODE >36:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+502 text6 CODE >39:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+507 text6 CODE >40:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+50D text6 CODE >41:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+50E text6 CODE >42:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+50F text6 CODE >45:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+512 text6 CODE >48:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+515 text6 CODE >50:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+51D text6 CODE >53:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+51E text6 CODE >54:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+51F text6 CODE >57:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+527 text6 CODE >65:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+52C text6 CODE >66:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+535 text6 CODE >119:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+545 text6 CODE >120:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+552 text6 CODE >121:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+55F text6 CODE >122:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+56F text6 CODE >123:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+588 text6 CODE >124:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+5A1 text6 CODE >125:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+5B1 text6 CODE >126:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+5CA text6 CODE >127:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+5E3 text6 CODE >128:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+5EC text6 CODE >129:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+5FC text6 CODE >130:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+616 text6 CODE >131:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+626 text6 CODE >132:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+640 text6 CODE >133:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+649 text6 CODE >134:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+659 text6 CODE >135:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+673 text6 CODE >136:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+683 text6 CODE >137:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+69D text6 CODE >138:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+6AD text6 CODE >139:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+6C7 text6 CODE >140:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+6D7 text6 CODE >141:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+6FA text6 CODE >145:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+71F text6 CODE >146:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+728 text6 CODE >149:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+735 text6 CODE >152:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+737 text6 CODE >153:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+740 text6 CODE >154:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+741 text6 CODE >155:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+742 text6 CODE >157:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+74B text6 CODE >158:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+751 text6 CODE >152:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+752 text6 CODE >163:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+753 text6 CODE >164:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+755 text6 CODE >165:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+766 text6 CODE >169:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+769 text6 CODE >166:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+76B text6 CODE >174:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+76E text6 CODE >175:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+77C text6 CODE >176:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+77E text6 CODE >177:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+797 text6 CODE >178:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+79D text6 CODE >183:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7A8 text6 CODE >184:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7B2 text6 CODE >185:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7B3 text6 CODE >187:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7C0 text6 CODE >188:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7CA text6 CODE >190:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7CB text6 CODE >191:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7CC text6 CODE >194:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7D2 text6 CODE >195:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7DA text6 CODE >196:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7DB text6 CODE >197:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7DC text6 CODE >199:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7E3 text6 CODE >200:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7E3 text6 CODE >201:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7E7 text6 CODE >203:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+7EF text6 CODE >205:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcmul.c
+32D text5 CODE >43:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+32D text5 CODE >47:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+338 text5 CODE >48:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+341 text5 CODE >49:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+356 text5 CODE >50:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+357 text5 CODE >51:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+35F text5 CODE >52:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+361 text5 CODE >53:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+363 text5 CODE >54:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+368 text5 CODE >57:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+371 text5 CODE >58:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+378 text5 CODE >60:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+37C text5 CODE >62:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+37C text5 CODE >65:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+37F text5 CODE >63:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+388 text5 CODE >64:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+38A text5 CODE >62:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+38B text5 CODE >67:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+38E text5 CODE >68:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+399 text5 CODE >70:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\fltol.c
+438 text4 CODE >10:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+439 text4 CODE >15:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+43D text4 CODE >16:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+44C text4 CODE >17:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+44D text4 CODE >19:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+455 text4 CODE >20:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+455 text4 CODE >21:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+45B text4 CODE >22:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+464 text4 CODE >23:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+468 text4 CODE >24:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+46C text4 CODE >25:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+470 text4 CODE >26:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+479 text4 CODE >24:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+47A text4 CODE >29:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+47E text4 CODE >30:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+48C text4 CODE >31:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+495 text4 CODE >28:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+495 text4 CODE >32:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+49A text4 CODE >33:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+49E text4 CODE >34:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4A0 text4 CODE >35:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4A9 text4 CODE >33:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4AB text4 CODE >37:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4AD text4 CODE >38:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4B5 text4 CODE >39:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4B7 text4 CODE >40:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4CD text4 CODE >41:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4D1 text4 CODE >42:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4D2 text4 CODE >43:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+4DA text4 CODE >44:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\xxtofl.c
+292 text3 CODE >5:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+292 text3 CODE >13:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+294 text3 CODE >14:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+298 text3 CODE >15:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+29A text3 CODE >16:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+29C text3 CODE >17:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2A3 text3 CODE >18:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2A7 text3 CODE >16:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2A8 text3 CODE >21:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2AF text3 CODE >22:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2B7 text3 CODE >23:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2BD text3 CODE >24:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2BE text3 CODE >26:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2C5 text3 CODE >27:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2C9 text3 CODE >29:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+2CD text3 CODE >30:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwdiv.c
+225 text2 CODE >5:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+225 text2 CODE >12:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+229 text2 CODE >13:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+22B text2 CODE >14:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+22D text2 CODE >15:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+234 text2 CODE >16:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+238 text2 CODE >14:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+239 text2 CODE >19:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+241 text2 CODE >20:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+247 text2 CODE >21:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+24E text2 CODE >22:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+252 text2 CODE >24:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+256 text2 CODE >25:D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\lwmod.c
+39A text1 CODE >41:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+39A text1 CODE >43:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+39D text1 CODE >44:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+39F text1 CODE >45:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3AA text1 CODE >46:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3AD text1 CODE >48:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3AE text1 CODE >49:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3B0 text1 CODE >50:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3BB text1 CODE >51:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3BE text1 CODE >53:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3BF text1 CODE >54:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3D4 text1 CODE >55:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3DF text1 CODE >56:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3E2 text1 CODE >58:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+3E3 text1 CODE >59:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+405 text1 CODE >60:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+410 text1 CODE >61:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+413 text1 CODE >63:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+414 text1 CODE >64:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+429 text1 CODE >65:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+434 text1 CODE >66:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+437 text1 CODE >67:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2CE maintext CODE >22:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2CE maintext CODE >26:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2D1 maintext CODE >27:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2D2 maintext CODE >28:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2D3 maintext CODE >29:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2D6 maintext CODE >30:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2D7 maintext CODE >32:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2DC maintext CODE >35:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+2E8 maintext CODE >36:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+323 maintext CODE >37:D:\DATA\PIC\PIC16F877A\lm35_led7\code_lm35_led7.X\main.c
+1D9 inittext CODE >565:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1D9 inittext CODE >566:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1DA inittext CODE >567:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1DB inittext CODE >568:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1DC inittext CODE >569:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1DD inittext CODE >576:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1DD inittext CODE >577:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E0 inittext CODE >578:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E1 inittext CODE >579:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E2 inittext CODE >580:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E3 inittext CODE >581:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E4 inittext CODE >582:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E5 inittext CODE >583:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E6 inittext CODE >584:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E7 inittext CODE >585:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E8 inittext CODE >586:C:\Users\Admin\AppData\Local\Temp\s2sk.
+1E9 inittext CODE >587:C:\Users\Admin\AppData\Local\Temp\s2sk.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__size_of_Read_ADC 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+main@t 45 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_ADFM 4FF 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_ADIE 466 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_ADIF 66 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_ADON F8 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s2sk.o
+_main 59C 0 CODE 0 maintext dist/default/production\code_lm35_led7.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+start 0 0 CODE 0 init C:\Users\Admin\AppData\Local\Temp\s2sk.o
+___flmul@aexp 32 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+___flmul@bexp 33 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+___flmul@prod 34 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+___flmul@sign 2D 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+___flmul@temp 38 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+__size_of___flmul 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__size_of___fltol 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_ADC_Init 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_Read_ADC 4AE 0 CODE 0 text8 dist/default/production\code_lm35_led7.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Admin\AppData\Local\Temp\s2sk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Admin\AppData\Local\Temp\s2sk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Admin\AppData\Local\Temp\s2sk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Admin\AppData\Local\Temp\s2sk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Admin\AppData\Local\Temp\s2sk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Admin\AppData\Local\Temp\s2sk.o
+wtemp0 7E 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__end_of_Read_ADC 524 0 CODE 0 text8 dist/default/production\code_lm35_led7.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON0 1F 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__end_of__Umul8_16 44A 0 CODE 0 text7 dist/default/production\code_lm35_led7.X.production.o
+__size_of__Umul8_16 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_display 734 0 CODE 0 text1 dist/default/production\code_lm35_led7.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_ADC_Init 3D4 0 CODE 0 text9 dist/default/production\code_lm35_led7.X.production.o
+___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Umul8_16 404 0 CODE 0 text7 dist/default/production\code_lm35_led7.X.production.o
+__end_of___flmul FE0 0 CODE 0 text6 dist/default/production\code_lm35_led7.X.production.o
+__end_of___fltol 734 0 CODE 0 text5 dist/default/production\code_lm35_led7.X.production.o
+__end_of___lwdiv 59C 0 CODE 0 text3 dist/default/production\code_lm35_led7.X.production.o
+__end_of___lwmod 4AE 0 CODE 0 text2 dist/default/production\code_lm35_led7.X.production.o
+__Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__end_of_ADC_Init 404 0 CODE 0 text9 dist/default/production\code_lm35_led7.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s2sk.o
+___stacklo 0 0 ABS 0 - C:\Users\Admin\AppData\Local\Temp\s2sk.o
+___lwdiv@quotient 7B 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+___flmul@a 24 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+___flmul@b 20 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+start_initialization FE0 0 CODE 0 cinit dist/default/production\code_lm35_led7.X.production.o
+_GO_nDONE FA 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+_TRISA0 428 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+?_Read_ADC 70 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Admin\AppData\Local\Temp\s2sk.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+___xxtofl@arg 7A 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+___xxtofl@exp 79 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+___xxtofl@val 70 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FE0 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+___flmul@grs 2E 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RC0 38 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_RC1 39 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_RC2 3A 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_RC3 3B 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_RC4 3C 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+___xxtofl 870 0 CODE 0 text4 dist/default/production\code_lm35_led7.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Admin\AppData\Local\Temp\s2sk.o
+__end_of___xxtofl 9B6 0 CODE 0 text4 dist/default/production\code_lm35_led7.X.production.o
+__pdataBANK0 47 0 BANK0 1 dataBANK0 dist/default/production\code_lm35_led7.X.production.o
+___flmul 9B6 0 CODE 0 text6 dist/default/production\code_lm35_led7.X.production.o
+___fltol 65A 0 CODE 0 text5 dist/default/production\code_lm35_led7.X.production.o
+___lwdiv 524 0 CODE 0 text3 dist/default/production\code_lm35_led7.X.production.o
+___lwmod 44A 0 CODE 0 text2 dist/default/production\code_lm35_led7.X.production.o
+__pmaintext 59C 0 CODE 0 maintext dist/default/production\code_lm35_led7.X.production.o
+__Umul8_16@multiplier 78 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+___lwdiv@divisor 76 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__size_of_display 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+init_fetch0 3B2 0 CODE 0 inittext dist/default/production\code_lm35_led7.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Umul8_16@product 74 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+___fltol@exp1 44 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\code_lm35_led7.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 78 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+?___flmul 20 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+?___fltol 3A 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+?___lwdiv 76 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+?___lwmod 70 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__ptext1 734 0 CODE 0 text1 dist/default/production\code_lm35_led7.X.production.o
+__ptext2 44A 0 CODE 0 text2 dist/default/production\code_lm35_led7.X.production.o
+__ptext3 524 0 CODE 0 text3 dist/default/production\code_lm35_led7.X.production.o
+__ptext4 870 0 CODE 0 text4 dist/default/production\code_lm35_led7.X.production.o
+__ptext5 65A 0 CODE 0 text5 dist/default/production\code_lm35_led7.X.production.o
+__ptext6 9B6 0 CODE 0 text6 dist/default/production\code_lm35_led7.X.production.o
+__ptext7 404 0 CODE 0 text7 dist/default/production\code_lm35_led7.X.production.o
+__ptext8 4AE 0 CODE 0 text8 dist/default/production\code_lm35_led7.X.production.o
+__ptext9 3D4 0 CODE 0 text9 dist/default/production\code_lm35_led7.X.production.o
+?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+?___xxtofl 70 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Umul8_16@word_mpld 76 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+___fltol@sign1 43 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+___fltol@f1 3A 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\code_lm35_led7.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_display 870 0 CODE 0 text1 dist/default/production\code_lm35_led7.X.production.o
+__pidataBANK0 39E 0 CODE 0 idataBANK0 dist/default/production\code_lm35_led7.X.production.o
+_code7seg 47 0 BANK0 1 dataBANK0 dist/default/production\code_lm35_led7.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+display@number 20 0 BANK0 1 cstackBANK0 dist/default/production\code_lm35_led7.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 3BA 0 CODE 0 inittext dist/default/production\code_lm35_led7.X.production.o
+__end_of_main 65A 0 CODE 0 maintext dist/default/production\code_lm35_led7.X.production.o
+_ADCS0 FE 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_ADCS1 FF 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_ADCS2 4FE 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_PCFG0 4F8 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_PCFG1 4F9 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_PCFG2 4FA 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_PCFG3 4FB 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+Read_ADC@channel 78 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+Read_ADC@N 76 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FE0 0 CODE 0 cinit dist/default/production\code_lm35_led7.X.production.o
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+___xxtofl@sign 78 0 COMMON 1 cstackCOMMON dist/default/production\code_lm35_led7.X.production.o
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\code_lm35_led7.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7F0 FE0 10 2
+text1 0 39A 734 9E 2
+text2 0 225 44A 32 2
+text3 0 292 524 3C 2
+text4 0 438 870 A3 2
+text5 0 32D 65A 6D 2
+text6 0 4DB 9B6 315 2
+text7 0 202 404 23 2
+text8 0 257 4AE 3B 2
+text9 0 1EA 3D4 18 2
+maintext 0 2CE 59C 5F 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 31 1
+inittext 0 1D9 3B2 11 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 1CF 39E A 2
+config 0 2007 400E 1 2

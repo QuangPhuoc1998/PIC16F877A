@@ -1,0 +1,96 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"10 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"15 D:\DATA\PIC\PIC16F877A\LCD_v2\code_LCD_v2.X\lcd_v.c
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"34
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"70
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"93
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"110
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"3 D:\DATA\PIC\PIC16F877A\LCD_v2\code_LCD_v2.X\LCD_v2.c
+[v _main main `(v  1 e 1 0 ]
+"1499 D:\PROGRAM\MPLABX v5.20\XC8 v2.05\pic\include\pic16f877a.h
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2749
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2752
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2755
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2758
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2761
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2764
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2983
+[v _TRISD0 TRISD0 `VEb  1 e 0 @1088 ]
+"2986
+[v _TRISD1 TRISD1 `VEb  1 e 0 @1089 ]
+"3 D:\DATA\PIC\PIC16F877A\LCD_v2\code_LCD_v2.X\LCD_v2.c
+[v _main main `(v  1 e 1 0 ]
+{
+"11
+} 0
+"110 D:\DATA\PIC\PIC16F877A\LCD_v2\code_LCD_v2.X\lcd_v.c
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+[v Lcd_Write_String@a a `*.24uc  1 a 1 wreg ]
+"112
+[v Lcd_Write_String@i i `i  1 a 2 6 ]
+"110
+[v Lcd_Write_String@a a `*.24uc  1 a 1 wreg ]
+"113
+[v Lcd_Write_String@a a `*.24uc  1 a 1 8 ]
+"115
+} 0
+"93
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"95
+[v Lcd_Write_Char@High4 High4 `uc  1 a 1 4 ]
+[v Lcd_Write_Char@Low4 Low4 `uc  1 a 1 3 ]
+"93
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"96
+[v Lcd_Write_Char@a a `uc  1 a 1 5 ]
+"109
+} 0
+"70
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"92
+} 0
+"34
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@CMD CMD `uc  1 a 1 wreg ]
+[v Lcd_Cmd@CMD CMD `uc  1 a 1 wreg ]
+"37
+[v Lcd_Cmd@CMD CMD `uc  1 a 1 3 ]
+"44
+} 0
+"15
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Port@Data Data `uc  1 a 1 wreg ]
+[v Lcd_Port@Data Data `uc  1 a 1 wreg ]
+"17
+[v Lcd_Port@Data Data `uc  1 a 1 0 ]
+"33
+} 0
